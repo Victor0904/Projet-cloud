@@ -1,0 +1,1246 @@
+{
+ "source": "https://api-adresse.data.gouv.fr/search/ et https://geo.api.gouv.fr/communes",
+ "enregistre_le": "2026-10-25",
+ "adresses": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.378299,
+     48.865801
+    ]
+   },
+   "properties": {
+    "label": "100 Rue Oberkampf 75011 Paris",
+    "score": 0.9809390909090907,
+    "housenumber": "100",
+    "id": "75111_6858_00100",
+    "banId": "4891aae2-9bf5-4ef0-8e9e-1e1afa0af9eb",
+    "name": "100 Rue Oberkampf",
+    "postcode": "75011",
+    "citycode": "75111",
+    "x": 654392,
+    "y": 6863042.94,
+    "city": "Paris",
+    "district": "Paris 11e Arrondissement",
+    "context": "75, Paris, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.79033,
+    "depcode": "75",
+    "street": "Rue Oberkampf",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.371043,
+     48.853907
+    ]
+   },
+   "properties": {
+    "label": "20 Rue de la Roquette 75011 Paris",
+    "score": 0.9822463636363635,
+    "housenumber": "20",
+    "id": "75111_8358_00020",
+    "banId": "eccec8d5-085d-4e7e-8aa3-508b76702594",
+    "name": "20 Rue de la Roquette",
+    "postcode": "75011",
+    "citycode": "75111",
+    "x": 653849.17,
+    "y": 6861724.64,
+    "city": "Paris",
+    "district": "Paris 11e Arrondissement",
+    "context": "75, Paris, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.80471,
+    "depcode": "75",
+    "street": "Rue de la Roquette",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.36041,
+     48.8555
+    ]
+   },
+   "properties": {
+    "label": "10 Rue de Rivoli 75004 Paris",
+    "score": 0.9701581818181818,
+    "housenumber": "10",
+    "id": "75104_8249_00010",
+    "banId": "10ee511a-2616-4186-948f-ab4ae0dffab4",
+    "name": "10 Rue de Rivoli",
+    "postcode": "75004",
+    "citycode": "75104",
+    "x": 653070.41,
+    "y": 6861908.04,
+    "city": "Paris",
+    "district": "Paris 4e Arrondissement",
+    "context": "75, Paris, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.67174,
+    "depcode": "75",
+    "street": "Rue de Rivoli",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.832729,
+     45.762933
+    ]
+   },
+   "properties": {
+    "label": "Rue Mercière 69002 Lyon",
+    "score": 0.77863,
+    "id": "69382_4730",
+    "banId": "33eb23e5-9bb4-479b-8caf-19d633276ced",
+    "name": "Rue Mercière",
+    "postcode": "69002",
+    "citycode": "69382",
+    "x": 842438.55,
+    "y": 6519800.54,
+    "city": "Lyon",
+    "district": "Lyon 2e Arrondissement",
+    "context": "69, Rhône, Auvergne-Rhône-Alpes",
+    "type": "street",
+    "importance": 0.64493,
+    "depcode": "69",
+    "street": "Rue Mercière",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.851947,
+     45.759315
+    ]
+   },
+   "properties": {
+    "label": "200 Rue Garibaldi 69003 Lyon",
+    "score": 0.975770909090909,
+    "housenumber": "200",
+    "id": "69383_3030_00200",
+    "banId": "35378ba6-4c2e-49ff-b701-322040b8ef0e",
+    "name": "200 Rue Garibaldi",
+    "postcode": "69003",
+    "citycode": "69383",
+    "x": 843941.31,
+    "y": 6519433.72,
+    "city": "Lyon",
+    "district": "Lyon 3e Arrondissement",
+    "context": "69, Rhône, Auvergne-Rhône-Alpes",
+    "type": "housenumber",
+    "importance": 0.73348,
+    "depcode": "69",
+    "street": "Rue Garibaldi",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.062667,
+     50.637505
+    ]
+   },
+   "properties": {
+    "label": "10 Rue Esquermoise 59800 Lille",
+    "score": 0.7850481524926687,
+    "housenumber": "10",
+    "id": "59350_3197_00010",
+    "banId": "1b01d2ff-72b1-4dbc-87f9-f21f37ef6748",
+    "name": "10 Rue Esquermoise",
+    "postcode": "59800",
+    "citycode": "59350",
+    "oldcitycode": "59350",
+    "x": 704440.8,
+    "y": 7060062.3,
+    "city": "Lille",
+    "oldcity": "Lille",
+    "context": "59, Nord, Hauts-de-France",
+    "type": "housenumber",
+    "importance": 0.79682,
+    "depcode": "59",
+    "street": "Rue Esquermoise",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.576411,
+     44.841885
+    ]
+   },
+   "properties": {
+    "label": "20 Cours de l'Intendance 33000 Bordeaux",
+    "score": 0.9799536363636363,
+    "housenumber": "20",
+    "id": "33063_4510_00020",
+    "banId": "b88a4e0f-8ab5-4e1f-b76c-e34e4cfc5439",
+    "name": "20 Cours de l'Intendance",
+    "postcode": "33000",
+    "citycode": "33063",
+    "x": 417482.26,
+    "y": 6422256.62,
+    "city": "Bordeaux",
+    "context": "33, Gironde, Nouvelle-Aquitaine",
+    "type": "housenumber",
+    "importance": 0.77949,
+    "depcode": "33",
+    "street": "Cours de l'Intendance",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.686742,
+     47.396088
+    ]
+   },
+   "properties": {
+    "label": "10 Rue Nationale 37000 Tours",
+    "score": 0.9787745454545453,
+    "housenumber": "10",
+    "id": "37261_3610_00010",
+    "banId": "65a9a4c6-0758-4864-9cac-ed690a637fc1",
+    "name": "10 Rue Nationale",
+    "postcode": "37000",
+    "citycode": "37261",
+    "x": 525537.49,
+    "y": 6702082.9,
+    "city": "Tours",
+    "context": "37, Indre-et-Loire, Centre-Val de Loire",
+    "type": "housenumber",
+    "importance": 0.76652,
+    "depcode": "37",
+    "street": "Rue Nationale",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.18266,
+     48.693118
+    ]
+   },
+   "properties": {
+    "label": "1 Place Stanislas 54000 Nancy",
+    "score": 0.9678881818181818,
+    "housenumber": "1",
+    "id": "54395_4930_00001",
+    "banId": "ab3301ae-2ce5-4fd0-860f-c8db4d5cf031",
+    "name": "1 Place Stanislas",
+    "postcode": "54000",
+    "citycode": "54395",
+    "x": 934192.9,
+    "y": 6848383.54,
+    "city": "Nancy",
+    "context": "54, Meurthe-et-Moselle, Grand Est",
+    "type": "housenumber",
+    "importance": 0.64677,
+    "depcode": "54",
+    "street": "Place Stanislas",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.182543,
+     48.69383
+    ]
+   },
+   "properties": {
+    "label": "7 Place Stanislas 54000 Nancy",
+    "score": 0.9678881818181818,
+    "housenumber": "7",
+    "id": "54395_4930_00007",
+    "banId": "16c7b84e-696e-4df0-a169-d188d55e1de3",
+    "name": "7 Place Stanislas",
+    "postcode": "54000",
+    "citycode": "54395",
+    "x": 934181.1,
+    "y": 6848462.29,
+    "city": "Nancy",
+    "context": "54, Meurthe-et-Moselle, Grand Est",
+    "type": "housenumber",
+    "importance": 0.64677,
+    "depcode": "54",
+    "street": "Place Stanislas",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.181993,
+     48.691233
+    ]
+   },
+   "properties": {
+    "label": "20 Rue Saint Dizier 54000 Nancy",
+    "score": 0.9795172727272726,
+    "housenumber": "20",
+    "id": "54395_4490_00020",
+    "banId": "d0e422ed-767e-4ef3-8bf2-59321b3974bc",
+    "name": "20 Rue Saint Dizier",
+    "postcode": "54000",
+    "citycode": "54395",
+    "x": 934152.29,
+    "y": 6848172.16,
+    "city": "Nancy",
+    "context": "54, Meurthe-et-Moselle, Grand Est",
+    "type": "housenumber",
+    "importance": 0.77469,
+    "depcode": "54",
+    "street": "Rue Saint Dizier",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.376448,
+     48.859796
+    ]
+   },
+   "properties": {
+    "label": "100 Boulevard Voltaire 75011 Paris",
+    "score": 0.9838999999999999,
+    "housenumber": "100",
+    "id": "75111_9907_00100",
+    "banId": "5c4c33cc-6dc6-4816-ac29-90848b6bd6b9",
+    "name": "100 Boulevard Voltaire",
+    "postcode": "75011",
+    "citycode": "75111",
+    "x": 654250.94,
+    "y": 6862376.31,
+    "city": "Paris",
+    "district": "Paris 11e Arrondissement",
+    "context": "75, Paris, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.8229,
+    "depcode": "75",
+    "street": "Boulevard Voltaire",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.444053,
+     43.603872
+    ]
+   },
+   "properties": {
+    "label": "1 Place du Capitole 31000 Toulouse",
+    "score": 0.9764799999999999,
+    "housenumber": "1",
+    "id": "31555_1676_00001",
+    "banId": "264c0325-241b-4c4e-a07f-896b6b2c1b03",
+    "name": "1 Place du Capitole",
+    "postcode": "31000",
+    "citycode": "31555",
+    "x": 574344.14,
+    "y": 6279551.2,
+    "city": "Toulouse",
+    "context": "31, Haute-Garonne, Occitanie",
+    "type": "housenumber",
+    "importance": 0.74128,
+    "depcode": "31",
+    "street": "Place du Capitole",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.746501,
+     48.583092
+    ]
+   },
+   "properties": {
+    "label": "1 Place Kléber 67000 Strasbourg",
+    "score": 0.974710909090909,
+    "housenumber": "1",
+    "id": "67482_3705_00001",
+    "banId": "58177c50-80eb-4efe-9423-7c7f7b3eca56",
+    "name": "1 Place Kléber",
+    "postcode": "67000",
+    "citycode": "67482",
+    "x": 1049885.66,
+    "y": 6841950.32,
+    "city": "Strasbourg",
+    "context": "67, Bas-Rhin, Grand Est",
+    "type": "housenumber",
+    "importance": 0.72182,
+    "depcode": "67",
+    "street": "Place Kléber",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.175712,
+     49.117406
+    ]
+   },
+   "properties": {
+    "label": "10 Rue Serpenoise 57000 Metz",
+    "score": 0.9761863636363635,
+    "housenumber": "10",
+    "id": "57463_6420_00010",
+    "name": "10 Rue Serpenoise",
+    "postcode": "57000",
+    "citycode": "57463",
+    "x": 931784.9,
+    "y": 6895505.72,
+    "city": "Metz",
+    "context": "57, Moselle, Grand Est",
+    "type": "housenumber",
+    "importance": 0.73805,
+    "depcode": "57",
+    "street": "Rue Serpenoise",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.877669,
+     43.6097
+    ]
+   },
+   "properties": {
+    "label": "10 Rue de la Loge 34000 Montpellier",
+    "score": 0.9777354545454545,
+    "housenumber": "10",
+    "id": "34172_3300_00010",
+    "name": "10 Rue de la Loge",
+    "postcode": "34000",
+    "citycode": "34172",
+    "x": 770875.11,
+    "y": 6279354.76,
+    "city": "Montpellier",
+    "context": "34, Hérault, Occitanie",
+    "type": "housenumber",
+    "importance": 0.75509,
+    "depcode": "34",
+    "street": "Rue de la Loge",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.441463,
+     48.862344
+    ]
+   },
+   "properties": {
+    "label": "1 Place Jean Jaures 93100 Montreuil",
+    "score": 0.969250909090909,
+    "housenumber": "1",
+    "id": "93048_4740_00001",
+    "banId": "ca669e90-b6f3-48b5-be7d-80a00ba9c493",
+    "name": "1 Place Jean Jaures",
+    "postcode": "93100",
+    "citycode": "93048",
+    "x": 659022.91,
+    "y": 6862623.92,
+    "city": "Montreuil",
+    "context": "93, Seine-Saint-Denis, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.66176,
+    "depcode": "93",
+    "street": "Place Jean Jaures",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.358293,
+     48.935748
+    ]
+   },
+   "properties": {
+    "label": "1 Place Victor Hugo 93200 Saint-Denis",
+    "score": 0.9687099999999998,
+    "housenumber": "1",
+    "id": "93066_9645_00001",
+    "banId": "1222c20b-db40-4428-ae27-745611fa6196",
+    "name": "1 Place Victor Hugo",
+    "postcode": "93200",
+    "citycode": "93066",
+    "oldcitycode": "93066",
+    "x": 652987.6,
+    "y": 6870832.5,
+    "city": "Saint-Denis",
+    "oldcity": "Saint-Denis",
+    "context": "93, Seine-Saint-Denis, Île-de-France",
+    "type": "housenumber",
+    "importance": 0.65581,
+    "depcode": "93",
+    "street": "Place Victor Hugo",
+    "_type": "address"
+   }
+  }
+ ],
+ "communes": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.171263,
+     48.688135
+    ]
+   },
+   "properties": {
+    "label": "Nancy",
+    "score": 0.9565927272727272,
+    "id": "54395",
+    "banId": "c5b52684-66a5-4ea4-a17a-9cb43dca04d1",
+    "type": "municipality",
+    "name": "Nancy",
+    "postcode": "54000",
+    "citycode": "54395",
+    "x": 933376.96,
+    "y": 6847796.25,
+    "population": 103671,
+    "city": "Nancy",
+    "context": "54, Meurthe-et-Moselle, Grand Est",
+    "importance": 0.52252,
+    "depcode": "54",
+    "municipality": "Nancy",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.347,
+     48.859
+    ]
+   },
+   "properties": {
+    "label": "Paris",
+    "score": 0.9702754545454544,
+    "id": "75056",
+    "type": "municipality",
+    "name": "Paris",
+    "postcode": "75001",
+    "citycode": "75056",
+    "x": 652089.7,
+    "y": 6862305.26,
+    "population": 2103778,
+    "city": "Paris",
+    "context": "75, Paris, Île-de-France",
+    "importance": 0.67303,
+    "depcode": "75",
+    "municipality": "Paris",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.835,
+     45.758
+    ]
+   },
+   "properties": {
+    "label": "Lyon",
+    "score": 0.9639145454545454,
+    "id": "69123",
+    "type": "municipality",
+    "name": "Lyon",
+    "postcode": "69001",
+    "citycode": "69123",
+    "x": 842627.75,
+    "y": 6519256.98,
+    "population": 519127,
+    "city": "Lyon",
+    "context": "69, Rhône, Auvergne-Rhône-Alpes",
+    "importance": 0.60306,
+    "depcode": "69",
+    "municipality": "Lyon",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.045391,
+     50.630951
+    ]
+   },
+   "properties": {
+    "label": "Lille",
+    "score": 0.9603745454545453,
+    "id": "59350",
+    "banId": "79d4e07e-329b-4e3f-94e9-a432079eb186",
+    "type": "municipality",
+    "name": "Lille",
+    "postcode": "59000",
+    "citycode": "59350",
+    "x": 703216.98,
+    "y": 7059331.15,
+    "population": 238246,
+    "city": "Lille",
+    "context": "59, Nord, Hauts-de-France",
+    "importance": 0.56412,
+    "depcode": "59",
+    "municipality": "Lille",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.194891,
+     49.108385
+    ]
+   },
+   "properties": {
+    "label": "Metz",
+    "score": 0.9573536363636362,
+    "id": "57463",
+    "type": "municipality",
+    "name": "Metz",
+    "postcode": "57000",
+    "citycode": "57463",
+    "x": 933224.54,
+    "y": 6894559.67,
+    "population": 122572,
+    "city": "Metz",
+    "context": "57, Moselle, Grand Est",
+    "importance": 0.53089,
+    "depcode": "57",
+    "municipality": "Metz",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.433805,
+     43.604082
+    ]
+   },
+   "properties": {
+    "label": "Toulouse",
+    "score": 0.9638772727272726,
+    "id": "31555",
+    "banId": "f8d655da-f150-41fb-bc30-c0b075b6b670",
+    "type": "municipality",
+    "name": "Toulouse",
+    "postcode": "31000",
+    "citycode": "31555",
+    "x": 573517.1,
+    "y": 6279590.9,
+    "population": 514819,
+    "city": "Toulouse",
+    "context": "31, Haute-Garonne, Occitanie",
+    "importance": 0.60265,
+    "depcode": "31",
+    "municipality": "Toulouse",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.761454,
+     48.579831
+    ]
+   },
+   "properties": {
+    "label": "Strasbourg",
+    "score": 0.9613272727272727,
+    "id": "67482",
+    "banId": "fa199ceb-b235-4898-a985-2638b3c225b2",
+    "type": "municipality",
+    "name": "Strasbourg",
+    "postcode": "67000",
+    "citycode": "67482",
+    "x": 1051008.43,
+    "y": 6841654.82,
+    "population": 293771,
+    "city": "Strasbourg",
+    "context": "67, Bas-Rhin, Grand Est",
+    "importance": 0.5746,
+    "depcode": "67",
+    "municipality": "Strasbourg",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.587877,
+     44.851939
+    ]
+   },
+   "properties": {
+    "label": "Bordeaux",
+    "score": 0.96091,
+    "id": "33063",
+    "banId": "f38fe08f-c87b-4b3f-8f05-1566b8da9c39",
+    "type": "municipality",
+    "name": "Bordeaux",
+    "postcode": "33000",
+    "citycode": "33063",
+    "x": 416627.86,
+    "y": 6423413.25,
+    "population": 267991,
+    "city": "Bordeaux",
+    "context": "33, Gironde, Nouvelle-Aquitaine",
+    "importance": 0.57001,
+    "depcode": "33",
+    "municipality": "Bordeaux",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.405,
+     43.282
+    ]
+   },
+   "properties": {
+    "label": "Marseille",
+    "score": 0.9663454545454545,
+    "id": "13055",
+    "type": "municipality",
+    "name": "Marseille",
+    "postcode": "13001",
+    "citycode": "13055",
+    "x": 895296.11,
+    "y": 6245510.5,
+    "population": 886040,
+    "city": "Marseille",
+    "context": "13, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+    "importance": 0.6298,
+    "depcode": "13",
+    "municipality": "Marseille",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.555335,
+     47.239367
+    ]
+   },
+   "properties": {
+    "label": "Nantes",
+    "score": 0.9618245454545453,
+    "id": "44109",
+    "banId": "f721f17d-e804-4c56-b917-b1ce7474b3e2",
+    "type": "municipality",
+    "name": "Nantes",
+    "postcode": "44000",
+    "citycode": "44109",
+    "x": 355581,
+    "y": 6692055.78,
+    "population": 327734,
+    "city": "Nantes",
+    "context": "44, Loire-Atlantique, Pays de la Loire",
+    "importance": 0.58007,
+    "depcode": "44",
+    "municipality": "Nantes",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.87048,
+     43.610476
+    ]
+   },
+   "properties": {
+    "label": "Montpellier",
+    "score": 0.9615745454545455,
+    "id": "34172",
+    "type": "municipality",
+    "name": "Montpellier",
+    "postcode": "34000",
+    "citycode": "34172",
+    "x": 770293.65,
+    "y": 6279434.57,
+    "population": 310240,
+    "city": "Montpellier",
+    "context": "34, Hérault, Occitanie",
+    "importance": 0.57732,
+    "depcode": "34",
+    "municipality": "Montpellier",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.68365,
+     48.110899
+    ]
+   },
+   "properties": {
+    "label": "Rennes",
+    "score": 0.960231818181818,
+    "id": "35238",
+    "banId": "c14fd320-7bfb-4446-bcf1-cbf3df3a2451",
+    "type": "municipality",
+    "name": "Rennes",
+    "postcode": "35000",
+    "citycode": "35238",
+    "x": 351630.65,
+    "y": 6789282.24,
+    "population": 230890,
+    "city": "Rennes",
+    "context": "35, Ille-et-Vilaine, Bretagne",
+    "importance": 0.56255,
+    "depcode": "35",
+    "municipality": "Rennes",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.724301,
+     45.182828
+    ]
+   },
+   "properties": {
+    "label": "Grenoble",
+    "score": 0.9584545454545453,
+    "id": "38185",
+    "banId": "a7a7488d-a49b-4cc1-8a0d-8f11e820cc01",
+    "type": "municipality",
+    "name": "Grenoble",
+    "postcode": "38000",
+    "citycode": "38185",
+    "x": 913930.21,
+    "y": 6457415.06,
+    "population": 156140,
+    "city": "Grenoble",
+    "context": "38, Isère, Auvergne-Rhône-Alpes",
+    "importance": 0.543,
+    "depcode": "38",
+    "municipality": "Grenoble",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.033601,
+     47.331953
+    ]
+   },
+   "properties": {
+    "label": "Dijon",
+    "score": 0.9586172727272726,
+    "id": "21231",
+    "banId": "d756137f-d2a6-4804-9b0e-eca275f59dd3",
+    "type": "municipality",
+    "name": "Dijon",
+    "postcode": "21000",
+    "citycode": "21231",
+    "x": 853559.64,
+    "y": 6694380.31,
+    "population": 161830,
+    "city": "Dijon",
+    "context": "21, Côte-d'Or, Bourgogne-Franche-Comté",
+    "importance": 0.54479,
+    "depcode": "21",
+    "municipality": "Dijon",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.055595,
+     49.250948
+    ]
+   },
+   "properties": {
+    "label": "Reims",
+    "score": 0.959041818181818,
+    "id": "51454",
+    "banId": "531995a8-bccc-460f-95de-e57f7f5f9be6",
+    "type": "municipality",
+    "name": "Reims",
+    "postcode": "51100",
+    "citycode": "51454",
+    "x": 776864.36,
+    "y": 6906211.75,
+    "population": 177674,
+    "city": "Reims",
+    "context": "51, Marne, Grand Est",
+    "importance": 0.54946,
+    "depcode": "51",
+    "municipality": "Reims",
+    "_type": "address"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.695848,
+     47.395476
+    ]
+   },
+   "properties": {
+    "label": "Tours",
+    "score": 0.9579345454545454,
+    "id": "37261",
+    "banId": "d714d115-1030-4372-b3e0-8d8993394d8d",
+    "type": "municipality",
+    "name": "Tours",
+    "postcode": "37000",
+    "citycode": "37261",
+    "x": 526222.07,
+    "y": 6701994.86,
+    "population": 139259,
+    "city": "Tours",
+    "context": "37, Indre-et-Loire, Centre-Val de Loire",
+    "importance": 0.53728,
+    "depcode": "37",
+    "municipality": "Tours",
+    "_type": "address"
+   }
+  }
+ ],
+ "geo": [
+  {
+   "nom": "Nancy",
+   "code": "54395",
+   "codesPostaux": [
+    "54000",
+    "54100"
+   ],
+   "codeDepartement": "54",
+   "codeRegion": "44",
+   "population": 103671,
+   "_score": 2.0367100000000002
+  },
+  {
+   "nom": "Paris",
+   "code": "75056",
+   "codesPostaux": [
+    "75001",
+    "75002",
+    "75003",
+    "75004",
+    "75005",
+    "75006",
+    "75007",
+    "75008",
+    "75009",
+    "75010",
+    "75011",
+    "75012",
+    "75013",
+    "75014",
+    "75015",
+    "75016",
+    "75017",
+    "75018",
+    "75019",
+    "75020",
+    "75116"
+   ],
+   "codeDepartement": "75",
+   "codeRegion": "11",
+   "population": 2103778,
+   "_score": 9.535435286815508
+  },
+  {
+   "nom": "Lyon",
+   "code": "69123",
+   "codesPostaux": [
+    "69001",
+    "69002",
+    "69003",
+    "69004",
+    "69005",
+    "69006",
+    "69007",
+    "69008",
+    "69009"
+   ],
+   "codeDepartement": "69",
+   "codeRegion": "84",
+   "population": 519127,
+   "_score": 3.3309776503428137
+  },
+  {
+   "nom": "Lille",
+   "code": "59350",
+   "codesPostaux": [
+    "59000",
+    "59160",
+    "59260",
+    "59777",
+    "59800"
+   ],
+   "codeDepartement": "59",
+   "codeRegion": "32",
+   "population": 238246,
+   "_score": 1.8082078747980779
+  },
+  {
+   "nom": "Metz",
+   "code": "57463",
+   "codesPostaux": [
+    "57000",
+    "57050",
+    "57070"
+   ],
+   "codeDepartement": "57",
+   "codeRegion": "44",
+   "population": 122572,
+   "_score": 1.1046305487977426
+  },
+  {
+   "nom": "Toulouse",
+   "code": "31555",
+   "codesPostaux": [
+    "31000",
+    "31100",
+    "31200",
+    "31300",
+    "31400",
+    "31500"
+   ],
+   "codeDepartement": "31",
+   "codeRegion": "76",
+   "population": 514819,
+   "_score": 6.14819
+  },
+  {
+   "nom": "Strasbourg",
+   "code": "67482",
+   "codesPostaux": [
+    "67000",
+    "67100",
+    "67200"
+   ],
+   "codeDepartement": "67",
+   "codeRegion": "44",
+   "population": 293771,
+   "_score": 3.93771
+  },
+  {
+   "nom": "Bordeaux",
+   "code": "33063",
+   "codesPostaux": [
+    "33000",
+    "33100",
+    "33200",
+    "33300",
+    "33800"
+   ],
+   "codeDepartement": "33",
+   "codeRegion": "75",
+   "population": 267991,
+   "_score": 3.67991
+  },
+  {
+   "nom": "Marseille",
+   "code": "13055",
+   "codesPostaux": [
+    "13001",
+    "13002",
+    "13003",
+    "13004",
+    "13005",
+    "13006",
+    "13007",
+    "13008",
+    "13009",
+    "13010",
+    "13011",
+    "13012",
+    "13013",
+    "13014",
+    "13015",
+    "13016"
+   ],
+   "codeDepartement": "13",
+   "codeRegion": "93",
+   "population": 886040,
+   "_score": 4.953310028125956
+  },
+  {
+   "nom": "Nantes",
+   "code": "44109",
+   "codesPostaux": [
+    "44000",
+    "44100",
+    "44200",
+    "44300"
+   ],
+   "codeDepartement": "44",
+   "codeRegion": "52",
+   "population": 327734,
+   "_score": 4.277340000000001
+  },
+  {
+   "nom": "Montpellier",
+   "code": "34172",
+   "codesPostaux": [
+    "34000",
+    "34070",
+    "34080",
+    "34090"
+   ],
+   "codeDepartement": "34",
+   "codeRegion": "76",
+   "population": 310240,
+   "_score": 4.102399999999999
+  },
+  {
+   "nom": "Rennes",
+   "code": "35238",
+   "codesPostaux": [
+    "35000",
+    "35200",
+    "35700"
+   ],
+   "codeDepartement": "35",
+   "codeRegion": "53",
+   "population": 230890,
+   "_score": 3.3089
+  },
+  {
+   "nom": "Grenoble",
+   "code": "38185",
+   "codesPostaux": [
+    "38000",
+    "38100"
+   ],
+   "codeDepartement": "38",
+   "codeRegion": "84",
+   "population": 156140,
+   "_score": 2.5614
+  },
+  {
+   "nom": "Dijon",
+   "code": "21231",
+   "codesPostaux": [
+    "21000"
+   ],
+   "codeDepartement": "21",
+   "codeRegion": "27",
+   "population": 161830,
+   "_score": 2.6183
+  },
+  {
+   "nom": "Reims",
+   "code": "51454",
+   "codesPostaux": [
+    "51100"
+   ],
+   "codeDepartement": "51",
+   "codeRegion": "44",
+   "population": 177674,
+   "_score": 2.77674
+  },
+  {
+   "nom": "Tours",
+   "code": "37261",
+   "codesPostaux": [
+    "37000",
+    "37100",
+    "37200"
+   ],
+   "codeDepartement": "37",
+   "codeRegion": "24",
+   "population": 139259,
+   "_score": 1.5785258344134945
+  }
+ ]
+}

@@ -42,3 +42,7 @@ Un projet qui utilise `packages/ui` doit garder la ligne `@source` de son `globa
 ## Déployer
 
 Chaque projet est une application Next.js autonome (Vercel ou Coolify : dossier racine = `projets/<nom>`, installation depuis la racine du dépôt).
+
+## Tableau de bord de démonstration
+
+`outils/demo/construire.sh <dossier>` exporte les 8 applications en statique (`VIEFR_EXPORT=1`), les rend indépendantes de leur adresse d'hébergement (`relocaliser.py`) et ajoute le tableau de bord (`tableau-de-bord.html`). Hors ligne, `demo-hors-ligne.js` répond au géocodage avec des réponses réelles enregistrées (`geocodage-demo.json`) et ajoute un bouton de retour au tableau de bord. `serveur_strict.py` sert le résultat sous un préfixe arbitraire pour le tester.

@@ -1,0 +1,345 @@
+<title>Banc d'essai Vie FR</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Mise en page : bandeau institutionnel, puis une grille de fiches d'essai (2 colonnes, 1 sur mobile), puis les annexes. */
+  :root {
+    --fond: #f6f6fb;
+    --surface: #ffffff;
+    --encre: #161625;
+    --encre-douce: #4d4d63;
+    --filet: #dcdce8;
+    --bleu: #000091;
+    --bleu-clair: #e3e3fd;
+    --rouge: #c9191e;
+    --ok: #18753c;
+    --ok-fond: #dffee6;
+    --partiel: #8a4b00;
+    --partiel-fond: #fff1d6;
+    --bug: #b34000;
+    --police: "Public Sans", "Marianne", Arial, system-ui, sans-serif;
+    --police-code: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fond: #121220; --surface: #1c1c2e; --encre: #ececf6; --encre-douce: #b4b4c8; --filet: #34344c;
+      --bleu: #a9a9ff; --bleu-clair: #26265a; --rouge: #ff8a8d; --ok: #6fe39a; --ok-fond: #14301f;
+      --partiel: #ffc46b; --partiel-fond: #3a2a0c; --bug: #ffaa7a; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fond: #121220; --surface: #1c1c2e; --encre: #ececf6; --encre-douce: #b4b4c8; --filet: #34344c;
+    --bleu: #a9a9ff; --bleu-clair: #26265a; --rouge: #ff8a8d; --ok: #6fe39a; --ok-fond: #14301f;
+    --partiel: #ffc46b; --partiel-fond: #3a2a0c; --bug: #ffaa7a; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--fond); color: var(--encre); font-family: var(--police); font-size: 15px; line-height: 1.55; }
+  .gouttiere {
+    max-width: 1120px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  a { color: var(--bleu); }
+  :focus-visible { outline: 3px solid var(--bleu); outline-offset: 2px; }
+  code, .code { font-family: var(--police-code); font-size: 0.86em; }
+
+  /* Bandeau */
+  .bandeau { background: var(--surface); border-bottom: 1px solid var(--filet); }
+  .bandeau .gouttiere { padding-block: 28px 24px; display: grid; gap: 14px; }
+  .tricolore { display: flex; width: 44px; height: 6px; }
+  .tricolore span { flex: 1; }
+  .tricolore span:nth-child(1) { background: #000091; }
+  .tricolore span:nth-child(2) { background: #ffffff; border-block: 1px solid var(--filet); }
+  .tricolore span:nth-child(3) { background: #e1000f; }
+  .surtitre { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--encre-douce); }
+  h1 { margin: 0; font-size: clamp(26px, 4vw, 36px); line-height: 1.15; font-weight: 800; text-wrap: balance; }
+  .chapo { margin: 0; max-width: 68ch; color: var(--encre-douce); font-size: 16px; }
+  .chiffres { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 14px; color: var(--encre-douce); }
+  .chiffres strong { color: var(--encre); font-variant-numeric: tabular-nums; }
+
+  main .gouttiere { padding-block: 24px 48px; display: grid; gap: 32px; }
+  main .gouttiere > * { min-width: 0; }
+
+  /* Encadré « avant de tester » */
+  .avant { background: var(--bleu-clair); border-left: 4px solid var(--bleu); padding: 16px 18px; border-radius: 0 4px 4px 0; }
+  .avant h2 { margin: 0 0 8px; font-size: 17px; }
+  .avant ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; max-width: 90ch; }
+
+  /* Fiches */
+  .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr)); gap: 18px; }
+  .fiche { background: var(--surface); border: 1px solid var(--filet); border-radius: 6px; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .fiche header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .numero { font-family: var(--police-code); font-size: 13px; color: var(--encre-douce); }
+  .fiche h3 { margin: 2px 0 0; font-size: 19px; line-height: 1.25; text-wrap: balance; }
+  .objet { margin: 0; color: var(--encre-douce); }
+  .pastille { flex: none; font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .pastille.ok { background: var(--ok-fond); color: var(--ok); }
+  .pastille.partiel { background: var(--partiel-fond); color: var(--partiel); }
+  .bloc h4 { margin: 0 0 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--encre-douce); }
+  .bloc p, .bloc ul { margin: 0; }
+  .bloc ul { padding-left: 18px; display: grid; gap: 3px; }
+  .attendu { font-variant-numeric: tabular-nums; }
+  .bugs li::marker { color: var(--bug); }
+  .apercu { font-size: 13.5px; color: var(--encre-douce); border-top: 1px dashed var(--filet); padding-top: 10px; }
+  .actions { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-top: 4px; }
+  .ouvrir {
+    display: inline-flex; align-items: center; gap: 8px; background: var(--bleu); color: var(--surface);
+    text-decoration: none; font-weight: 700; padding: 10px 16px; border-radius: 4px;
+  }
+  .ouvrir:hover { filter: brightness(1.15); }
+  .tests { font-size: 13px; color: var(--encre-douce); font-variant-numeric: tabular-nums; }
+
+  /* Annexes */
+  section > h2 { margin: 0 0 6px; font-size: 21px; }
+  section > p { margin: 0 0 12px; color: var(--encre-douce); max-width: 75ch; }
+  .tableau { overflow-x: auto; background: var(--surface); border: 1px solid var(--filet); border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--filet); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--encre-douce); font-weight: 700; }
+  tr:last-child td { border-bottom: 0; }
+  td.adresse { white-space: nowrap; }
+  .copier {
+    font: inherit; font-size: 12px; font-weight: 600; color: var(--bleu); background: transparent;
+    border: 1px solid var(--bleu); border-radius: 4px; padding: 2px 8px; cursor: pointer; margin-left: 8px;
+  }
+  pre { margin: 0; background: var(--surface); border: 1px solid var(--filet); border-radius: 6px; padding: 14px 16px; overflow-x: auto; font-family: var(--police-code); font-size: 13px; line-height: 1.6; }
+  footer { border-top: 1px solid var(--filet); }
+  footer .gouttiere { padding-block: 18px 28px; font-size: 13px; color: var(--encre-douce); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="bandeau">
+  <div class="gouttiere">
+    <div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="surtitre">Monorepo Vie FR · branche claude/dreamy-turing-ga3uq7 · 25 octobre 2026</div>
+    <h1>Banc d'essai Vie FR</h1>
+    <p class="chapo">Les huit applications, construites et vérifiées. Chaque fiche indique le scénario à jouer, le résultat attendu et les bugs déjà repérés lors de la vérification dans un navigateur.</p>
+    <ul class="chiffres">
+      <li><strong>8</strong> applications</li>
+      <li><strong>694</strong> tests qui passent</li>
+      <li><strong>4</strong> critères de fin validés, <strong>4</strong> partiels</li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="gouttiere">
+    <aside class="avant" aria-labelledby="avant-titre">
+      <h2 id="avant-titre">Avant de tester</h2>
+      <ul>
+        <li>Les applications tournent dans ton navigateur. Rien de ce que tu saisis n'est envoyé : tout reste dans le stockage local de cette page.</li>
+        <li>Cet aperçu est hors ligne. La recherche d'adresse et de commune répond avec les <a href="#adresses">adresses d'exemple</a> ci-dessous.</li>
+        <li>L'aperçu bloque l'impression (PDF), les téléchargements (JSON, .ics) et les fonds de carte. Pour tester ces points, <a href="#local">lance le projet sur ta machine</a>.</li>
+        <li>Le bouton « ← Tous les projets », en bas à gauche de chaque application, ramène ici.</li>
+      </ul>
+    </aside>
+
+    <section aria-labelledby="projets-titre">
+      <h2 id="projets-titre">Les applications</h2>
+      <div class="grille">
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/01-aides</div><h3>Simulateur d'aides</h3></div>
+            <span class="pastille partiel">Critère partiel</span>
+          </header>
+          <p class="objet">Un seul formulaire, la liste des aides probables avec leur montant et le lien vers la démarche.</p>
+          <div class="bloc"><h4>À tester</h4><p>Couple de 38 et 36 ans, enfants de 4 et 8 ans, locataires à Nancy, loyer 750 €, salaires nets 1 500 € et 900 €.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Prime d'activité 434 €/mois, allocations familiales 153 €/mois, ARS 429 €/an. Total ≈ 7 764 €/an.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>Sans loyer saisi, le RSA affiché monte à 652 € au lieu de 573 €.</li>
+            <li>Avec l'AAH, le RSA s'ajoute en plein au total.</li>
+            <li>ASF et PAJE non simulées : RSA des parents isolés surestimé.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : communes d'exemple seulement, bouton PDF sans effet.</p>
+          <div class="actions"><a class="ouvrir" href="01-aides/index.html">Ouvrir l'application →</a><span class="tests">65 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/02-quotient</div><h3>Coûts selon le quotient familial</h3></div>
+            <span class="pastille ok">Critère validé</span>
+          </header>
+          <p class="objet">Le coût annuel de la cantine, du périscolaire et de la garde dans sa commune, comparé à d'autres villes.</p>
+          <div class="bloc"><h4>À tester</h4><p>2 enfants, QF 900, cantine 4 jours, garderie du soir 3 jours × 1 h, 10 journées de centre de loisirs. Comparer Nancy et Metz.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Nancy 1 437,88 €/an. Metz marquée « incomplet », plus chère de 168 €/an sur ce qui est comparable.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>Sur mobile, la section crèche fait déborder la page (719 px de large).</li>
+            <li>Avec Nantes (fourchette), l'écart et « la moins chère » sont incohérents.</li>
+            <li>Grenoble et Reims affichent un total de 0 €.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : export JSON et impression sans effet.</p>
+          <div class="actions"><a class="ouvrir" href="02-quotient/index.html">Ouvrir l'application →</a><span class="tests">161 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/03-decodeur-courrier</div><h3>Décodeur de courrier</h3></div>
+            <span class="pastille partiel">Critère partiel</span>
+          </header>
+          <p class="objet">On colle un courrier de la CAF, des impôts ou d'un huissier : l'outil explique, donne la date limite et prépare la réponse.</p>
+          <div class="bloc"><h4>À tester</h4><p>Charger l'exemple « CAF — indu » (ou coller un vrai courrier), puis ouvrir la lettre de recours.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Notification d'indu de 742,18 €, à contester avant le 3 mai 2026, lettre à la commission de recours amiable préremplie.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>L'impression de la lettre sort des pages blanches.</li>
+            <li>« Tout effacer » laisse le nom et l'adresse en mémoire.</li>
+            <li>Impossible d'importer un JSON tant qu'aucun courrier n'a été décodé.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : l'import de PDF fonctionne ; l'impression est sans effet.</p>
+          <div class="actions"><a class="ouvrir" href="03-decodeur-courrier/index.html">Ouvrir l'application →</a><span class="tests">117 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/04-mes-delais</div><h3>Mes délais</h3></div>
+            <span class="pastille ok">Critère validé</span>
+          </header>
+          <p class="objet">Contrôle technique, CNI, assurances : toutes les échéances au même endroit, avec rappels dans l'agenda.</p>
+          <div class="bloc"><h4>À tester</h4><p>Voiture mise en circulation le 15/03/2021, dernier CT le 10/03/2025 ; CNI délivrée le 10/06/2016 (ancien modèle) ; assurance habitation souscrite le 01/02/2019.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Prochain CT le 10/03/2027, CNI valable jusqu'au 10/06/2031, assurance le 01/02/2027.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>Réimporter le .ics après « c'est fait » crée des doublons dans l'agenda.</li>
+            <li>Une CNI de 2016 laissée en « format carte » s'affiche « dépassée ».</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : l'export .ics et les notifications sont bloqués.</p>
+          <div class="actions"><a class="ouvrir" href="04-mes-delais/index.html">Ouvrir l'application →</a><span class="tests">122 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/05-loyer</div><h3>Vérificateur de loyer</h3></div>
+            <span class="pastille ok">Critère validé</span>
+          </header>
+          <p class="objet">Dans les villes à loyers encadrés : le plafond légal, le trop-payé et la lettre à envoyer au propriétaire.</p>
+          <div class="bloc"><h4>À tester</h4><p>« 100 rue Oberkampf 75011 Paris », studio meublé de 20 m², construit avant 1946, loyer 950 € hors charges, bail signé le 01/09/2025.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Plafond 854 €, dépassement de 96 €/mois (1 152 €/an), lettre de mise en demeure préremplie.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>La liste de suggestions d'adresse ne se pilote pas avec les flèches.</li>
+            <li>Formulaire vide : une erreur « complément de loyer » s'affiche à tort.</li>
+            <li>Lille, Bordeaux et la Seine-Saint-Denis utilisent encore les plafonds 2023.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : adresses d'exemple seulement (Paris, Lyon, Lille, Bordeaux, Tours…), impression sans effet.</p>
+          <div class="actions"><a class="ouvrir" href="05-loyer/index.html">Ouvrir l'application →</a><span class="tests">58 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/08-changer-de-boulot</div><h3>Et si je change de boulot ?</h3></div>
+            <span class="pastille ok">Critère validé</span>
+          </header>
+          <p class="objet">Ce qui reste vraiment chaque mois, après cotisations, impôt, transport et frais, pour deux ou trois offres.</p>
+          <div class="bloc"><h4>À tester</h4><p>L'exemple est déjà rempli : CDI cadre à 48 000 € brut à Paris, face à un freelance à 450 €/jour sur 200 jours, plus le même en portage.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>CDI ≈ 3 138 € net/mois, chiffre recoupé avec le simulateur Urssaf. Alerte : 90 000 € dépasse le plafond micro.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>Sur mobile, la page défile de 70 px vers la droite.</li>
+            <li>Un scénario passé en micro garde 0 € de frais d'activité.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : impression et téléchargement du JSON sans effet.</p>
+          <div class="actions"><a class="ouvrir" href="08-changer-de-boulot/index.html">Ouvrir l'application →</a><span class="tests">42 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/10-ecoles</div><h3>Comparateur d'écoles</h3></div>
+            <span class="pastille partiel">Critère partiel</span>
+          </header>
+          <p class="objet">Les collèges et lycées autour d'une adresse, le collège de secteur et des indicateurs expliqués, sans classement.</p>
+          <div class="bloc"><h4>À tester</h4><p>« 1 place Stanislas 54000 Nancy », puis comparer deux lycées. Essayer aussi « 7 place Stanislas » et « 1 place du Capitole 31000 Toulouse ».</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Collège de secteur Guynemer (La Craffe au n° 7), 15 collèges à moins de 3 km. À Toulouse : « sectorisation non publiée ».</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>Le tableau de comparaison est illisible (une seule colonne visible) et son PDF est tronqué.</li>
+            <li>Chaque marqueur de la carte est un arrêt de tabulation sans nom.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : la carte s'affiche sans fond (tuiles bloquées). Seuls les départements 54, 57, 75, 69 et 31 sont chargés.</p>
+          <div class="actions"><a class="ouvrir" href="10-ecoles/index.html">Ouvrir l'application →</a><span class="tests">45 tests</span></div>
+        </article>
+
+        <article class="fiche">
+          <header>
+            <div><div class="numero">projets/12-succession</div><h3>Après un décès</h3></div>
+            <span class="pastille partiel">Critère partiel</span>
+          </header>
+          <p class="objet">Le plan daté des démarches après le décès d'un proche, les organismes à prévenir et les courriers prêts.</p>
+          <div class="bloc"><h4>À tester</h4><p>Vous êtes son enfant ; parent décédé le 20/10/2026, retraité, veuf, locataire, avec un véhicule et une assurance-vie.</p></div>
+          <div class="bloc attendu"><h4>Attendu</h4><p>Plan en 4 phases (23 démarches) : obsèques avant le 3/11/2026, déclaration de succession avant le 20/04/2027.</p></div>
+          <div class="bloc bugs"><h4>Bugs connus</h4><ul>
+            <li>La fusion « Réunir » efface les démarches cochées par l'autre personne.</li>
+            <li>Sur un appareil neuf, l'import oblige à remplir le questionnaire et écrase le profil.</li>
+            <li>Une échéance reportée peut tomber un samedi.</li>
+          </ul></div>
+          <p class="apercu">Dans l'aperçu : l'export JSON (partage avec un proche) et l'impression des courriers sont bloqués.</p>
+          <div class="actions"><a class="ouvrir" href="12-succession/index.html">Ouvrir l'application →</a><span class="tests">84 tests</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="adresses" aria-labelledby="adresses-titre">
+      <h2 id="adresses-titre">Adresses d'exemple</h2>
+      <p>Hors ligne, la recherche d'adresse ne connaît que ces adresses. Ce sont de vraies réponses de l'API Adresse, enregistrées le 25/10/2026. Commence à taper l'adresse et choisis-la dans la liste.</p>
+      <div class="tableau">
+        <table>
+          <thead><tr><th scope="col">Adresse</th><th scope="col">Sert à tester</th></tr></thead>
+          <tbody>
+            <tr><td class="adresse"><span class="code">100 Rue Oberkampf 75011 Paris</span></td><td>05 : critère de fin (studio à 950 €)</td></tr>
+            <tr><td class="adresse"><span class="code">20 Rue de la Roquette 75011 Paris</span></td><td>05 : autre secteur parisien</td></tr>
+            <tr><td class="adresse"><span class="code">200 Rue Garibaldi 69003 Lyon</span></td><td>05 : Lyon · 10 : collège de secteur à Lyon</td></tr>
+            <tr><td class="adresse"><span class="code">10 Rue Esquermoise 59800 Lille</span></td><td>05 : secteur choisi à la main</td></tr>
+            <tr><td class="adresse"><span class="code">20 Cours de l'Intendance 33000 Bordeaux</span></td><td>05 : secteur choisi à la main</td></tr>
+            <tr><td class="adresse"><span class="code">10 Rue de la Loge 34000 Montpellier</span></td><td>05 : Montpellier</td></tr>
+            <tr><td class="adresse"><span class="code">1 Place Jean Jaures 93100 Montreuil</span></td><td>05 : Est Ensemble</td></tr>
+            <tr><td class="adresse"><span class="code">1 Place Victor Hugo 93200 Saint-Denis</span></td><td>05 : Plaine Commune</td></tr>
+            <tr><td class="adresse"><span class="code">10 Rue Nationale 37000 Tours</span></td><td>05 : hors zone d'encadrement</td></tr>
+            <tr><td class="adresse"><span class="code">1 Place Stanislas 54000 Nancy</span></td><td>10 : critère de fin (collège Guynemer)</td></tr>
+            <tr><td class="adresse"><span class="code">7 Place Stanislas 54000 Nancy</span></td><td>10 : côté impair (La Craffe)</td></tr>
+            <tr><td class="adresse"><span class="code">20 Rue Saint Dizier 54000 Nancy</span></td><td>10 : autre adresse à Nancy</td></tr>
+            <tr><td class="adresse"><span class="code">100 Boulevard Voltaire 75011 Paris</span></td><td>10 : collège Voltaire</td></tr>
+            <tr><td class="adresse"><span class="code">10 Rue Serpenoise 57000 Metz</span></td><td>10 : Moselle</td></tr>
+            <tr><td class="adresse"><span class="code">1 Place du Capitole 31000 Toulouse</span></td><td>10 : sectorisation non publiée</td></tr>
+            <tr><td class="adresse"><span class="code">1 Place Kléber 67000 Strasbourg</span></td><td>10 : département non chargé</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:10px">Communes reconnues (01 et 02) : Nancy, Paris, Lyon, Lille, Metz, Toulouse, Strasbourg, Bordeaux, Marseille, Nantes, Montpellier, Rennes, Grenoble, Dijon, Reims, Tours.</p>
+    </section>
+
+    <section id="local" aria-labelledby="local-titre">
+      <h2 id="local-titre">Tester sur ta machine</h2>
+      <p>En local, tout fonctionne : vraie recherche d'adresse, impression en PDF, téléchargements et fonds de carte. Depuis la racine du dépôt :</p>
+      <pre>git checkout claude/dreamy-turing-ga3uq7
+npm install
+npm run dev -w @vie-fr/05-loyer      # puis http://localhost:3000
+# remplace 05-loyer par 01-aides, 02-quotient, 03-decodeur-courrier, 04-mes-delais,
+# 08-changer-de-boulot, 10-ecoles ou 12-succession</pre>
+      <p style="margin-top:10px">Pour reconstruire cet aperçu : <span class="code">outils/demo/construire.sh &lt;dossier&gt;</span>. Le détail des vérifications est dans <span class="code">REVUE.md</span>.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="gouttiere">Estimations et aides à la compréhension : ces outils ne remplacent pas les démarches officielles. Beaucoup de chiffres sont encore marqués A_VERIFIER, voir le JOURNAL.md de chaque projet.</div>
+</footer>
+
+<script>
+  try { sessionStorage.setItem("viefr-retour", location.href); } catch (e) {}
+  document.querySelectorAll("td.adresse").forEach(function (td) {
+    var texte = td.textContent.trim();
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "copier";
+    b.textContent = "Copier";
+    b.setAttribute("aria-label", "Copier l'adresse " + texte);
+    b.addEventListener("click", function () {
+      var fini = function () { b.textContent = "Copiée"; setTimeout(function () { b.textContent = "Copier"; }, 1500); };
+      var repli = function () {
+        var r = document.createRange(); r.selectNodeContents(td.querySelector(".code"));
+        var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Sélectionnée";
+      };
+      try { navigator.clipboard.writeText(texte).then(fini, repli); } catch (e) { repli(); }
+    });
+    td.appendChild(b);
+  });
+</script>

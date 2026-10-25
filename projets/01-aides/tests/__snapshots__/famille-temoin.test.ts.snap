@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Famille témoin — Nancy > liste figée (snapshot) 1`] = `
+{
+  "aides": [
+    {
+      "aide": "prime-activite",
+      "confiance": "probable",
+      "montant": 434.46,
+      "periodicite": "mensuel",
+    },
+    {
+      "aide": "allocations-familiales",
+      "confiance": "probable",
+      "montant": 153.01,
+      "periodicite": "mensuel",
+    },
+    {
+      "aide": "ars",
+      "confiance": "probable",
+      "montant": 429.01,
+      "periodicite": "annuel",
+    },
+    {
+      "aide": "aide-logement",
+      "confiance": "possible",
+      "montant": 23.74,
+      "periodicite": "mensuel",
+    },
+  ],
+  "totalAnnuel": 7764,
+}
+`;

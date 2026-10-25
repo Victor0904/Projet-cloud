@@ -1,0 +1,1526 @@
+{
+ "_description": "Barèmes utilisés par le simulateur d'aides. Chaque valeur porte sa source officielle (URL), sa date d'effet et sa date de vérification. 'statut: A_VERIFIER' = valeur non confirmée sur la source officielle.",
+ "_genere_le": "2026-10-25",
+ "smic": {
+  "horaire_brut": {
+   "valeur": 12.31,
+   "date_effet": "2026-06-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054126589",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "mensuel_brut": {
+   "valeur": 1867.02,
+   "date_effet": "2026-06-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054126589",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  }
+ },
+ "prelevements": {
+  "crds": {
+   "valeur": 0.005,
+   "date_effet": "1996-02-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006306523",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "csg_imposable_activite": {
+   "valeur": 0.024,
+   "date_effet": "1993-07-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000006318786&cidTexte=JORFTEXT000000362947",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "abattement_assiette_csg": {
+   "valeur": 0.0175,
+   "date_effet": "2012-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025013432",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Abattement de 1,75 % sur l'assiette CSG/CRDS des salaires (dans la limite de 4 plafonds de la Sécurité sociale)."
+  },
+  "ratio_net_sur_brut": {
+   "valeur": 0.78,
+   "date_effet": "A_VERIFIER",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "note": "Hypothèse du simulateur : salaire net ≈ 78 % du brut (salarié du privé non cadre). Sert seulement à passer du net au net imposable (CSG non déductible + CRDS).",
+   "statut": "A_VERIFIER"
+  }
+ },
+ "rsa": {
+  "montant_base": {
+   "valeur": 651.69,
+   "date_effet": "2026-04-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053733826",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_2e_personne": {
+   "valeur": 0.5,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000020522717&cidTexte=JORFTEXT000020521930",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_3e_personne": {
+   "valeur": 0.3,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000020522717&cidTexte=JORFTEXT000020521930",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_enfant_supplementaire": {
+   "valeur": 0.4,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000020522717&cidTexte=JORFTEXT000020521930",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_isolement_base": {
+   "valeur": 1.28412,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000031673709&cidTexte=JORFTEXT000031665094",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_isolement_par_enfant": {
+   "valeur": 0.42804,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000031673709&cidTexte=JORFTEXT000031665094",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_limite_enfant_isolement": {
+   "valeur": 3,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000019861526&cidTexte=JORFTEXT000019860428",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_1_personne": {
+   "valeur": 0.12,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020526192/2022-01-21/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_2_personnes": {
+   "valeur": 0.16,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020526192/2022-01-21/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_3_personnes": {
+   "valeur": 0.165,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020526192/2022-01-21/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_minimum": {
+   "valeur": 25,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000019861526&cidTexte=JORFTEXT000019860428",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "montant_minimum_verse": {
+   "valeur": 6,
+   "date_effet": "2009-06-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000020522717&cidTexte=JORFTEXT000020521930",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  }
+ },
+ "prime_activite": {
+  "montant_base": {
+   "valeur": 638.28,
+   "date_effet": "2026-04-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053733855",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_2e_personne": {
+   "valeur": 0.5,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_3e_personne": {
+   "valeur": 0.3,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_enfant_supplementaire": {
+   "valeur": 0.4,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_isolement_base": {
+   "valeur": 1.28412,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_isolement_par_enfant": {
+   "valeur": 0.42804,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "part_revenus_activite": {
+   "valeur": 0.5985,
+   "date_effet": "2025-04-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037462909",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "bonification_seuil_smic_horaire": {
+   "valeur": 59,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037873473",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "bonification_seuil_max_smic_horaire": {
+   "valeur": 138,
+   "date_effet": "2026-04-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037873473",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "bonification_taux_max": {
+   "valeur": 0.377,
+   "date_effet": "2026-04-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037873473",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_1_personne": {
+   "valeur": 0.12,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048841687",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_2_personnes": {
+   "valeur": 0.16,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048841687",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "forfait_logement_3_personnes": {
+   "valeur": 0.165,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048841687",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "montant_minimum_verse": {
+   "valeur": 15,
+   "date_effet": "2015-10-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031673885/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_minimum": {
+   "valeur": 18,
+   "date_effet": "2015-10-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031087615",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "plancher_apprenant_heures_smic": {
+   "valeur": 169,
+   "date_effet": "2016-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031087615",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Étudiants, stagiaires et apprentis : revenus d'activité ≥ 169 h × Smic horaire brut × 55 % (≈ 78 % du Smic net)."
+  },
+  "plancher_apprenant_taux": {
+   "valeur": 0.55,
+   "date_effet": "1985-12-22",
+   "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000866621",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  }
+ },
+ "prestations_familiales": {
+  "bmaf": {
+   "valeur": 478.16,
+   "date_effet": "2026-04-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/instruction-interministerielle-ndeg-dss2b202646-du-20-mars-2026-relative-la-revalorisation-au-1er-avril-2026-des-prestations-familiales-servies-en-metropole-en-guadeloupe-en-guyane-en-martinique-la-reunion-saint-barthelemy-saint-martin-et",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_taux_2_enfants": {
+   "valeur": 0.32,
+   "date_effet": "1982-02-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000030674064",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_taux_par_enfant_au_dela": {
+   "valeur": 0.41,
+   "date_effet": "1986-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030680318/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_majoration_age_taux": {
+   "valeur": 0.16,
+   "date_effet": "2008-05-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018730821",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_majoration_age_seuil": {
+   "valeur": 14,
+   "date_effet": "2026-03-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053594174",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Décret 2026-138 : l'âge passe à 18 ans pour les enfants dont le 14e anniversaire est postérieur au 1er mars 2026. En pratique en 2026 : majoration pour les enfants ayant eu 14 ans avant le 1er mars 2026. Le simulateur applique 14 ans pour les enfants de 15 ans et plus, et 'à vérifier' pour ceux de 14 ans."
+  },
+  "af_majoration_age_seuil_nouveau": {
+   "valeur": 18,
+   "date_effet": "2026-03-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053594174",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_plafond_1_deux_enfants": {
+   "valeur": 79980,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_plafond_2_deux_enfants": {
+   "valeur": 106604,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_majoration_plafond_par_enfant": {
+   "valeur": 6664,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_modulation_tranche_2": {
+   "valeur": 0.5,
+   "date_effet": "2015-07-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030680318/2015-07-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "af_modulation_tranche_3": {
+   "valeur": 0.25,
+   "date_effet": "2015-07-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030680318/2015-07-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_limite_enfant": {
+   "valeur": 20,
+   "date_effet": "2001-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006750602/2000-01-29",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_taux_base": {
+   "valeur": 0.4165,
+   "date_effet": "1983-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006737116/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_taux_majore": {
+   "valeur": 0.6248,
+   "date_effet": "2018-04-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038249420/2022-09-27/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_nb_enfants_min": {
+   "valeur": 3,
+   "date_effet": "1986-07-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000006774526&cidTexte=JORFTEXT000000885994",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_age_min": {
+   "valeur": 3,
+   "date_effet": "1986-07-01",
+   "source": "https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000006774526&cidTexte=JORFTEXT000000885994",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_age_max": {
+   "valeur": 21,
+   "date_effet": "2000-02-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006750615",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_plafond_base": {
+   "valeur": 24853,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_majoration_2_premiers_enfants": {
+   "valeur": 0.25,
+   "date_effet": "1986-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046499019",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_majoration_3e_enfant_et_plus": {
+   "valeur": 0.3,
+   "date_effet": "2010-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046499019",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_majoration_biactifs_isoles": {
+   "valeur": 9989,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "cf_coef_plafond_majore": {
+   "valeur": 0.5,
+   "date_effet": "2014-04-01",
+   "source": "https://solidarites-sante.gouv.fr/fichiers/bo/2020/20-12/ste_20200012_0000_0050.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "ars_taux_6_10": {
+   "valeur": 0.8972,
+   "date_effet": "2012-08-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026087214",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "ars_taux_11_14": {
+   "valeur": 0.9467,
+   "date_effet": "2012-08-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026087214",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "ars_taux_15_18": {
+   "valeur": 0.9795,
+   "date_effet": "2012-08-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026087214",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "ars_plafond_base": {
+   "valeur": 22274,
+   "date_effet": "2026-01-01",
+   "source": "https://bulletins-officiels.social.gouv.fr/sites/textes-officiels/files/2025-12/SFHS2535630J_0.pdf",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "ars_majoration_par_enfant": {
+   "valeur": 0.3,
+   "date_effet": "1986-07-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000866621/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  }
+ },
+ "aides_logement": {
+  "abattement_frais_pro": {
+   "valeur": 0.1,
+   "date_effet": "2021-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041419358",
+   "verifie_le": "2026-10-25",
+   "note": "Approximation : les ressources retenues sont les revenus nets imposables (après abattement de 10 % pour frais professionnels) des 12 derniers mois.",
+   "statut": "A_VERIFIER"
+  },
+  "arrondi_ressources": {
+   "valeur": 100,
+   "date_effet": "2021-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038878977",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Ressources arrondies à la centaine d'euros supérieure (d'après la formule OpenFisca)."
+  },
+  "forfait_etudiant": {
+   "valeur": 8600,
+   "date_effet": "2025-01-01",
+   "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "minoration_etudiant_boursier": {
+   "valeur": 1700,
+   "date_effet": "2024-01-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048621292",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_max_etudiant": {
+   "valeur": 28,
+   "date_effet": "2020-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041419188/2021-01-01",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "abattement_double_activite": {
+   "valeur": 95,
+   "date_effet": "2007-07-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039793907",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "minoration_forfaitaire": {
+   "valeur": 5,
+   "date_effet": "2017-10-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160747/2024-09-29",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "seuil_versement": {
+   "valeur": 10,
+   "date_effet": "2017-10-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160749",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "charges_base": {
+   "valeur": 61.29,
+   "date_effet": "2026-10-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "charges_par_enfant": {
+   "valeur": 13.9,
+   "date_effet": "2026-10-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "charges_coloc_isole": {
+   "valeur": 30.64,
+   "date_effet": "2026-10-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "coef_colocation": {
+   "valeur": 0.75,
+   "date_effet": "2002-01-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050286643/2024-09-29",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "p0_taux": {
+   "valeur": 0.085,
+   "date_effet": "2001-01-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206225/2022-07-01",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "p0_forfait": {
+   "valeur": 40.01,
+   "date_effet": "2026-10-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "tl_seuil_1": {
+   "valeur": 0.45,
+   "date_effet": "2001-01-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050286630",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "tl_seuil_2": {
+   "valeur": 0.75,
+   "date_effet": "2001-01-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050286630",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "tl_taux_2": {
+   "valeur": 0.0045,
+   "date_effet": "2007-07-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050286630",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "tl_taux_3": {
+   "valeur": 0.0068,
+   "date_effet": "2007-07-01",
+   "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050286630",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "tf": {
+   "personnes_isolees": {
+    "valeur": 0.0283,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "couples_0_enfant": {
+    "valeur": 0.0315,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_1_enfant": {
+    "valeur": 0.027,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_2_enfants": {
+    "valeur": 0.0238,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_3_enfants": {
+    "valeur": 0.0201,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_4_enfants": {
+    "valeur": 0.0185,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_5_enfants": {
+    "valeur": 0.0179,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "avec_6_enfants": {
+    "valeur": 0.0173,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   },
+   "maj_par_enf_supp": {
+    "valeur": -0.0006,
+    "date_effet": "2007-07-01",
+    "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046206208/2022-07-01/#LEGIARTI000046206208",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+   }
+  },
+  "r0": {
+   "taux_seul": {
+    "valeur": 5235,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux_couple": {
+    "valeur": 7501,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux1pac": {
+    "valeur": 8947,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux2pac": {
+    "valeur": 9148,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux3pac": {
+    "valeur": 9498,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux4pac": {
+    "valeur": 9851,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux5pac": {
+    "valeur": 10202,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux6pac": {
+    "valeur": 10554,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   },
+   "taux_pac_supp": {
+    "valeur": 346,
+    "date_effet": "2025-01-01",
+    "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053202812/",
+    "verifie_le": "2026-10-25",
+    "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+    "note": "Non revalorisé pour 2026 (arrêté du 28/12/2025)."
+   }
+  },
+  "plafonds_loyer": {
+   "zone_1": {
+    "personnes_seules": {
+     "valeur": 336.97,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "couples": {
+     "valeur": 406.4,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "un_enfant": {
+     "valeur": 459.32,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "majoration_par_enf_supp": {
+     "valeur": 66.65,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   },
+   "zone_2": {
+    "personnes_seules": {
+     "valeur": 293.68,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "couples": {
+     "valeur": 359.47,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "un_enfant": {
+     "valeur": 404.49,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "majoration_par_enf_supp": {
+     "valeur": 58.88,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   },
+   "zone_3": {
+    "personnes_seules": {
+     "valeur": 275.25,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "couples": {
+     "valeur": 333.67,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "un_enfant": {
+     "valeur": 374.13,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "majoration_par_enf_supp": {
+     "valeur": 53.62,
+     "date_effet": "2026-10-01",
+     "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054913928",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   }
+  },
+  "degressivite": {
+   "zone_1": {
+    "degressivite": {
+     "valeur": 3.4,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "suppression": {
+     "valeur": 4,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   },
+   "zone_2": {
+    "degressivite": {
+     "valeur": 2.5,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "suppression": {
+     "valeur": 3.1,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   },
+   "zone_3": {
+    "degressivite": {
+     "valeur": 2.5,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    },
+    "suppression": {
+     "valeur": 3.1,
+     "date_effet": "2016-07-01",
+     "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039160745",
+     "verifie_le": "2026-10-25",
+     "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+    }
+   }
+  }
+ },
+ "cheque_energie": {
+  "uc_premiere_personne": {
+   "valeur": 1,
+   "date_effet": "2017-01-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Référence officielle absente du fichier OpenFisca ; règle connue : 1 UC + 0,5 + 0,3 par personne supplémentaire. Référence officielle sans URL dans OpenFisca : A_VERIFIER",
+   "statut": "A_VERIFIER"
+  },
+  "uc_deuxieme_personne": {
+   "valeur": 0.5,
+   "date_effet": "2017-01-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  },
+  "uc_autres_personnes": {
+   "valeur": 0.3,
+   "date_effet": "2017-01-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  },
+  "baremes": {
+   "valeur": {
+    "une_uc": [
+     [
+      0,
+      194
+     ],
+     [
+      5600,
+      146
+     ],
+     [
+      6700,
+      98
+     ],
+     [
+      7700,
+      48
+     ],
+     [
+      10800,
+      0
+     ]
+    ],
+    "entre_1_et_2_uc": [
+     [
+      0,
+      240
+     ],
+     [
+      5600,
+      176
+     ],
+     [
+      6700,
+      113
+     ],
+     [
+      7700,
+      63
+     ],
+     [
+      10800,
+      0
+     ]
+    ],
+    "deux_uc_et_plus": [
+     [
+      0,
+      277
+     ],
+     [
+      5600,
+      202
+     ],
+     [
+      6700,
+      126
+     ],
+     [
+      7700,
+      76
+     ],
+     [
+      10800,
+      0
+     ]
+    ]
+   },
+   "date_effet": "2021-01-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043178875/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Tranches [seuil de RFR par UC, montant annuel en €]. Le dernier seuil (10 800 €) est le plafond d'éligibilité. Campagne 2026 non vérifiée sur chequeenergie.gouv.fr (site inaccessible).",
+   "statut": "A_VERIFIER"
+  },
+  "lien": {
+   "valeur": "https://chequeenergie.gouv.fr",
+   "date_effet": "2026-01-01",
+   "source": "https://chequeenergie.gouv.fr",
+   "verifie_le": "2026-10-25"
+  }
+ },
+ "aah": {
+  "montant_max": {
+   "valeur": 1041.59,
+   "date_effet": "2026-04-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053734356",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "age_minimal": {
+   "valeur": 20,
+   "date_effet": "1986-01-01",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000866621",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "taux_incapacite": {
+   "valeur": 0.8,
+   "date_effet": "2010-11-17",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023097719",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "taux_incapacite_rsdae": {
+   "valeur": 0.5,
+   "date_effet": "2010-11-17",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023097719",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "plafond_multiple_montant": {
+   "valeur": 12,
+   "date_effet": "2005-07-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006739692/2005-07-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_plafond_par_enfant": {
+   "valeur": 0.5,
+   "date_effet": "2000-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039211076",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  }
+ },
+ "css": {
+  "plafond_base": {
+   "valeur": 10421,
+   "date_effet": "2026-04-01",
+   "source": "https://www.complementaire-sante-solidaire.gouv.fr/sites/default/files/2026-05/2026%20Plafonds%20%26%20forfaits%20logement%20%26%20cotisations%20C2S.pdf",
+   "verifie_le": "2026-10-25",
+   "note": "Plafond annuel personne seule en métropole (CSS sans participation). Relevé via la fiche DSS citée en recherche web ; le PDF officiel n'a pas pu être téléchargé (accès bloqué). Valeur OpenFisca précédente : 10 166 € (avril 2024).",
+   "statut": "A_VERIFIER"
+  },
+  "coef_2e_personne": {
+   "valeur": 0.5,
+   "date_effet": "2000-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006753235/2000-01-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "coef_3e_4e_personne": {
+   "valeur": 0.3,
+   "date_effet": "2000-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006753235/2000-01-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "coef_5e_personne_et_plus": {
+   "valeur": 0.4,
+   "date_effet": "2000-01-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006753235/2000-01-01/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "majoration_participation": {
+   "valeur": 0.35,
+   "date_effet": "2019-10-01",
+   "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037950247/2019-11-01",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "participation_moins_30_ans": {
+   "valeur": 8,
+   "date_effet": "2019-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Montant mensuel par personne ; référence officielle absente du fichier OpenFisca. Référence officielle sans URL dans OpenFisca : A_VERIFIER",
+   "statut": "A_VERIFIER"
+  },
+  "participation_30_49_ans": {
+   "valeur": 14,
+   "date_effet": "2019-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  },
+  "participation_50_59_ans": {
+   "valeur": 21,
+   "date_effet": "2019-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  },
+  "participation_60_69_ans": {
+   "valeur": 25,
+   "date_effet": "2019-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  },
+  "participation_70_ans_et_plus": {
+   "valeur": 30,
+   "date_effet": "2019-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "statut": "A_VERIFIER",
+   "note": " Référence officielle sans URL dans OpenFisca : A_VERIFIER"
+  }
+ },
+ "bourse_superieur": {
+  "age_maximum": {
+   "valeur": 28,
+   "date_effet": "2020-06-08",
+   "source": "https://www.education.gouv.fr/bo/20/Hebdo25/ESRS2013435C.htm",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "nombre_mensualites": {
+   "valeur": 10,
+   "date_effet": "2020-07-31",
+   "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000042170743/",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "points_par_enfant_a_charge": {
+   "valeur": 2,
+   "date_effet": "2020-08-06",
+   "source": "https://www.education.gouv.fr/bo/20/Hebdo25/ESRS2013435C.htm",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "points_par_enfant_etudiant": {
+   "valeur": 4,
+   "date_effet": "2020-08-06",
+   "source": "https://www.education.gouv.fr/bo/20/Hebdo25/ESRS2013435C.htm",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "points_distance": {
+   "valeur": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     1
+    ],
+    [
+     250,
+     2
+    ]
+   ],
+   "date_effet": "2006-03-31",
+   "source": "https://www.education.gouv.fr/bo/20/Hebdo25/ESRS2013435C.htm",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "[distance minimale en km, points]. La circulaire ajoute des cas outre-mer non gérés ici."
+  },
+  "montants_mensuels": {
+   "valeur": {
+    "0bis": 145.4,
+    "1": 216.3,
+    "2": 307.1,
+    "3": 382.8,
+    "4": 458.7,
+    "5": 521.2,
+    "6": 550.6,
+    "7": 633.5
+   },
+   "date_effet": "2023-03-15",
+   "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047483284",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Montants mensuels par échelon (versés sur 10 mois). Dernière revalorisation connue : rentrée 2023 ; à vérifier pour 2026-2027.",
+   "statut": "A_VERIFIER"
+  },
+  "plafonds_par_echelon": {
+   "valeur": {
+    "0bis": [
+     35086,
+     38966,
+     42877,
+     46767,
+     50668,
+     54569,
+     58459,
+     62360,
+     66261,
+     70151,
+     74052,
+     77952,
+     81843,
+     85743,
+     89634,
+     93545,
+     97435,
+     101347
+    ],
+    "1": [
+     23850,
+     26500,
+     29150,
+     31800,
+     34450,
+     37111,
+     39761,
+     42411,
+     45061,
+     47700,
+     50361,
+     53011,
+     55650,
+     58300,
+     60971,
+     63611,
+     66261,
+     68911
+    ],
+    "2": [
+     19281,
+     21423,
+     23564,
+     25705,
+     27846,
+     29998,
+     32139,
+     34280,
+     36422,
+     38563,
+     40704,
+     42835,
+     44976,
+     47117,
+     49269,
+     51410,
+     53551,
+     55692
+    ],
+    "3": [
+     17034,
+     18921,
+     20818,
+     22716,
+     24603,
+     26500,
+     28376,
+     30274,
+     32171,
+     34058,
+     35955,
+     37853,
+     39739,
+     41637,
+     43513,
+     45410,
+     47308,
+     49195
+    ],
+    "4": [
+     14829,
+     16472,
+     18126,
+     19758,
+     21412,
+     23066,
+     24709,
+     26352,
+     28005,
+     29648,
+     31291,
+     32955,
+     34588,
+     36231,
+     37895,
+     39538,
+     41170,
+     42824
+    ],
+    "5": [
+     12667,
+     14077,
+     15476,
+     16875,
+     18285,
+     19695,
+     21105,
+     22514,
+     23914,
+     25323,
+     26733,
+     28132,
+     29542,
+     30952,
+     32362,
+     33772,
+     35181,
+     36581
+    ],
+    "6": [
+     7992,
+     8872,
+     9773,
+     10653,
+     11533,
+     12434,
+     13324,
+     14215,
+     15094,
+     15985,
+     16865,
+     17755,
+     18645,
+     19525,
+     20426,
+     21317,
+     22196,
+     23087
+    ],
+    "7": [
+     265,
+     530,
+     795,
+     1060,
+     1325,
+     1590,
+     1855,
+     2120,
+     2385,
+     2650,
+     2915,
+     3180,
+     3445,
+     3710,
+     3975,
+     4240,
+     4505,
+     4770
+    ]
+   },
+   "date_effet": "2023-03-15",
+   "source": "https://www.education.gouv.fr/bo/20/Hebdo25/ESRS2013435C.htm",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Plafonds de revenu brut global des parents (avis N-2), indexés par nombre de points de charge (0 à 17).",
+   "statut": "A_VERIFIER"
+  }
+ },
+ "mobili_jeune": {
+  "age_maximum_exclu": {
+   "valeur": 30,
+   "date_effet": "2012-07-01",
+   "source": "https://www.actionlogement.fr/l-aide-mobili-jeune",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "montant_minimum": {
+   "valeur": 10,
+   "date_effet": "2012-07-01",
+   "source": "https://www.actionlogement.fr/l-aide-mobili-jeune",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)"
+  },
+  "montant_maximum": {
+   "valeur": 100,
+   "date_effet": "2012-07-01",
+   "source": "https://www.actionlogement.fr/l-aide-mobili-jeune",
+   "verifie_le": "2026-10-25",
+   "via": "Paramètres OpenFisca-France (github.com/openfisca/openfisca-france, commit 5cc6563 du 23/10/2026)",
+   "note": "Montant maximum mensuel (hors secteur agricole : 300 €). Site Action Logement inaccessible lors de la vérification.",
+   "statut": "A_VERIFIER"
+  },
+  "plafond_salaire_pct_smic": {
+   "valeur": 1.0,
+   "date_effet": "2012-07-01",
+   "source": "https://www.actionlogement.fr/l-aide-mobili-jeune",
+   "verifie_le": "2026-10-25",
+   "note": "Salaire brut mensuel ≤ 100 % du Smic.",
+   "statut": "A_VERIFIER"
+  }
+ },
+ "maprimerenov": {
+  "plafonds_hors_idf": {
+   "valeur": {
+    "tres_modestes": [
+     17363,
+     25393,
+     30540,
+     35676,
+     40835
+    ],
+    "modestes": [
+     22259,
+     32553,
+     39148,
+     45735,
+     52348
+    ],
+    "intermediaires": [
+     31185,
+     45842,
+     55196,
+     64550,
+     73907
+    ],
+    "par_personne_sup": {
+     "tres_modestes": 5151,
+     "modestes": 6598,
+     "intermediaires": 9357
+    }
+   },
+   "date_effet": "2026-01-01",
+   "source": "https://www.anah.gouv.fr/document/guide-des-aides-financieres-0226",
+   "verifie_le": "2026-10-25",
+   "note": "Revenu fiscal de référence, par nombre de personnes du ménage (1 à 5), guide Anah « Les aides financières en 2026 », p. 7."
+  },
+  "plafonds_idf": {
+   "valeur": {
+    "tres_modestes": [
+     24031,
+     35270,
+     42357,
+     49455,
+     56580
+    ],
+    "modestes": [
+     29253,
+     42933,
+     51564,
+     60208,
+     68877
+    ],
+    "intermediaires": [
+     40851,
+     60051,
+     71846,
+     84562,
+     96817
+    ],
+    "par_personne_sup": {
+     "tres_modestes": 7116,
+     "modestes": 8663,
+     "intermediaires": 12257
+    }
+   },
+   "date_effet": "2026-01-01",
+   "source": "https://www.anah.gouv.fr/document/guide-des-aides-financieres-0226",
+   "verifie_le": "2026-10-25",
+   "note": "Île-de-France, même guide, p. 7."
+  },
+  "exemple_pac_air_eau": {
+   "valeur": {
+    "tres_modestes": 5000,
+    "modestes": 4000,
+    "intermediaires": 3000,
+    "superieurs": 0
+   },
+   "date_effet": "2026-01-01",
+   "source": "https://www.anah.gouv.fr/document/guide-des-aides-financieres-0226",
+   "verifie_le": "2026-10-25",
+   "note": "Prime « par geste » pour une pompe à chaleur air/eau, donnée à titre d'exemple."
+  },
+  "renovation_ampleur_taux": {
+   "valeur": {
+    "tres_modestes": 0.8,
+    "modestes": 0.6,
+    "intermediaires": 0.45,
+    "superieurs": 0.1
+   },
+   "date_effet": "2026-01-01",
+   "source": "https://www.anah.gouv.fr/document/guide-des-aides-financieres-0226",
+   "verifie_le": "2026-10-25",
+   "note": "Taux de prise en charge d'une rénovation d'ampleur (gain de 2 classes, plafond 30 000 € HT)."
+  },
+  "departements_idf": {
+   "valeur": [
+    "75",
+    "77",
+    "78",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95"
+   ],
+   "date_effet": "2026-01-01",
+   "source": "https://www.anah.gouv.fr/document/guide-des-aides-financieres-0226",
+   "verifie_le": "2026-10-25"
+  }
+ },
+ "frais_bancaires": {
+  "plafond_frais_incidents_fragiles_mensuel": {
+   "valeur": 25,
+   "date_effet": "2020-11-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "note": "Plafond mensuel des frais d'incidents pour les clients en situation de fragilité financière (Code monétaire et financier, art. L312-1-3 et R312-4-3 ; décret 2020-889). Légifrance inaccessible lors de la vérification.",
+   "statut": "A_VERIFIER"
+  },
+  "offre_specifique_cout_max_mensuel": {
+   "valeur": 3,
+   "date_effet": "2014-10-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "note": "Coût maximal de l'« offre spécifique » clientèle fragile. Légifrance inaccessible lors de la vérification.",
+   "statut": "A_VERIFIER"
+  },
+  "offre_specifique_plafond_incidents_mensuel": {
+   "valeur": 20,
+   "date_effet": "2014-10-01",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "note": "Plafond mensuel des frais d'incidents pour les titulaires de l'offre spécifique.",
+   "statut": "A_VERIFIER"
+  },
+  "seuil_revenu_indicatif_pct_smic": {
+   "valeur": 1.0,
+   "date_effet": "A_VERIFIER",
+   "source": "A_VERIFIER",
+   "verifie_le": "2026-10-25",
+   "note": "Il n'existe pas de seuil national : chaque banque fixe ses critères de fragilité (incidents répétés, faibles ressources, inscription au fichier Banque de France, surendettement). Seuil indicatif retenu par le simulateur : ressources ≤ Smic brut mensuel.",
+   "statut": "A_VERIFIER"
+  }
+ },
+ "energie_protections": {
+  "description": {
+   "valeur": "Le tarif social de l'électricité (TPN) a été supprimé fin 2017 et remplacé par le chèque énergie. Les bénéficiaires du chèque énergie gardent des protections : mise en service gratuite, abattement sur les frais en cas d'impayé, pas de réduction de puissance pendant la trêve hivernale.",
+   "date_effet": "2018-01-01",
+   "source": "https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000032497834&cidTexte=LEGITEXT000023983208",
+   "verifie_le": "2026-10-25",
+   "note": "Liste des protections non revérifiée en 2026 (sites officiels inaccessibles).",
+   "statut": "A_VERIFIER"
+  }
+ }
+}

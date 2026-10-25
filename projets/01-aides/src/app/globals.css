@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @source "../../../../packages/ui/src";
+
+@media print {
+  @page { margin: 1.5cm; }
+  details > *:not(summary) { display: block; }
+  details::details-content { content-visibility: visible; display: block; }
+  a[href^="http"] { color: #1e3a8a; }
+}

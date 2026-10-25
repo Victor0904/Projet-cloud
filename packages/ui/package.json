@@ -1,0 +1,12 @@
+{
+  "name": "@vie-fr/ui",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "tsc -p ."
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@vie-fr/fr-data",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5"
+  }
+}

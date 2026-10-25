@@ -1,6 +1,8 @@
 // Chargement à la demande des fichiers produits par l'import (public/donnees/), avec cache mémoire.
 import type { Etablissement, FichierDepartement, FichierSecteurs, IndexDepartement, IndexDonnees } from "./types";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const cache = new Map<string, Promise<unknown>>();
 
 function charger<T>(chemin: string): Promise<T> {
@@ -16,13 +18,13 @@ function charger<T>(chemin: string): Promise<T> {
   return p;
 }
 
-export const chargerIndex = () => charger<IndexDonnees>("/donnees/index.json");
+export const chargerIndex = () => charger<IndexDonnees>(`${BASE}/donnees/index.json`);
 
 export const chargerDepartement = (code3: string) =>
-  charger<FichierDepartement>(`/donnees/${code3}/etablissements.json`);
+  charger<FichierDepartement>(`${BASE}/donnees/${code3}/etablissements.json`);
 
 export async function chargerSecteurs(dep: IndexDepartement): Promise<FichierSecteurs | null> {
-  return dep.carteScolaireColleges ? charger<FichierSecteurs>(`/donnees/${dep.code3}/secteurs.json`) : null;
+  return dep.carteScolaireColleges ? charger<FichierSecteurs>(`${BASE}/donnees/${dep.code3}/secteurs.json`) : null;
 }
 
 /** Département importé correspondant à un code département INSEE (« 54 », « 2A »…), ou null. */

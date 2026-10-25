@@ -20,6 +20,31 @@ Revue faite par le coordinateur après la construction en parallèle des 8 appli
 | 10-ecoles | ✅ | ✅ | ✅ 45 |
 | 12-succession | ✅ | ✅ | ✅ 84 |
 
+## Vérification dans un navigateur (25/10/2026, 2e passe)
+
+Huit vérificateurs indépendants, sans corriger, ont fait un parcours Chromium/Playwright sur `next start`. Pour chaque projet, ils ont joué le « Critère de fin » du `PROMPT.md` et contrôlé 390 px, le clavier, la console, les mentions, les sources et les exports. Le géocodeur IGN (data.geopf.fr) étant bloqué depuis le cloud, ses réponses ont été simulées avec `page.route` pour 01, 05 et 10. Captures et scripts : `/tmp/claude-0/-home-user-Projet-cloud/7c853b2b-d9c0-50cb-a0cb-377c39e777b2/scratchpad/verif/<projet>/` (hors dépôt, éphémère).
+
+| Projet | Critère de fin | Bugs les plus graves constatés |
+|---|---|---|
+| 01-aides | **Partiel** : chiffres identiques au snapshot (7 764 €/an), mais la comparaison avec mesdroitssociaux n'a jamais été faite | Sans loyer saisi, RSA à 652 € « probable » au lieu de 573 € ; avec l'AAH, le RSA s'ajoute en plein au total |
+| 02-quotient | **OK** (~1 min), chiffres identiques au snapshot | **À 390 px, la page fait 719 px de large** (URL caf.fr non coupée dans `CarteResultat`, `packages/ui`) ; écart « entre −948 € et 1 453 € » et ville « la moins chère » avec des fourchettes qui se chevauchent ; total « 0 € » pour Grenoble/Reims, qui fait disparaître la comparaison |
+| 03-decodeur-courrier | **Partiel** : décodage en 102 ms, date limite et lettre justes | **L'impression de la lettre de recours sort 3 pages blanches** (la lettre est dans une `Section` `print:hidden`) ; « Tout effacer » laisse nom et adresse en localStorage ; import JSON impossible sur une page vierge ; « A_VERIFIER » affiché en texte brut |
+| 04-mes-delais | **OK** (sauf la réception dans un vrai agenda, non testable) : `.ics` conforme RFC 5545, dates justes | UID `<id>-<date>` non stables : après « c'est fait », la réimportation crée des doublons (le README dit le contraire) ; CNI 2016 laissée en « format carte » par défaut, d'où un faux « DÉPASSÉ » |
+| 05-loyer | **OK** (~30-45 s) : Paris 11e = plafond 854 €, +96 €/mois, comme le snapshot ; Lyon, Lille/Bordeaux et hors zone OK | Mineurs : l'autocomplétion n'est pas un combobox ARIA (flèches et Échap inopérants) ; erreur « complément » à tort sur un formulaire vide ; signature seule en page 2 du PDF |
+| 08-changer-de-boulot | **OK** (< 2 min) : net du CDI cadre 48 k€ = 3 137,67 €, recoupé avec l'API Urssaf | Défilement horizontal de 70 px à 390 px (`sr-only` absolu dans `TableauComparatif.tsx`) ; les valeurs par défaut de l'indépendant ne sont pas appliquées quand on change de statut ; les sources sont repliées dans le PDF |
+| 10-ecoles | **Partiel** : secteur juste à Nancy, Paris et Lyon, Toulouse et hors couverture bien gérés | **Tableau de comparaison illisible** (~1 900 px pour 2 établissements, `min-w-max` dans `Comparaison.tsx`) **et PDF de comparaison tronqué** ; chaque marqueur de la carte est un arrêt de tabulation sans nom (75 et plus à Paris) |
+| 12-succession | **Partiel** : plan ordonné et dates justes, courriers OK | **La fusion « Réunir » efface le travail de la sœur** (le simple ajout d'organismes donne un `majLe` plus récent) ; **sur un appareil neuf, la sœur ne peut importer qu'après le questionnaire, et ses réponses par défaut écrasent le profil** ; le report laisse les échéances tomber un samedi (art. 642 CPC à vérifier) ; « En ma qualité de enfant » |
+
+Aucun projet n'a d'erreur JavaScript en console. Tous ont des labels sur leurs champs, un lien d'évitement, un focus visible et la mention de confidentialité.
+
+**Problèmes communs mis en évidence :**
+- **`sr-only` qui fait déborder la page :** un élément `sr-only` (en position absolue) placé dans un conteneur `overflow-x-auto` qui n'est pas `relative` sort du conteneur et fait défiler toute la page (08, 10). C'est à corriger une fois pour toutes dans le socle (`relative` sur les conteneurs défilants, ou un gabarit de tableau commun).
+- **Dates ISO affichées brutes :** `CarteResultat` affiche `verifieLe` en format ISO (01, 02) et ne coupe pas les longues URL (02). C'est une correction à faire dans `packages/ui`, qui profitera à tous les projets.
+- **Focus perdu :** après une sélection dans une liste d'autocomplétion, ou après une validation, le focus retombe sur `body` (01, 04, 05).
+- **Pieds de page inexacts :** « Rien n'est envoyé à un serveur » alors que l'adresse part vers l'IGN, l'API Adresse ou les tuiles OSM (01, 10). Il faut reformuler la mention commune.
+
+**Corrections prioritaires après cette passe** (elles passent avant les listes par projet ci-dessous) : impression de la lettre (03), fusion du partage (12), tableau de comparaison (10), largeur mobile de `CarteResultat` (02 et socle), RSA sans loyer (01), UID du `.ics` (04).
+
 ## Constat transversal
 
 - **Sources officielles inaccessibles.** Depuis l'environnement cloud, Légifrance, service-public, ameli, urssaf.fr et caf.fr étaient bloqués (403, anti-robot ou DNS), et impots.gouv.fr était en maintenance. Une grande partie des valeurs vient donc de sources secondaires ou du moteur de recherche. Elles sont marquées `A_VERIFIER` (ou « recoupé ») : entre 13 et 79 occurrences par projet. **Une passe de vérification depuis un poste normal est la priorité n° 1 de tout le dépôt.**

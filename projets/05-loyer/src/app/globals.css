@@ -1,2 +1,16 @@
 @import "tailwindcss";
 @source "../../../../packages/ui/src";
+
+/* Impression de la lettre seule : tout le reste est masqué. */
+@media print {
+  body[data-impression="lettre"] header,
+  body[data-impression="lettre"] footer,
+  body[data-impression="lettre"] aside,
+  body[data-impression="lettre"] [data-imprimable="synthese"] > :not(section[aria-labelledby="titre-lettre"]),
+  body[data-impression="lettre"] section[aria-labelledby="titre-lettre"] > :not([data-imprimable="lettre"]) {
+    display: none !important;
+  }
+  @page {
+    margin: 2cm;
+  }
+}

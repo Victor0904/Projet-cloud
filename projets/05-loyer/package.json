@@ -6,9 +6,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . && tsc --noEmit",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "import:paris": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-paris.ts",
+    "import:lyon": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-lyon.ts",
+    "import:lille": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-lille.ts",
+    "import:montpellier": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-montpellier.ts",
+    "import:bordeaux": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-bordeaux.ts",
+    "import:est-ensemble": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-est-ensemble.ts",
+    "import:plaine-commune": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-plaine-commune.ts",
+    "import:carte-loyers": "NODE_USE_ENV_PROXY=1 node --no-warnings --experimental-strip-types scripts/import-carte-loyers.ts",
+    "import:tout": "npm run import:paris && npm run import:lyon && npm run import:lille && npm run import:montpellier && npm run import:bordeaux && npm run import:est-ensemble && npm run import:plaine-commune && npm run import:carte-loyers"
   },
   "dependencies": {
+    "@turf/boolean-point-in-polygon": "^7.4.0",
     "@vie-fr/fr-data": "*",
     "@vie-fr/ui": "*",
     "next": "^15.5.0",

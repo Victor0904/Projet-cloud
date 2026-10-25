@@ -1,0 +1,100 @@
+{
+  "source": "https://www.ecologie.gouv.fr/politiques-publiques/encadrement-niveaux-loyers",
+  "verifie_le": "2026-10-25",
+  "statut": "A_VERIFIER",
+  "note": "Liste des territoires et dates d'entrée en vigueur reconstituée à partir des jeux de données et de recherches web ; le site du ministère n'était pas joignable depuis l'environnement de construction.",
+  "villes": [
+    {
+      "id": "paris",
+      "nom": "Paris",
+      "communes": ["75056", "75101", "75102", "75103", "75104", "75105", "75106", "75107", "75108", "75109", "75110", "75111", "75112", "75113", "75114", "75115", "75116", "75117", "75118", "75119", "75120"],
+      "entree_vigueur": "2019-07-01",
+      "geolocalisation": "polygones",
+      "millesimes": ["2023", "2024", "2025"],
+      "lien_officiel": "https://www.paris.fr/encadrementloyers",
+      "statut": "OK",
+      "note": "Le jeu open data de la Ville de Paris s'arrête à l'arrêté applicable au 1er juillet 2025. L'arrêté applicable au 1er juillet 2026 n'y figure pas encore (A_VERIFIER) : pour un bail signé depuis, nous utilisons les valeurs 2025."
+    },
+    {
+      "id": "lyon",
+      "nom": "Lyon et Villeurbanne",
+      "communes": ["69123", "69381", "69382", "69383", "69384", "69385", "69386", "69387", "69388", "69389", "69266"],
+      "entree_vigueur": "2021-11-01",
+      "geolocalisation": "polygones",
+      "millesimes": ["2023-2024", "2024-2025", "2025-2026"],
+      "lien_officiel": "https://www.data.gouv.fr/datasets/encadrement-des-loyers-de-la-metropole-de-lyon-2025-2026",
+      "statut": "OK"
+    },
+    {
+      "id": "montpellier",
+      "nom": "Montpellier",
+      "communes": ["34172"],
+      "entree_vigueur": "2022-07-01",
+      "geolocalisation": "polygones",
+      "millesimes": ["2023"],
+      "lien_officiel": "https://www.montpellier3m.fr/encadrementdesloyers",
+      "statut": "A_VERIFIER",
+      "note": "Seules les valeurs de l'arrêté 2023 étaient téléchargeables. Les plafonds actuels peuvent être différents : vérifiez sur le site officiel."
+    },
+    {
+      "id": "lille",
+      "nom": "Lille, Hellemmes et Lomme",
+      "communes": ["59350", "59298", "59355"],
+      "entree_vigueur": "2020-03-01",
+      "geolocalisation": "manuelle",
+      "millesimes": ["2023"],
+      "lien_officiel": "https://www.lille.fr/Vivre-a-Lille/Logement/L-encadrement-des-loyers",
+      "statut": "A_VERIFIER",
+      "note": "La carte des secteurs n'était pas téléchargeable : choisissez votre secteur (1 à 4) sur la carte officielle. Valeurs de l'arrêté 2023."
+    },
+    {
+      "id": "bordeaux",
+      "nom": "Bordeaux",
+      "communes": ["33063"],
+      "entree_vigueur": "2022-07-15",
+      "geolocalisation": "manuelle",
+      "millesimes": ["2023"],
+      "lien_officiel": "https://geo.bordeaux-metropole.fr/encadrement-des-loyers",
+      "statut": "A_VERIFIER",
+      "note": "La carte des secteurs n'était pas téléchargeable : choisissez votre secteur (1 à 4) sur le simulateur officiel. Valeurs de l'arrêté 2023."
+    },
+    {
+      "id": "est-ensemble",
+      "nom": "Est Ensemble",
+      "communes": ["93006", "93008", "93010", "93045", "93048", "93053", "93055", "93061", "93063"],
+      "entree_vigueur": "2021-12-01",
+      "geolocalisation": "polygones",
+      "millesimes": ["2023"],
+      "lien_officiel": "https://www.referenceloyer.drihl.gouv.fr/",
+      "statut": "A_VERIFIER",
+      "note": "Zonage simplifié par commune (2022) et valeurs 2023. Vérifiez sur le site de la DRIHL."
+    },
+    {
+      "id": "plaine-commune",
+      "nom": "Plaine Commune",
+      "communes": ["93001", "93027", "93031", "93039", "93059", "93066", "93070", "93072", "93079"],
+      "entree_vigueur": "2021-06-01",
+      "geolocalisation": "polygones",
+      "millesimes": ["2023"],
+      "lien_officiel": "https://www.referenceloyer.drihl.gouv.fr/",
+      "statut": "A_VERIFIER",
+      "note": "Zonage simplifié par commune (2022) et valeurs 2023. Vérifiez sur le site de la DRIHL."
+    }
+  ],
+  "non_couvertes": [
+    {
+      "nom": "Pays basque (Communauté d'agglomération)",
+      "communes": ["64102", "64024", "64122", "64483", "64260", "64189", "64125", "64249", "64140", "64545"],
+      "lien_officiel": "https://www.communaute-paysbasque.fr/",
+      "raison": "Encadrement en vigueur depuis fin 2024 ; aucun jeu de données ouvert exploitable trouvé. Liste de communes partielle (A_VERIFIER).",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "nom": "Grenoble-Alpes Métropole",
+      "communes": ["38185", "38151", "38421", "38169", "38229", "38485"],
+      "lien_officiel": "https://www.grenoblealpesmetropole.fr/",
+      "raison": "Encadrement en vigueur depuis 2025 ; aucun jeu de données ouvert exploitable trouvé. Liste de communes partielle (A_VERIFIER).",
+      "statut": "A_VERIFIER"
+    }
+  ]
+}

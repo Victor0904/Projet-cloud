@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`studio meublé Paris 11e à 950 € > résultat et lettre figés 1`] = `
+{
+  "action": true,
+  "avertissements": [],
+  "complement": {
+    "contestable": false,
+    "dateLimite": "2025-12-01",
+    "delaiDepasse": true,
+    "present": false,
+    "raisons": [],
+  },
+  "contestableMensuel": 96,
+  "millesime": "2025",
+  "quartier": "Saint-Ambroise",
+  "reference": {
+    "epoque": "avant-1946",
+    "majore": 42.7,
+    "meuble": true,
+    "minore": 24.9,
+    "pieces": 1,
+    "ref": 35.6,
+    "remarques": [],
+    "zone": "10",
+  },
+  "secteur": "42",
+  "tropPercu": {
+    "depuis": "2025-09-01",
+    "limiteParPrescription": false,
+    "mois": 13,
+    "montant": 1248,
+  },
+  "verdict": {
+    "complement": 0,
+    "conforme": false,
+    "depassementAnnuel": 1152,
+    "depassementMensuel": 96,
+    "loyerBase": 950,
+    "loyerBaseM2": 47.5,
+    "loyerReference": 712,
+    "plafond": 854,
+    "plancher": 498,
+    "sousMinore": false,
+    "surface": 20,
+  },
+  "ville": "paris",
+  "zone": "10",
+}
+`;
+
+exports[`studio meublé Paris 11e à 950 € > résultat et lettre figés 2`] = `
+"Camille Martin
+100 rue Oberkampf, 75011 Paris
+
+[Nom du bailleur ou de l'agence]
+[Adresse du bailleur]
+
+Le 25 octobre 2026
+
+Objet : Mise en demeure – loyer supérieur au plafond de l'encadrement des loyers. Lettre recommandée avec avis de réception.
+
+Madame, Monsieur,
+Je suis locataire du logement situé 100 rue Oberkampf, 75011 Paris, d'une surface habitable de 20 m², en vertu d'un bail signé le 1er septembre 2025.
+Ce logement se trouve dans une zone où les loyers sont encadrés (Paris). En application de l'article 140 de la loi n° 2018-1021 du 23 novembre 2018 (loi ELAN) et de l'arrêté préfectoral en vigueur à la date de signature du bail (Arrêté du préfet de la région Île-de-France fixant les loyers de référence à Paris, applicable au 1er juillet 2025), le loyer de base ne peut pas dépasser le loyer de référence majoré, soit 42,70 € par m², c'est-à-dire 854,00 € par mois pour ce logement.
+Or le loyer de base prévu par le bail est de 950,00 € par mois hors charges, ce qui dépasse ce plafond de 96,00 € par mois.
+Je vous mets donc en demeure, dans un délai de 30 jours à compter de la réception de ce courrier, de :
+– ramener le loyer à 854,00 € par mois hors charges à compter de la prochaine échéance, par la signature d'un avenant au bail ;
+– me rembourser les sommes perçues au-delà du loyer autorisé depuis le 1er septembre 2025, soit 1 248,00 € à ce jour (montant à actualiser jusqu'à la mise en conformité).
+À défaut de réponse satisfaisante dans ce délai, je saisirai la commission départementale de conciliation, puis, si nécessaire, le juge des contentieux de la protection. Je me réserve également la possibilité de signaler la situation au préfet, qui peut prononcer une amende administrative à l'encontre du bailleur.
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+Camille Martin"
+`;

@@ -1,0 +1,1544 @@
+{
+  "version": 1,
+  "verifie_le": "2026-10-25",
+  "avertissement": "Règles reformulées en langage clair à partir des fiches officielles. Les pages service-public.gouv.fr et legifrance.gouv.fr n'étaient pas accessibles directement depuis l'environnement de construction : chaque règle a été recoupée par recherche (extraits des fiches officielles et sources secondaires). Le champ « statut » vaut « recoupe » dans ce cas, et « A_VERIFIER » quand une valeur ou une URL n'a pas pu être confirmée.",
+  "categories": [
+    {
+      "id": "vehicule",
+      "libelle": "Véhicules"
+    },
+    {
+      "id": "identite",
+      "libelle": "Papiers d'identité et titres"
+    },
+    {
+      "id": "impots",
+      "libelle": "Impôts et amendes"
+    },
+    {
+      "id": "logement",
+      "libelle": "Logement"
+    },
+    {
+      "id": "contrats",
+      "libelle": "Contrats, assurances et achats"
+    },
+    {
+      "id": "sante",
+      "libelle": "Santé et travail"
+    },
+    {
+      "id": "social",
+      "libelle": "Prestations sociales"
+    },
+    {
+      "id": "autre",
+      "libelle": "Autres échéances"
+    }
+  ],
+  "types": [
+    {
+      "id": "ct-voiture",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Contrôle technique d'une voiture",
+      "description": "Premier contrôle dans les 6 mois avant les 4 ans du véhicule, puis tous les 2 ans (voiture particulière, camping-car jusqu'à 3,5 t).",
+      "regle": {
+        "type": "periodique",
+        "champ": "mise_en_circulation",
+        "premier_mois": 48,
+        "intervalle_mois": 24,
+        "champ_dernier": "dernier_controle"
+      },
+      "champs": [
+        {
+          "id": "mise_en_circulation",
+          "libelle": "Date de première mise en circulation",
+          "aide": "Case B de la carte grise.",
+          "obligatoire": true
+        },
+        {
+          "id": "dernier_controle",
+          "libelle": "Date du dernier contrôle technique",
+          "aide": "Laissez vide si le véhicule n'a jamais été contrôlé.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 180,
+      "consequences": "Rouler sans contrôle à jour : amende forfaitaire de 135 € et carte grise pouvant être retenue (7 jours pour régulariser). Vente impossible sans contrôle de moins de 6 mois.",
+      "demarche": {
+        "libelle": "Trouver un centre agréé et connaître les règles",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "ct-camionnette",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Contrôle technique d'une camionnette (moins de 3,5 t)",
+      "description": "Même rythme que la voiture : premier contrôle avant les 4 ans, puis tous les 2 ans.",
+      "regle": {
+        "type": "periodique",
+        "champ": "mise_en_circulation",
+        "premier_mois": 48,
+        "intervalle_mois": 24,
+        "champ_dernier": "dernier_controle"
+      },
+      "champs": [
+        {
+          "id": "mise_en_circulation",
+          "libelle": "Date de première mise en circulation",
+          "aide": "Case B de la carte grise.",
+          "obligatoire": true
+        },
+        {
+          "id": "dernier_controle",
+          "libelle": "Date du dernier contrôle technique",
+          "aide": "Laissez vide si le véhicule n'a jamais été contrôlé.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 180,
+      "consequences": "Amende forfaitaire de 135 € et immobilisation possible. Un contrôle complémentaire « pollution » peut s'ajouter pour certains utilitaires : vérifiez sur la fiche officielle.",
+      "demarche": {
+        "libelle": "Règles du contrôle technique des camionnettes",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33353"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33353",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "ct-moto",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Contrôle technique d'une moto ou d'un scooter",
+      "description": "Obligatoire depuis le 15 avril 2024 : premier contrôle dans les 6 mois avant les 5 ans du véhicule, puis tous les 3 ans. Les deux-roues immatriculés avant 2022 suivent un calendrier de rattrapage progressif.",
+      "regle": {
+        "type": "periodique",
+        "champ": "mise_en_circulation",
+        "premier_mois": 60,
+        "intervalle_mois": 36,
+        "champ_dernier": "dernier_controle"
+      },
+      "champs": [
+        {
+          "id": "mise_en_circulation",
+          "libelle": "Date de première mise en circulation",
+          "aide": "Case B de la carte grise.",
+          "obligatoire": true
+        },
+        {
+          "id": "dernier_controle",
+          "libelle": "Date du dernier contrôle technique",
+          "aide": "Laissez vide si le véhicule n'a jamais été contrôlé.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 180,
+      "consequences": "Amende forfaitaire de 135 € en cas de contrôle routier sans contrôle technique valide.",
+      "demarche": {
+        "libelle": "Contrôle technique des deux-roues",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A16861"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A16861",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "A_VERIFIER : le calendrier transitoire des deux-roues immatriculés avant 2022 (dates limites par année d'immatriculation) n'est pas modélisé. L'outil applique la règle générale 5 ans puis 3 ans."
+    },
+    {
+      "id": "ct-collection",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Contrôle technique d'un véhicule de collection",
+      "description": "Véhicule portant la mention « collection » sur la carte grise : un contrôle tous les 5 ans.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_controle",
+        "premier_mois": 60,
+        "intervalle_mois": 60
+      },
+      "champs": [
+        {
+          "id": "dernier_controle",
+          "libelle": "Date du dernier contrôle technique",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 90,
+      "consequences": "Amende forfaitaire de 135 € et immobilisation possible.",
+      "demarche": {
+        "libelle": "Règles pour les véhicules de collection",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F328"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F328",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "contre-visite-ct",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Contre-visite après un contrôle technique défavorable",
+      "description": "En cas de défaillance majeure ou critique, la contre-visite doit être faite dans les 2 mois qui suivent le contrôle.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_controle",
+        "mois": 2,
+        "jours": 0,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_controle",
+          "libelle": "Date du contrôle défavorable",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Au-delà de 2 mois, il faut repasser un contrôle technique complet (et payer à nouveau). Avec une défaillance critique, le véhicule ne peut plus circuler dès le lendemain du contrôle.",
+      "demarche": {
+        "libelle": "Contre-visite : ce qu'il faut savoir",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "carte-grise-adresse",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Changement d'adresse sur la carte grise après un déménagement",
+      "description": "Après un déménagement, l'adresse de la carte grise doit être mise à jour dans le mois, en ligne sur le site de l'ANTS (gratuit).",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_demenagement",
+        "mois": 1,
+        "jours": 0,
+        "rattrapable": true
+      },
+      "champs": [
+        {
+          "id": "date_demenagement",
+          "libelle": "Date du déménagement",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Amende forfaitaire de 135 €. Les avis de contravention partent à l'ancienne adresse et sont majorés faute de paiement.",
+      "demarche": {
+        "libelle": "Changer l'adresse de sa carte grise",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12118"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12118",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "assurance-auto",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Échéance annuelle de l'assurance auto ou moto",
+      "description": "Le contrat se renouvelle chaque année. Après la première année, vous pouvez résilier à tout moment sans frais (loi Hamon) ; l'échéance annuelle reste le bon moment pour comparer.",
+      "regle": {
+        "type": "anniversaire",
+        "champ": "date_souscription",
+        "preavis_jours": 0
+      },
+      "champs": [
+        {
+          "id": "date_souscription",
+          "libelle": "Date de souscription (ou date d'échéance indiquée sur l'avis)",
+          "obligatoire": true
+        }
+      ],
+      "parametres": [
+        {
+          "id": "preavis_jours",
+          "libelle": "Être prévenu combien de jours avant l'échéance ?",
+          "defaut": 0,
+          "aide": "0 = rappel le jour de l'échéance. Les alarmes de l'agenda arrivent de toute façon 60, 30 et 7 jours avant."
+        }
+      ],
+      "consequences": "Sans action, le contrat est reconduit au nouveau tarif. Rouler sans assurance est un délit (amende forfaitaire de 750 €).",
+      "demarche": {
+        "libelle": "Résilier son assurance auto",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2659"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2659",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "A_VERIFIER : montant de l'amende forfaitaire pour défaut d'assurance (750 €) non relu sur la fiche officielle."
+    },
+    {
+      "id": "pneus-hiver",
+      "categorie": "vehicule",
+      "cible": "vehicule",
+      "libelle": "Équipements hiver (loi Montagne)",
+      "description": "Dans les communes de montagne désignées par arrêté préfectoral, pneus hiver ou chaînes/chaussettes obligatoires du 1er novembre au 31 mars.",
+      "regle": {
+        "type": "annuel",
+        "mois": 11,
+        "jour": 1
+      },
+      "champs": [],
+      "anticiper_jours": 30,
+      "consequences": "Amende de 135 € et immobilisation possible dans les zones concernées.",
+      "demarche": {
+        "libelle": "Obligations d'équipement en hiver",
+        "url": "https://www.securite-routiere.gouv.fr"
+      },
+      "source": "https://www.securite-routiere.gouv.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : URL exacte de la fiche officielle et montant de l'amende non confirmés (décret n° 2020-1264 du 16 octobre 2020)."
+    },
+    {
+      "id": "cni",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Carte d'identité",
+      "description": "La durée dépend du modèle : 10 ans pour la carte au format carte bancaire (depuis 2021) et pour un mineur ; 15 ans pour l'ancienne carte délivrée à un majeur entre 2004 et 2021.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_delivrance",
+        "duree_mois": 120
+      },
+      "variantes": [
+        {
+          "id": "format-carte",
+          "libelle": "Format carte bancaire (délivrée depuis 2021) — 10 ans",
+          "regle": {
+            "duree_mois": 120
+          }
+        },
+        {
+          "id": "ancien-majeur",
+          "libelle": "Ancien modèle papier, délivré à un majeur — 15 ans",
+          "regle": {
+            "duree_mois": 180
+          },
+          "apres_renouvellement": "format-carte"
+        },
+        {
+          "id": "mineur",
+          "libelle": "Délivrée à un mineur (tout modèle) — 10 ans",
+          "regle": {
+            "duree_mois": 120
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_delivrance",
+          "libelle": "Date de délivrance",
+          "aide": "Inscrite au dos de la carte. Si la date de fin est imprimée, vous pouvez saisir directement une échéance libre.",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 90,
+      "consequences": "Carte périmée : refusée pour voyager, pour certaines démarches (banque, examens, vote dans les grandes communes). Les délais de rendez-vous en mairie dépassent souvent plusieurs semaines.",
+      "demarche": {
+        "libelle": "Renouveler sa carte d'identité",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21089"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35005",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Pour une ancienne carte délivrée entre 2004 et 2013 à un majeur, la validité a été prolongée de 5 ans (15 ans au total) : l'outil le prend en compte via la variante « ancien modèle ». La date exacte de fin imprimée par l'administration peut différer d'un jour."
+    },
+    {
+      "id": "passeport",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Passeport",
+      "description": "Valable 10 ans pour un majeur, 5 ans pour un mineur.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_delivrance",
+        "duree_mois": 120
+      },
+      "variantes": [
+        {
+          "id": "majeur",
+          "libelle": "Majeur — 10 ans",
+          "regle": {
+            "duree_mois": 120
+          }
+        },
+        {
+          "id": "mineur",
+          "libelle": "Mineur — 5 ans",
+          "regle": {
+            "duree_mois": 60
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_delivrance",
+          "libelle": "Date de délivrance",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 120,
+      "consequences": "Voyage impossible hors Union européenne. Beaucoup de pays exigent un passeport valable encore 3 à 6 mois après le retour.",
+      "demarche": {
+        "libelle": "Demander ou renouveler un passeport",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14930"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14930",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "permis-conduire",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Permis de conduire (format carte)",
+      "description": "Le titre au format carte bancaire est valable 15 ans (les catégories restent valables à vie). Le renouvellement est une simple démarche en ligne, sans examen. L'ancien permis rose reste valable jusqu'au 19 janvier 2033.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_delivrance",
+        "duree_mois": 180
+      },
+      "champs": [
+        {
+          "id": "date_delivrance",
+          "libelle": "Date de délivrance du titre (case 4a)",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 90,
+      "consequences": "Titre périmé : vous restez titulaire du droit de conduire, mais le titre n'est plus valable comme pièce justificative et peut poser problème lors d'un contrôle ou à l'étranger.",
+      "demarche": {
+        "libelle": "Durée de validité et renouvellement du permis",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31133"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31133",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Une directive européenne votée en 2025 pourrait ramener la durée à 10 ans en France après transposition : à surveiller."
+    },
+    {
+      "id": "permis-rose",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Remplacement du permis rose cartonné",
+      "description": "L'ancien permis rose en carton n'est plus valable après le 19 janvier 2033. Le remplacement se demande en ligne.",
+      "regle": {
+        "type": "fixe",
+        "date": "2033-01-19"
+      },
+      "champs": [],
+      "anticiper_jours": 365,
+      "consequences": "Après cette date, le titre cartonné ne sera plus reconnu.",
+      "demarche": {
+        "libelle": "Remplacer son permis rose",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31674"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31674",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "titre-sejour",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Renouvellement d'un titre de séjour",
+      "description": "Pour la plupart des titres (démarche en ligne ANEF), la demande se dépose entre le 120e et le 60e jour avant la date d'expiration. Pour les autres, dans les 2 mois qui précèdent l'expiration.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_expiration",
+        "mois": 0,
+        "jours": -60,
+        "rattrapable": true
+      },
+      "variantes": [
+        {
+          "id": "anef",
+          "libelle": "Titre renouvelable en ligne (ANEF) — au plus tard 60 jours avant",
+          "regle": {
+            "jours": -60
+          }
+        },
+        {
+          "id": "autre",
+          "libelle": "Autre titre — au plus tard la veille de l'expiration",
+          "regle": {
+            "jours": -1
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_expiration",
+          "libelle": "Date d'expiration du titre actuel",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Une demande tardive peut être traitée comme une première demande : perte de la continuité du séjour et parfois du droit au travail pendant l'instruction. Les délais d'instruction dépassent souvent 3 mois.",
+      "demarche": {
+        "libelle": "Administration numérique pour les étrangers (ANEF)",
+        "url": "https://administration-etrangers-en-france.interieur.gouv.fr"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/N110",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : fenêtre 120 j / 60 j issue de l'article R. 431-5 du CESEDA cité par la jurisprudence, URL de la fiche service-public non confirmée."
+    },
+    {
+      "id": "ceam",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Carte européenne d'assurance maladie",
+      "description": "La carte délivrée par la France est valable 2 ans. Elle se demande gratuitement sur votre compte ameli, au moins 2 semaines avant un départ.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_delivrance",
+        "duree_mois": 24
+      },
+      "champs": [
+        {
+          "id": "date_delivrance",
+          "libelle": "Date de délivrance (ou de début de validité)",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Sans carte valide, vous avancez les frais de santé lors d'un séjour en Europe et la prise en charge est plus compliquée.",
+      "demarche": {
+        "libelle": "Demander la carte sur ameli",
+        "url": "https://www.ameli.fr"
+      },
+      "source": "https://www.cleiss.fr/particuliers/ceam_durees.html",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "recensement",
+      "categorie": "identite",
+      "cible": "personne",
+      "libelle": "Recensement citoyen à 16 ans",
+      "description": "Tout jeune Français doit se faire recenser entre son 16e anniversaire et la fin du 3e mois qui suit. C'est indispensable pour s'inscrire aux examens (bac, permis) et être inscrit d'office sur les listes électorales.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_naissance",
+        "mois": 195,
+        "jours": 0,
+        "fin_de_mois": true,
+        "rattrapable": true
+      },
+      "champs": [
+        {
+          "id": "date_naissance",
+          "libelle": "Date de naissance du jeune",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 90,
+      "consequences": "Sans attestation de recensement, impossible de s'inscrire au bac, au permis ou aux concours avant 25 ans. La régularisation reste possible jusqu'à 25 ans.",
+      "demarche": {
+        "libelle": "Se faire recenser (en ligne ou en mairie)",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F870"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F870",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "declaration-revenus",
+      "categorie": "impots",
+      "cible": "personne",
+      "libelle": "Déclaration de revenus",
+      "description": "Chaque printemps. La date limite de la déclaration en ligne dépend de votre département ; la déclaration papier a une date unique.",
+      "regle": {
+        "type": "annuel",
+        "mois": 5,
+        "jour": 21
+      },
+      "variantes": [
+        {
+          "id": "zone1",
+          "libelle": "En ligne — départements 01 à 19 et non-résidents",
+          "regle": {
+            "mois": 5,
+            "jour": 21
+          }
+        },
+        {
+          "id": "zone2",
+          "libelle": "En ligne — départements 20 à 54 (dont Corse)",
+          "regle": {
+            "mois": 5,
+            "jour": 28
+          }
+        },
+        {
+          "id": "zone3",
+          "libelle": "En ligne — départements 55 à 976",
+          "regle": {
+            "mois": 6,
+            "jour": 4
+          }
+        },
+        {
+          "id": "papier",
+          "libelle": "Déclaration papier (tous départements)",
+          "regle": {
+            "mois": 5,
+            "jour": 19
+          }
+        }
+      ],
+      "champs": [],
+      "anticiper_jours": 45,
+      "consequences": "Majoration de 10 % de l'impôt dû en cas de retard (20 % après une mise en demeure restée sans réponse 30 jours). La déclaration conditionne aussi de nombreuses aides (CAF, bourses, logement social).",
+      "demarche": {
+        "libelle": "Déclarer en ligne sur impots.gouv.fr",
+        "url": "https://www.impots.gouv.fr/toutes-les-questions/particulier/quelle-date-dois-je-faire-ma-declaration"
+      },
+      "source": "https://www.impots.gouv.fr/toutes-les-questions/particulier/quelle-date-dois-je-faire-ma-declaration",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Dates 2026 : 19 mai (papier), 21 mai (zone 1), 28 mai (zone 2), 4 juin (zone 3). A_VERIFIER chaque année : le calendrier est publié au printemps ; pour les années suivantes, l'outil reprend les mêmes jour et mois, à titre d'estimation."
+    },
+    {
+      "id": "taxe-fonciere",
+      "categorie": "impots",
+      "cible": "logement",
+      "libelle": "Paiement de la taxe foncière",
+      "description": "Avis envoyé fin août. Date limite mi-octobre (paiement par chèque ou virement, si le montant ne dépasse pas 300 €), quelques jours plus tard pour le paiement en ligne.",
+      "regle": {
+        "type": "annuel",
+        "mois": 10,
+        "jour": 20
+      },
+      "variantes": [
+        {
+          "id": "en-ligne",
+          "libelle": "Paiement en ligne",
+          "regle": {
+            "mois": 10,
+            "jour": 20
+          }
+        },
+        {
+          "id": "autre",
+          "libelle": "Chèque, espèces, virement (300 € maximum)",
+          "regle": {
+            "mois": 10,
+            "jour": 15
+          }
+        }
+      ],
+      "champs": [],
+      "anticiper_jours": 30,
+      "consequences": "Majoration de 10 % des sommes non payées à la date limite.",
+      "demarche": {
+        "libelle": "Payer sur impots.gouv.fr",
+        "url": "https://www.impots.gouv.fr"
+      },
+      "source": "https://www.impots.gouv.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : dates 2026 (15 et 20 octobre) relevées dans la presse spécialisée ; la date exacte figure sur votre avis et change chaque année."
+    },
+    {
+      "id": "amende-contestation",
+      "categorie": "impots",
+      "cible": "personne",
+      "libelle": "Contester une amende forfaitaire (code de la route)",
+      "description": "Vous avez 45 jours à partir de l'envoi de l'avis de contravention pour contester. Attention : payer l'amende vaut reconnaissance de l'infraction.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_avis",
+        "mois": 0,
+        "jours": 45,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_avis",
+          "libelle": "Date d'envoi de l'avis de contravention",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 15,
+      "consequences": "Après 45 jours, l'amende est majorée et la contestation devient plus difficile.",
+      "demarche": {
+        "libelle": "Payer ou contester une amende",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18509"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18509",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "amende-minoree",
+      "categorie": "impots",
+      "cible": "personne",
+      "libelle": "Payer une amende au tarif minoré",
+      "description": "Pour la plupart des contraventions, le montant est réduit si vous payez dans les 15 jours suivant l'envoi de l'avis.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_avis",
+        "mois": 0,
+        "jours": 15,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_avis",
+          "libelle": "Date d'envoi de l'avis de contravention",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 7,
+      "consequences": "Après 15 jours, vous payez le tarif normal (par exemple 135 € au lieu de 90 € pour une contravention de 4e classe).",
+      "demarche": {
+        "libelle": "Payer une amende",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18509"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18509",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "dpe",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Diagnostic de performance énergétique (DPE)",
+      "description": "Valable 10 ans. Obligatoire pour vendre ou louer. Les DPE réalisés entre 2018 et le 30 juin 2021 ne sont plus valables depuis le 1er janvier 2025.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_realisation",
+        "duree_mois": 120
+      },
+      "champs": [
+        {
+          "id": "date_realisation",
+          "libelle": "Date de réalisation du DPE",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 90,
+      "consequences": "Impossible de mettre le logement en vente ou en location sans DPE valide ; le locataire ou l'acheteur peut se retourner contre vous.",
+      "demarche": {
+        "libelle": "Le DPE expliqué",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "L'exception des DPE 2018–2021 (fin au 31/12/2024) n'est pas calculée automatiquement : l'outil affiche un avertissement."
+    },
+    {
+      "id": "diagnostic-electricite",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Diagnostic électricité (installation de plus de 15 ans)",
+      "description": "Obligatoire pour vendre ou louer si l'installation a plus de 15 ans. Valable 3 ans pour une vente, 6 ans pour une location.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_realisation",
+        "duree_mois": 72
+      },
+      "variantes": [
+        {
+          "id": "location",
+          "libelle": "Pour une location — 6 ans",
+          "regle": {
+            "duree_mois": 72
+          }
+        },
+        {
+          "id": "vente",
+          "libelle": "Pour une vente — 3 ans",
+          "regle": {
+            "duree_mois": 36
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_realisation",
+          "libelle": "Date du diagnostic",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Un diagnostic périmé à la signature expose le propriétaire à l'annulation du contrat ou à une baisse du prix ou du loyer.",
+      "demarche": {
+        "libelle": "Diagnostic de l'installation électrique",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18692"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18692",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "diagnostic-gaz",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Diagnostic gaz (installation de plus de 15 ans)",
+      "description": "Obligatoire pour vendre ou louer si l'installation de gaz a plus de 15 ans. Valable 3 ans pour une vente, 6 ans pour une location.",
+      "regle": {
+        "type": "validite",
+        "champ": "date_realisation",
+        "duree_mois": 72
+      },
+      "variantes": [
+        {
+          "id": "location",
+          "libelle": "Pour une location — 6 ans",
+          "regle": {
+            "duree_mois": 72
+          }
+        },
+        {
+          "id": "vente",
+          "libelle": "Pour une vente — 3 ans",
+          "regle": {
+            "duree_mois": 36
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_realisation",
+          "libelle": "Date du diagnostic",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Un diagnostic périmé à la signature expose le propriétaire à l'annulation du contrat ou à une baisse du prix ou du loyer.",
+      "demarche": {
+        "libelle": "Diagnostics immobiliers obligatoires",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18692"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18692",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : durées confirmées par des sources notariales, mais l'URL de la fiche officielle propre au diagnostic gaz n'a pas pu être relevée (la fiche électricité est citée à défaut)."
+    },
+    {
+      "id": "chaudiere",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Entretien de la chaudière",
+      "description": "Obligatoire au moins une fois par année civile pour les chaudières gaz, fioul, bois ou charbon de 4 à 400 kW. À la charge du locataire, sauf clause contraire du bail. L'outil vous le rappelle 12 mois après le dernier entretien.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_entretien",
+        "premier_mois": 12,
+        "intervalle_mois": 12
+      },
+      "champs": [
+        {
+          "id": "dernier_entretien",
+          "libelle": "Date du dernier entretien",
+          "aide": "Laissez vide si vous ne le connaissez pas : l'entretien sera proposé tout de suite.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 45,
+      "consequences": "Pas d'amende, mais l'assureur peut refuser d'indemniser un sinistre lié à l'appareil, et le bailleur peut retenir le coût sur le dépôt de garantie.",
+      "demarche": {
+        "libelle": "Entretien annuel du chauffage",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20760"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20760",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "pompe-a-chaleur",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Entretien d'une pompe à chaleur ou d'une climatisation",
+      "description": "Entretien obligatoire tous les 2 ans pour les appareils de 4 à 70 kW (décret n° 2020-912), par un technicien habilité aux fluides frigorigènes.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_entretien",
+        "premier_mois": 24,
+        "intervalle_mois": 24
+      },
+      "champs": [
+        {
+          "id": "dernier_entretien",
+          "libelle": "Date du dernier entretien",
+          "aide": "Laissez vide si vous ne le connaissez pas.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 45,
+      "consequences": "Pas d'amende prévue, mais risque de perte de garantie fabricant et de refus d'indemnisation.",
+      "demarche": {
+        "libelle": "Fiche ADEME sur l'entretien",
+        "url": "https://librairie.ademe.fr/ged/8309/fiche-entretien-pompe-chaleur-climatiseur.pdf"
+      },
+      "source": "https://librairie.ademe.fr/ged/8309/fiche-entretien-pompe-chaleur-climatiseur.pdf",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "ramonage",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Ramonage de la cheminée ou du poêle",
+      "description": "Au moins une fois par an. Dans la plupart des départements, le règlement sanitaire en exige deux, dont un pendant la période de chauffe : renseignez-vous en mairie.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_ramonage",
+        "premier_mois": 12,
+        "intervalle_mois": 12
+      },
+      "variantes": [
+        {
+          "id": "une-fois",
+          "libelle": "Une fois par an",
+          "regle": {
+            "premier_mois": 12,
+            "intervalle_mois": 12
+          }
+        },
+        {
+          "id": "deux-fois",
+          "libelle": "Deux fois par an (cas le plus fréquent)",
+          "regle": {
+            "premier_mois": 6,
+            "intervalle_mois": 6
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "dernier_ramonage",
+          "libelle": "Date du dernier ramonage",
+          "aide": "Laissez vide si vous ne la connaissez pas.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Amende possible (règlement sanitaire départemental) et refus d'indemnisation par l'assurance en cas d'incendie.",
+      "demarche": {
+        "libelle": "Règles pour les feux de cheminée",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32437"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32437",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "preavis-locataire",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Fin du préavis quand je quitte mon logement (locataire)",
+      "description": "Le préavis court à partir du jour où le propriétaire reçoit votre lettre. 3 mois pour un logement vide ; 1 mois en zone tendue ou pour un meublé.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_reception",
+        "mois": 3,
+        "jours": 0,
+        "rattrapable": false
+      },
+      "variantes": [
+        {
+          "id": "vide",
+          "libelle": "Logement vide hors zone tendue — 3 mois",
+          "regle": {
+            "mois": 3
+          }
+        },
+        {
+          "id": "zone-tendue",
+          "libelle": "Logement vide en zone tendue — 1 mois",
+          "regle": {
+            "mois": 1
+          }
+        },
+        {
+          "id": "meuble",
+          "libelle": "Logement meublé — 1 mois",
+          "regle": {
+            "mois": 1
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "date_reception",
+          "libelle": "Date de réception de la lettre par le propriétaire",
+          "aide": "Date de l'accusé de réception, de la remise en main propre ou de l'acte de commissaire de justice.",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Le loyer reste dû jusqu'à la fin du préavis. Prévoyez l'état des lieux de sortie et la remise des clés avant cette date.",
+      "demarche": {
+        "libelle": "Simulateur officiel du préavis",
+        "url": "https://www.service-public.gouv.fr/simulateur/calcul/delaiPreavisLocataire"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Depuis le 24 décembre 2025, certaines communes ne sont plus en zone tendue pour les baux signés ou renouvelés depuis : vérifiez avec le simulateur zones tendues."
+    },
+    {
+      "id": "conge-bailleur",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Donner congé à mon locataire (propriétaire)",
+      "description": "Le locataire doit recevoir la lettre de congé au moins 6 mois avant la fin du bail (logement vide) ou 3 mois avant (meublé), pour vente, reprise ou motif sérieux.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "fin_bail",
+        "mois": -6,
+        "jours": 0,
+        "rattrapable": false
+      },
+      "variantes": [
+        {
+          "id": "vide",
+          "libelle": "Logement vide — 6 mois avant",
+          "regle": {
+            "mois": -6
+          }
+        },
+        {
+          "id": "meuble",
+          "libelle": "Logement meublé — 3 mois avant",
+          "regle": {
+            "mois": -3
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "fin_bail",
+          "libelle": "Date de fin du bail en cours",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Un congé reçu trop tard n'est pas valable : le bail est reconduit pour 3 ans (vide) ou 1 an (meublé).",
+      "demarche": {
+        "libelle": "Congé donné par le propriétaire",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "assurance-habitation",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Échéance annuelle de l'assurance habitation",
+      "description": "Le contrat se renouvelle chaque année. Après un an, vous pouvez résilier à tout moment (loi Hamon) ; en cas de déménagement, la résiliation est possible à tout moment.",
+      "regle": {
+        "type": "anniversaire",
+        "champ": "date_souscription",
+        "preavis_jours": 0
+      },
+      "champs": [
+        {
+          "id": "date_souscription",
+          "libelle": "Date de souscription (ou date d'échéance indiquée sur l'avis)",
+          "obligatoire": true
+        }
+      ],
+      "parametres": [
+        {
+          "id": "preavis_jours",
+          "libelle": "Être prévenu combien de jours avant l'échéance ?",
+          "defaut": 0,
+          "aide": "0 = rappel le jour de l'échéance."
+        }
+      ],
+      "consequences": "Sans action, reconduction automatique au nouveau tarif. Un locataire doit être assuré en permanence et fournir chaque année une attestation à son bailleur.",
+      "demarche": {
+        "libelle": "Résilier son assurance habitation",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19083"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19083",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "attestation-assurance-locataire",
+      "categorie": "logement",
+      "cible": "logement",
+      "libelle": "Attestation d'assurance à envoyer au bailleur (locataire)",
+      "description": "Le locataire doit fournir une attestation d'assurance habitation à la remise des clés puis chaque année.",
+      "regle": {
+        "type": "anniversaire",
+        "champ": "date_entree",
+        "preavis_jours": 0
+      },
+      "champs": [
+        {
+          "id": "date_entree",
+          "libelle": "Date d'entrée dans le logement (ou de la dernière attestation envoyée)",
+          "obligatoire": true
+        }
+      ],
+      "consequences": "Le bailleur peut souscrire une assurance à votre place et vous la refacturer, ou engager la résiliation du bail si le bail le prévoit.",
+      "demarche": {
+        "libelle": "Assurance habitation du locataire",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/N44"
+      },
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000509310",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Article 7 de la loi n° 89-462 du 6 juillet 1989."
+    },
+    {
+      "id": "hamon-premiere-annee",
+      "categorie": "contrats",
+      "cible": "contrat",
+      "libelle": "Fin de la première année d'un contrat (loi Hamon)",
+      "description": "Assurance auto, moto, habitation, complémentaire santé : après un an, vous pouvez résilier à tout moment, sans frais ni justification. Le nouvel assureur peut s'occuper de la résiliation.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_souscription",
+        "mois": 12,
+        "jours": 0,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_souscription",
+          "libelle": "Date de souscription du contrat",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Rien de grave si vous laissez passer : la résiliation reste possible ensuite à tout moment. Ce rappel sert à comparer les offres.",
+      "demarche": {
+        "libelle": "Modèle de lettre de résiliation",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R21219"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19083",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "contrat-tacite",
+      "categorie": "contrats",
+      "cible": "contrat",
+      "libelle": "Contrat à reconduction tacite (loi Chatel)",
+      "description": "Abonnement, salle de sport, contrat d'entretien… Le professionnel doit vous prévenir entre 3 mois et 1 mois avant la date limite pour refuser la reconduction. S'il ne le fait pas, vous pouvez résilier à tout moment.",
+      "regle": {
+        "type": "anniversaire",
+        "champ": "date_souscription",
+        "preavis_jours": 30
+      },
+      "champs": [
+        {
+          "id": "date_souscription",
+          "libelle": "Date anniversaire du contrat",
+          "obligatoire": true
+        }
+      ],
+      "parametres": [
+        {
+          "id": "preavis_jours",
+          "libelle": "Préavis de résiliation prévu par votre contrat (en jours)",
+          "defaut": 30,
+          "aide": "Regardez les conditions générales. L'échéance affichée est la date limite pour envoyer votre résiliation."
+        }
+      ],
+      "consequences": "Passé la date limite, le contrat est reconduit pour une nouvelle période (souvent un an), sauf si le professionnel ne vous a pas prévenu.",
+      "demarche": {
+        "libelle": "Résilier un contrat à reconduction tacite",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33991"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33991",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "mutuelle",
+      "categorie": "contrats",
+      "cible": "personne",
+      "libelle": "Échéance de la complémentaire santé (mutuelle)",
+      "description": "Contrat annuel reconduit automatiquement. Après un an, résiliation possible à tout moment. L'organisme doit envoyer un avis d'échéance au moins 15 jours avant.",
+      "regle": {
+        "type": "anniversaire",
+        "champ": "date_souscription",
+        "preavis_jours": 0
+      },
+      "champs": [
+        {
+          "id": "date_souscription",
+          "libelle": "Date de souscription ou d'échéance annuelle",
+          "obligatoire": true
+        }
+      ],
+      "parametres": [
+        {
+          "id": "preavis_jours",
+          "libelle": "Être prévenu combien de jours avant l'échéance ?",
+          "defaut": 0
+        }
+      ],
+      "consequences": "Sans action, reconduction au nouveau tarif. Vérifiez si vous avez droit à la complémentaire santé solidaire.",
+      "demarche": {
+        "libelle": "Couverture maladie complémentaire",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20314"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20314",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "retractation",
+      "categorie": "contrats",
+      "cible": "contrat",
+      "libelle": "Délai de rétractation d'un achat à distance",
+      "description": "Achat en ligne, par téléphone ou à domicile : 14 jours pour changer d'avis sans justification, à partir de la livraison (bien) ou de la conclusion du contrat (service).",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_depart",
+        "mois": 0,
+        "jours": 14,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_depart",
+          "libelle": "Date de livraison (ou de signature pour un service)",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 7,
+      "consequences": "Après 14 jours, le vendeur peut refuser le retour (sauf geste commercial ou garantie légale en cas de défaut).",
+      "demarche": {
+        "libelle": "Formulaire de rétractation",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R15904"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10485",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe",
+      "note": "Le décompte légal commence le lendemain de la livraison ; si le dernier jour est un samedi, un dimanche ou un jour férié, il est reporté au jour ouvrable suivant. L'outil affiche la date sans report, par prudence."
+    },
+    {
+      "id": "garantie-conformite",
+      "categorie": "contrats",
+      "cible": "contrat",
+      "libelle": "Fin de la garantie légale de conformité",
+      "description": "Pour un bien neuf acheté à un professionnel : 2 ans à partir de la livraison pour obtenir réparation ou remplacement d'un défaut, gratuitement.",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "date_livraison",
+        "mois": 24,
+        "jours": 0,
+        "rattrapable": false
+      },
+      "champs": [
+        {
+          "id": "date_livraison",
+          "libelle": "Date de livraison du bien",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Après 2 ans, seule une éventuelle garantie commerciale ou la garantie des vices cachés reste possible.",
+      "demarche": {
+        "libelle": "Faire jouer la garantie légale",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11094"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11094",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "rappel-dtp",
+      "categorie": "sante",
+      "cible": "personne",
+      "libelle": "Rappel de vaccin diphtérie-tétanos-polio (adulte)",
+      "description": "Rappels à 25, 45 et 65 ans, puis tous les 10 ans (75, 85, 95 ans…).",
+      "regle": {
+        "type": "ages",
+        "champ": "date_naissance",
+        "ages": [
+          25,
+          45,
+          65,
+          75,
+          85,
+          95,
+          105
+        ],
+        "champ_dernier": "dernier_rappel"
+      },
+      "champs": [
+        {
+          "id": "date_naissance",
+          "libelle": "Date de naissance",
+          "obligatoire": true
+        },
+        {
+          "id": "dernier_rappel",
+          "libelle": "Date du dernier rappel",
+          "aide": "Laissez vide si vous ne la connaissez pas : un rappel manqué sera proposé tout de suite.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Protection insuffisante contre le tétanos en cas de blessure. Un rappel manqué se rattrape simplement.",
+      "demarche": {
+        "libelle": "Calendrier des vaccinations",
+        "url": "https://vaccination-info-service.fr"
+      },
+      "source": "https://vaccination-info-service.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : âges de rappel issus du calendrier vaccinal (ministère de la Santé), URL précise non relue."
+    },
+    {
+      "id": "depistage-colorectal",
+      "categorie": "sante",
+      "cible": "personne",
+      "libelle": "Dépistage du cancer colorectal (50 à 74 ans)",
+      "description": "Un test à faire chez soi tous les 2 ans, gratuit, de 50 à 74 ans. Il se commande en ligne ou auprès du médecin ou du pharmacien.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_test",
+        "premier_mois": 24,
+        "intervalle_mois": 24
+      },
+      "champs": [
+        {
+          "id": "dernier_test",
+          "libelle": "Date du dernier test",
+          "aide": "Laissez vide si vous n'en avez jamais fait.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Dépisté tôt, ce cancer se guérit dans 9 cas sur 10.",
+      "demarche": {
+        "libelle": "Commander le test",
+        "url": "https://monkit.depistage-colorectal.fr"
+      },
+      "source": "https://www.ameli.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : URL de la fiche ameli et chiffre « 9 cas sur 10 » non relus."
+    },
+    {
+      "id": "depistage-sein",
+      "categorie": "sante",
+      "cible": "personne",
+      "libelle": "Dépistage du cancer du sein (femmes de 50 à 74 ans)",
+      "description": "Une mammographie tous les 2 ans, prise en charge à 100 %, sur invitation de l'Assurance maladie.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_examen",
+        "premier_mois": 24,
+        "intervalle_mois": 24
+      },
+      "champs": [
+        {
+          "id": "dernier_examen",
+          "libelle": "Date de la dernière mammographie",
+          "aide": "Laissez vide si vous n'en avez jamais fait.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Un dépistage régulier permet de détecter plus tôt et de traiter plus simplement.",
+      "demarche": {
+        "libelle": "Dépistage organisé du cancer du sein",
+        "url": "https://www.ameli.fr"
+      },
+      "source": "https://www.ameli.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "depistage-col",
+      "categorie": "sante",
+      "cible": "personne",
+      "libelle": "Dépistage du cancer du col de l'utérus (25 à 65 ans)",
+      "description": "De 25 à 29 ans : un examen tous les 3 ans (après deux premiers tests à un an d'intervalle). De 30 à 65 ans : un test HPV tous les 5 ans.",
+      "regle": {
+        "type": "periodique",
+        "champ": "dernier_examen",
+        "premier_mois": 36,
+        "intervalle_mois": 36
+      },
+      "variantes": [
+        {
+          "id": "25-29",
+          "libelle": "25 à 29 ans — tous les 3 ans",
+          "regle": {
+            "premier_mois": 36,
+            "intervalle_mois": 36
+          }
+        },
+        {
+          "id": "30-65",
+          "libelle": "30 à 65 ans — tous les 5 ans",
+          "regle": {
+            "premier_mois": 60,
+            "intervalle_mois": 60
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "dernier_examen",
+          "libelle": "Date du dernier examen",
+          "aide": "Laissez vide si vous n'en avez jamais fait.",
+          "obligatoire": false
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Le dépistage régulier évite la plupart de ces cancers.",
+      "demarche": {
+        "libelle": "Dépistage du cancer du col de l'utérus",
+        "url": "https://www.ameli.fr"
+      },
+      "source": "https://www.ameli.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "visite-medicale-travail",
+      "categorie": "sante",
+      "cible": "personne",
+      "libelle": "Visite d'information et de prévention (médecine du travail)",
+      "description": "Pour un salarié sans suivi renforcé : une visite au moins tous les 5 ans (3 ans pour les travailleurs de nuit, handicapés ou titulaires d'une pension d'invalidité). C'est l'employeur qui l'organise.",
+      "regle": {
+        "type": "periodique",
+        "champ": "derniere_visite",
+        "premier_mois": 60,
+        "intervalle_mois": 60
+      },
+      "variantes": [
+        {
+          "id": "general",
+          "libelle": "Cas général — 5 ans maximum",
+          "regle": {
+            "premier_mois": 60,
+            "intervalle_mois": 60
+          }
+        },
+        {
+          "id": "adapte",
+          "libelle": "Travail de nuit, handicap, invalidité — 3 ans maximum",
+          "regle": {
+            "premier_mois": 36,
+            "intervalle_mois": 36
+          }
+        }
+      ],
+      "champs": [
+        {
+          "id": "derniere_visite",
+          "libelle": "Date de la dernière visite",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 60,
+      "consequences": "Obligation de l'employeur. En cas d'oubli, vous pouvez demander la visite vous-même au service de santé au travail.",
+      "demarche": {
+        "libelle": "Suivi médical du salarié",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2211"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2211",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : périodicités issues de l'article R. 4624-16 du code du travail ; URL de la fiche non confirmée."
+    },
+    {
+      "id": "css-renouvellement",
+      "categorie": "social",
+      "cible": "personne",
+      "libelle": "Renouvellement de la complémentaire santé solidaire",
+      "description": "Le droit est ouvert pour 12 mois. Demandez le renouvellement 2 mois avant la fin pour éviter une interruption (il est automatique pour certains allocataires du RSA).",
+      "regle": {
+        "type": "ponctuel",
+        "champ": "debut_droits",
+        "mois": 10,
+        "jours": 0,
+        "rattrapable": true
+      },
+      "champs": [
+        {
+          "id": "debut_droits",
+          "libelle": "Date de début des droits actuels",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 30,
+      "consequences": "Interruption de la prise en charge : vous avancez à nouveau des frais de santé.",
+      "demarche": {
+        "libelle": "Complémentaire santé solidaire",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10027"
+      },
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10027",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "declaration-trimestrielle",
+      "categorie": "social",
+      "cible": "personne",
+      "libelle": "Déclaration trimestrielle de ressources (RSA, prime d'activité)",
+      "description": "Tous les 3 mois, il faut déclarer ses ressources à la CAF ou à la MSA pour continuer à percevoir le RSA ou la prime d'activité.",
+      "regle": {
+        "type": "periodique",
+        "champ": "prochaine_declaration",
+        "premier_mois": 0,
+        "intervalle_mois": 3
+      },
+      "champs": [
+        {
+          "id": "prochaine_declaration",
+          "libelle": "Date de la prochaine déclaration attendue",
+          "aide": "Indiquée sur votre espace CAF ou MSA.",
+          "obligatoire": true
+        }
+      ],
+      "anticiper_jours": 7,
+      "consequences": "Sans déclaration, le versement est suspendu.",
+      "demarche": {
+        "libelle": "Mon compte CAF",
+        "url": "https://www.caf.fr"
+      },
+      "source": "https://www.caf.fr",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "A_VERIFIER : URL de la fiche officielle non relue."
+    },
+    {
+      "id": "libre",
+      "categorie": "autre",
+      "cible": "autre",
+      "libelle": "Échéance libre",
+      "description": "Toute autre date à ne pas oublier : abonnement, révision, garantie, rendez-vous…",
+      "regle": {
+        "type": "libre"
+      },
+      "champs": [],
+      "consequences": "",
+      "demarche": {
+        "libelle": "",
+        "url": ""
+      },
+      "source": "",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ]
+}

@@ -14,5 +14,8 @@
     "next": "^15.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "ical.js": "^2.2.1"
   }
 }

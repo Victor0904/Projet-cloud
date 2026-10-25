@@ -1,9 +1,10 @@
-import { Gabarit } from "@vie-fr/ui";
+import { Page } from "@/components/Page";
+import { TableauDeBord } from "@/components/TableauDeBord";
 
 export default function Accueil() {
   return (
-    <Gabarit titre={"Mes délais : les échéances qu'on oublie"}>
-      <p>Application en construction. Voir PROMPT.md pour le cahier des charges.</p>
-    </Gabarit>
+    <Page actif="/">
+      <TableauDeBord />
+    </Page>
   );
 }

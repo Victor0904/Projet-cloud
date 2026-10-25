@@ -1,0 +1,62 @@
+{
+  "code_insee": "38185",
+  "commune": "Grenoble",
+  "departement": "38",
+  "periode": "Non disponible",
+  "source": "https://portailfamille.grenoble.fr/maelisportail/fr/p/160/grenoble-accueil-p-riscolaire.xhtml",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF ou MSA, situation familiale (couple ou parent isolé) et commune de résidence.",
+  "notes": [
+    "Les tarifs sont fixés par délibération et publiés dans les « documents à télécharger » du portail famille."
+  ],
+  "a_verifier": [
+    "Portail famille inaccessible lors de la collecte : aucune grille relevée. Toute contribution est la bienvenue."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Pause méridienne",
+      "unite": "repas",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Grille non relevée."
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Grille non relevée."
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Grille non relevée."
+    },
+    "alsh_journee": {
+      "libelle": "Centre de loisirs — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Grille non relevée."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Centre de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Grille non relevée."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

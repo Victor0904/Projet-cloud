@@ -1,0 +1,13 @@
+{
+  "description": "Barème national des participations familiales PSU (crèches conventionnées CAF), année 2026.",
+  "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+  "verifie_le": "2026-10-25",
+  "annee": 2026,
+  "plancher_mensuel": 814.62,
+  "plafond_mensuel": 8500,
+  "taux_effort_collectif": { "1": 0.000619, "2": 0.000516, "3": 0.000413, "4": 0.00031, "5": 0.00031, "6": 0.00031, "7": 0.00031, "8": 0.000206 },
+  "taux_effort_familial": { "1": 0.000516, "2": 0.000413, "3": 0.00031, "4": 0.00031, "5": 0.00031, "6": 0.000206, "7": 0.000206, "8": 0.000206 },
+  "regle_handicap": "Un enfant bénéficiaire de l'AEEH dans le foyer : on applique le taux immédiatement inférieur (comme s'il y avait un enfant de plus).",
+  "ressources_retenues": "Revenus de l'année N-2 (revenus 2024 pour 2026), avant abattements, divisés par 12. Les prestations familiales ne sont pas comptées.",
+  "note": "Le gestionnaire peut, en accord avec la CAF, continuer d'appliquer le taux d'effort au-delà du plafond."
+}

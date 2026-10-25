@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`cas complet : 2 enfants, QF 900, Nancy vs Metz > détail figé 1`] = `
+{
+  "comparables": [
+    "cantine",
+    "garderie_soir",
+  ],
+  "ecarts": [
+    {
+      "max": 0,
+      "min": 0,
+    },
+    {
+      "max": 168.48,
+      "min": 168.48,
+    },
+  ],
+  "moinsChere": 0,
+  "resume": [
+    {
+      "annuel": {
+        "max": 1437.88,
+        "min": 1437.88,
+      },
+      "commune": "Nancy",
+      "lignes": [
+        {
+          "annuel": {
+            "max": 936,
+            "min": 936,
+          },
+          "cle": "cantine",
+          "quantite": 144,
+          "tarif": {
+            "max": 3.25,
+            "min": 3.25,
+          },
+        },
+        {
+          "annuel": {
+            "max": 308.88,
+            "min": 308.88,
+          },
+          "cle": "garderie_soir",
+          "quantite": 108,
+          "tarif": {
+            "max": 1.43,
+            "min": 1.43,
+          },
+        },
+        {
+          "annuel": {
+            "max": 193,
+            "min": 193,
+          },
+          "cle": "alsh_journee",
+          "quantite": 10,
+          "tarif": {
+            "max": 9.65,
+            "min": 9.65,
+          },
+        },
+      ],
+      "manquantes": [],
+      "mensuel": {
+        "max": 119.82,
+        "min": 119.82,
+      },
+      "valeurBase": 900,
+    },
+    {
+      "annuel": {
+        "max": 1413.36,
+        "min": 1413.36,
+      },
+      "commune": "Metz",
+      "lignes": [
+        {
+          "annuel": {
+            "max": 1143.36,
+            "min": 1143.36,
+          },
+          "cle": "cantine",
+          "quantite": 144,
+          "tarif": {
+            "max": 3.97,
+            "min": 3.97,
+          },
+        },
+        {
+          "annuel": {
+            "max": 270,
+            "min": 270,
+          },
+          "cle": "garderie_soir",
+          "quantite": 108,
+          "tarif": {
+            "max": 1.25,
+            "min": 1.25,
+          },
+        },
+        {
+          "annuel": {
+            "max": 0,
+            "min": 0,
+          },
+          "cle": "alsh_journee",
+          "quantite": 10,
+          "tarif": null,
+        },
+      ],
+      "manquantes": [
+        "Accueil de loisirs vacances — journée",
+      ],
+      "mensuel": {
+        "max": 117.78,
+        "min": 117.78,
+      },
+      "valeurBase": 900,
+    },
+  ],
+  "totauxComparables": [
+    {
+      "max": 1244.88,
+      "min": 1244.88,
+    },
+    {
+      "max": 1413.36,
+      "min": 1413.36,
+    },
+  ],
+}
+`;

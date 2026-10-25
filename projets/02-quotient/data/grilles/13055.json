@@ -1,0 +1,85 @@
+{
+  "code_insee": "13055",
+  "commune": "Marseille",
+  "departement": "13",
+  "periode": "Rentrée 2026-2027",
+  "source": "https://www.marseille.fr/actualites/inscription-cantine",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF.",
+  "notes": [
+    "Des frais mensuels s'ajoutent : 0,50 €/mois (QF > 433) ou 0,05 €/mois (QF ≤ 433), non comptés ici."
+  ],
+  "a_verifier": [
+    "Grille relevée via le moteur de recherche : la page marseille.fr bloque les accès automatisés. À relire sur la page officielle.",
+    "Garderie, accueil du soir et centres de loisirs : tarifs non trouvés."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restauration scolaire",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.marseille.fr/actualites/inscription-cantine",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 433,
+          "tarif": 0
+        },
+        {
+          "de": 433,
+          "a": 660,
+          "tarif": 1.83
+        },
+        {
+          "de": 660,
+          "a": 1850,
+          "tarif": 3.67
+        },
+        {
+          "de": 1850,
+          "a": null,
+          "tarif": 4.7
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Garderie du matin",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_journee": {
+      "libelle": "Centre de loisirs — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Centre de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

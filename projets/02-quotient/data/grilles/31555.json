@@ -1,0 +1,566 @@
+{
+  "code_insee": "31555",
+  "commune": "Toulouse",
+  "departement": "31",
+  "periode": "Recueil des tarifs de février 2026",
+  "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "revenus_mensuels",
+  "base_calcul_note": "Revenus mensuels = revenu fiscal de référence / 12. Le tarif dépend aussi du nombre d'enfants de la famille (1, 2, 3 et +).",
+  "notes": [
+    "Toutes les prestations se réservent jour par jour. Présence non réservée le midi : +50 % (non compté).",
+    "Accueil de loisirs des vacances : journée repas compris. Mercredi après-midi : élémentaire, repas non compris."
+  ],
+  "a_verifier": [],
+  "prestations": {
+    "cantine": {
+      "libelle": "Temps du midi (repas + CLAÉ)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 900,
+          "tarifs_par_nb_enfants": [
+            1.1,
+            1.05,
+            1.0
+          ]
+        },
+        {
+          "de": 900,
+          "a": 1150,
+          "tarifs_par_nb_enfants": [
+            1.45,
+            1.4,
+            1.3
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1450,
+          "tarifs_par_nb_enfants": [
+            1.85,
+            1.8,
+            1.7
+          ]
+        },
+        {
+          "de": 1450,
+          "a": 1800,
+          "tarifs_par_nb_enfants": [
+            2.3,
+            2.25,
+            2.15
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2150,
+          "tarifs_par_nb_enfants": [
+            2.7,
+            2.65,
+            2.55
+          ]
+        },
+        {
+          "de": 2150,
+          "a": 2500,
+          "tarifs_par_nb_enfants": [
+            3.15,
+            3.1,
+            3.0
+          ]
+        },
+        {
+          "de": 2500,
+          "a": 2850,
+          "tarifs_par_nb_enfants": [
+            3.55,
+            3.5,
+            3.4
+          ]
+        },
+        {
+          "de": 2850,
+          "a": 4050,
+          "tarifs_par_nb_enfants": [
+            4.0,
+            3.95,
+            3.85
+          ]
+        },
+        {
+          "de": 4050,
+          "a": 5400,
+          "tarifs_par_nb_enfants": [
+            4.6,
+            4.55,
+            4.45
+          ]
+        },
+        {
+          "de": 5400,
+          "a": 7200,
+          "tarifs_par_nb_enfants": [
+            5.6,
+            5.55,
+            5.45
+          ]
+        },
+        {
+          "de": 7200,
+          "a": null,
+          "tarifs_par_nb_enfants": [
+            6.6,
+            6.55,
+            6.45
+          ]
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Temps du matin (CLAÉ)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 900,
+          "tarifs_par_nb_enfants": [
+            0.09,
+            0.09,
+            0.09
+          ]
+        },
+        {
+          "de": 900,
+          "a": 1150,
+          "tarifs_par_nb_enfants": [
+            0.18,
+            0.17,
+            0.16
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1450,
+          "tarifs_par_nb_enfants": [
+            0.22,
+            0.21,
+            0.19
+          ]
+        },
+        {
+          "de": 1450,
+          "a": 1800,
+          "tarifs_par_nb_enfants": [
+            0.28,
+            0.27,
+            0.25
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2150,
+          "tarifs_par_nb_enfants": [
+            0.28,
+            0.27,
+            0.25
+          ]
+        },
+        {
+          "de": 2150,
+          "a": 2500,
+          "tarifs_par_nb_enfants": [
+            0.28,
+            0.27,
+            0.25
+          ]
+        },
+        {
+          "de": 2500,
+          "a": 2850,
+          "tarifs_par_nb_enfants": [
+            0.28,
+            0.27,
+            0.25
+          ]
+        },
+        {
+          "de": 2850,
+          "a": 4050,
+          "tarifs_par_nb_enfants": [
+            0.37,
+            0.36,
+            0.35
+          ]
+        },
+        {
+          "de": 4050,
+          "a": 5400,
+          "tarifs_par_nb_enfants": [
+            0.56,
+            0.55,
+            0.53
+          ]
+        },
+        {
+          "de": 5400,
+          "a": 7200,
+          "tarifs_par_nb_enfants": [
+            0.66,
+            0.65,
+            0.63
+          ]
+        },
+        {
+          "de": 7200,
+          "a": null,
+          "tarifs_par_nb_enfants": [
+            0.75,
+            0.74,
+            0.72
+          ]
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Temps du soir (CLAÉ)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 900,
+          "tarifs_par_nb_enfants": [
+            0.23,
+            0.23,
+            0.23
+          ]
+        },
+        {
+          "de": 900,
+          "a": 1150,
+          "tarifs_par_nb_enfants": [
+            0.47,
+            0.44,
+            0.4
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1450,
+          "tarifs_par_nb_enfants": [
+            0.56,
+            0.54,
+            0.49
+          ]
+        },
+        {
+          "de": 1450,
+          "a": 1800,
+          "tarifs_par_nb_enfants": [
+            0.7,
+            0.68,
+            0.63
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2150,
+          "tarifs_par_nb_enfants": [
+            0.7,
+            0.68,
+            0.63
+          ]
+        },
+        {
+          "de": 2150,
+          "a": 2500,
+          "tarifs_par_nb_enfants": [
+            0.7,
+            0.68,
+            0.63
+          ]
+        },
+        {
+          "de": 2500,
+          "a": 2850,
+          "tarifs_par_nb_enfants": [
+            0.7,
+            0.68,
+            0.63
+          ]
+        },
+        {
+          "de": 2850,
+          "a": 4050,
+          "tarifs_par_nb_enfants": [
+            0.94,
+            0.92,
+            0.87
+          ]
+        },
+        {
+          "de": 4050,
+          "a": 5400,
+          "tarifs_par_nb_enfants": [
+            1.41,
+            1.39,
+            1.34
+          ]
+        },
+        {
+          "de": 5400,
+          "a": 7200,
+          "tarifs_par_nb_enfants": [
+            1.65,
+            1.63,
+            1.58
+          ]
+        },
+        {
+          "de": 7200,
+          "a": null,
+          "tarifs_par_nb_enfants": [
+            1.89,
+            1.86,
+            1.82
+          ]
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs vacances — journée (repas compris)",
+      "unite": "jour",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 900,
+          "tarifs_par_nb_enfants": [
+            3.0,
+            2.5,
+            2.0
+          ]
+        },
+        {
+          "de": 900,
+          "a": 1150,
+          "tarifs_par_nb_enfants": [
+            4.0,
+            3.5,
+            2.5
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1450,
+          "tarifs_par_nb_enfants": [
+            5.5,
+            5.0,
+            4.0
+          ]
+        },
+        {
+          "de": 1450,
+          "a": 1800,
+          "tarifs_par_nb_enfants": [
+            6.5,
+            6.0,
+            5.0
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2150,
+          "tarifs_par_nb_enfants": [
+            8.0,
+            7.5,
+            6.5
+          ]
+        },
+        {
+          "de": 2150,
+          "a": 2500,
+          "tarifs_par_nb_enfants": [
+            9.5,
+            9.0,
+            8.0
+          ]
+        },
+        {
+          "de": 2500,
+          "a": 2850,
+          "tarifs_par_nb_enfants": [
+            11.0,
+            10.5,
+            9.5
+          ]
+        },
+        {
+          "de": 2850,
+          "a": 4050,
+          "tarifs_par_nb_enfants": [
+            12.0,
+            11.5,
+            10.5
+          ]
+        },
+        {
+          "de": 4050,
+          "a": 5400,
+          "tarifs_par_nb_enfants": [
+            13.0,
+            12.5,
+            11.5
+          ]
+        },
+        {
+          "de": 5400,
+          "a": 7200,
+          "tarifs_par_nb_enfants": [
+            14.0,
+            13.5,
+            12.5
+          ]
+        },
+        {
+          "de": 7200,
+          "a": null,
+          "tarifs_par_nb_enfants": [
+            15.5,
+            15.0,
+            14.0
+          ]
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "Accueil de loisirs du mercredi après-midi",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 900,
+          "tarifs_par_nb_enfants": [
+            0.95,
+            0.73,
+            0.5
+          ]
+        },
+        {
+          "de": 900,
+          "a": 1150,
+          "tarifs_par_nb_enfants": [
+            1.28,
+            1.05,
+            0.6
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1450,
+          "tarifs_par_nb_enfants": [
+            1.83,
+            1.6,
+            1.15
+          ]
+        },
+        {
+          "de": 1450,
+          "a": 1800,
+          "tarifs_par_nb_enfants": [
+            2.1,
+            1.88,
+            1.43
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2150,
+          "tarifs_par_nb_enfants": [
+            2.65,
+            2.43,
+            1.98
+          ]
+        },
+        {
+          "de": 2150,
+          "a": 2500,
+          "tarifs_par_nb_enfants": [
+            3.18,
+            2.95,
+            2.5
+          ]
+        },
+        {
+          "de": 2500,
+          "a": 2850,
+          "tarifs_par_nb_enfants": [
+            3.76,
+            3.5,
+            3.05
+          ]
+        },
+        {
+          "de": 2850,
+          "a": 4050,
+          "tarifs_par_nb_enfants": [
+            4.0,
+            3.78,
+            3.33
+          ]
+        },
+        {
+          "de": 4050,
+          "a": 5400,
+          "tarifs_par_nb_enfants": [
+            4.1,
+            3.88,
+            3.5
+          ]
+        },
+        {
+          "de": 5400,
+          "a": 7200,
+          "tarifs_par_nb_enfants": [
+            4.25,
+            4.03,
+            3.61
+          ]
+        },
+        {
+          "de": 7200,
+          "a": null,
+          "tarifs_par_nb_enfants": [
+            4.45,
+            4.23,
+            3.78
+          ]
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://metropole.toulouse.fr/sites/toulouse-fr/files/2026-02/recueil_tarifs_janvier2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales : barème CNAF (taux d'effort horaire, plancher et plafond), confirmé dans le recueil des tarifs."
+    }
+  }
+}

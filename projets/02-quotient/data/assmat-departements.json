@@ -1,0 +1,25 @@
+{
+  "description": "Tarif horaire de référence d'une assistante maternelle (salaire net + indemnités hors repas), par département.",
+  "source": "https://www.weblex.fr/weblex-actualite/revalorisation-du-complement-de-libre-choix-du-mode-de-garde-des-enfants-de-moins-de-6-ans",
+  "verifie_le": "2026-10-25",
+  "statut": "A_VERIFIER",
+  "note": "Aucune donnée ouverte du tarif horaire médian par département n'a été trouvée (Pajemploi / open.urssaf.fr inaccessibles). Tous les départements reprennent la valeur nationale du coût horaire de référence du CMG (4,91 €, médiane nationale). L'utilisateur peut saisir le tarif réel de son assistante maternelle.",
+  "national": 4.91,
+  "departements": {
+    "13": { "nom": "Bouches-du-Rhône", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "21": { "nom": "Côte-d'Or", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "31": { "nom": "Haute-Garonne", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "33": { "nom": "Gironde", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "34": { "nom": "Hérault", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "35": { "nom": "Ille-et-Vilaine", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "38": { "nom": "Isère", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "44": { "nom": "Loire-Atlantique", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "51": { "nom": "Marne", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "54": { "nom": "Meurthe-et-Moselle", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "57": { "nom": "Moselle", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "59": { "nom": "Nord", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "67": { "nom": "Bas-Rhin", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "69": { "nom": "Rhône", "tarif_horaire": 4.91, "statut": "A_VERIFIER" },
+    "75": { "nom": "Paris", "tarif_horaire": 4.91, "statut": "A_VERIFIER" }
+  }
+}

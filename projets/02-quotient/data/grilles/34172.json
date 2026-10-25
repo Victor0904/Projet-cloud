@@ -1,0 +1,143 @@
+{
+  "code_insee": "34172",
+  "commune": "Montpellier",
+  "departement": "34",
+  "periode": "Règlement périscolaire (janvier 2025) ; guide ALSH 2026-2027",
+  "source": "https://www.montpellier.fr/sites/default/files/2025-01/Reglement-de-fonctionnement-periscolaire.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF, mis à jour une fois par an en été.",
+  "notes": [
+    "Repas à 0,50 € pour les familles en grande précarité (non pris en compte).",
+    "Accueil du soir facturé pour le créneau 17h30-18h30."
+  ],
+  "a_verifier": [
+    "Formules 2025 : confirmer qu'elles sont inchangées pour 2026-2027 (le guide 2026-2027 donne la même fourchette 1,35 €-6,55 € pour le repas).",
+    "Accueils de loisirs : seule la fourchette journée 5,50 €-17,90 € est publiée."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restauration scolaire",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.montpellier.fr/sites/default/files/2025-01/Reglement-de-fonctionnement-periscolaire.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 560,
+          "tarif": 1.35
+        },
+        {
+          "de": 560,
+          "a": 1800,
+          "formule": {
+            "x0": 560,
+            "coef": [
+              1.35,
+              0.00419
+            ]
+          }
+        },
+        {
+          "de": 1800,
+          "a": null,
+          "tarif": 6.55
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.montpellier.fr/sites/default/files/2025-01/Reglement-de-fonctionnement-periscolaire.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 560,
+          "tarif": 0.35
+        },
+        {
+          "de": 560,
+          "a": 1800,
+          "formule": {
+            "x0": 560,
+            "coef": [
+              0.35,
+              0.00069
+            ]
+          }
+        },
+        {
+          "de": 1800,
+          "a": null,
+          "tarif": 1.2
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir (17h30-18h30)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.montpellier.fr/sites/default/files/2025-01/Reglement-de-fonctionnement-periscolaire.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 560,
+          "tarif": 0.4
+        },
+        {
+          "de": 560,
+          "a": 1800,
+          "formule": {
+            "x0": 560,
+            "coef": [
+              0.4,
+              0.00077
+            ]
+          }
+        },
+        {
+          "de": 1800,
+          "a": null,
+          "tarif": 1.35
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs municipal — journée",
+      "unite": "jour",
+      "statut": "fourchette",
+      "source": "https://www.montpellier.fr/sites/default/files/2026-07/GUIDE-ALSH-06-26.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "fourchette": [
+            5.5,
+            17.9
+          ]
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "Accueil de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Paramètres de calcul du coût annuel.",
+  "semaines_scolaires": 36,
+  "semaines_scolaires_source": "https://www.legifrance.gouv.fr/",
+  "semaines_scolaires_note": "Code de l’éducation, art. D521-2 : l’année scolaire comporte au moins 36 semaines (article non relu sur Legifrance, site inaccessible).",
+  "mois_factures": 10,
+  "semaines_scolaires_statut": "A_VERIFIER",
+  "mois_factures_note": "Forfaits mensuels : septembre à juin (10 mois) supposés.",
+  "mois_factures_statut": "A_VERIFIER",
+  "semaines_creche_defaut": 47,
+  "semaines_creche_note": "Valeur par défaut pour un contrat de crèche ou d'assistante maternelle : 52 semaines moins 5 semaines de congés. À ajuster.",
+  "verifie_le": "2026-10-25"
+}

@@ -1,0 +1,188 @@
+{
+  "code_insee": "21231",
+  "commune": "Dijon",
+  "departement": "21",
+  "periode": "Information tarifaire 2025 (validité au 1er avril 2025)",
+  "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CNAF : (revenus mensuels + prestations familiales) / nombre de parts.",
+  "notes": [
+    "Tarifs « au taux d'effort » : (QF x taux) ± constante, entre un plancher et un plafond.",
+    "Accueil de loisirs : journée avec repas ; demi-journée sans repas."
+  ],
+  "a_verifier": [
+    "Brochure tarifaire 2026 non accessible : formules 2025 reprises."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Pause méridienne (repas)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 390,
+          "tarif": 0.54
+        },
+        {
+          "de": 390,
+          "a": 860,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -1.79,
+              0.00597
+            ]
+          }
+        },
+        {
+          "de": 860,
+          "a": 1300,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.3,
+              0.00425
+            ]
+          }
+        },
+        {
+          "de": 1300,
+          "a": 2350,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              2.53,
+              0.00207
+            ]
+          }
+        },
+        {
+          "de": 2350,
+          "a": null,
+          "tarif": 7.4
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil périscolaire du matin (à la présence)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "bornes": {
+        "min": 0.91,
+        "max": 4.16
+      },
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.8,
+              0.00382
+            ]
+          }
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Accueil périscolaire du soir (à la présence)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "bornes": {
+        "min": 0.91,
+        "max": 4.16
+      },
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.8,
+              0.00382
+            ]
+          }
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs — journée avec repas",
+      "unite": "jour",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 600,
+          "tarif": 1.52
+        },
+        {
+          "de": 600,
+          "a": 1900,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -8.3,
+              0.01638
+            ]
+          }
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 22.82
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "Accueil de loisirs — demi-journée sans repas",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 600,
+          "tarif": 0.5
+        },
+        {
+          "de": 600,
+          "a": 1900,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -2.82,
+              0.00554
+            ]
+          }
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 7.71
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Multi-accueils municipaux : barème CNAF (taux d'effort horaire), confirmé dans l'information tarifaire de la Ville."
+    }
+  }
+}

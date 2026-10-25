@@ -1,0 +1,216 @@
+{
+  "code_insee": "69123",
+  "commune": "Lyon",
+  "departement": "69",
+  "periode": "Année scolaire 2026-2027",
+  "source": "https://www.lyon.fr/sites/lyonfr/files/content/documents/2026-04/Tableau%20tarifs%20p%C3%A9riscolaires%202026.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_municipal",
+  "base_calcul_note": "Quotient Familial Municipal (QFM) calculé par la Ville sur l'avis d'impôt 2025 (revenus 2024) et le nombre de parts. Approché ici par revenu fiscal de référence / 12 / parts fiscales.",
+  "notes": [
+    "Accueil du matin gratuit.",
+    "Pause du midi : la Ville publie un tarif minimum et maximum par tranche ; le tarif exact est calculé dans cet intervalle.",
+    "PEPS du soir : forfait annuel « Max » retenu (le forfait « Mini », deux fois moins cher, existe aussi).",
+    "Ateliers du mercredi : forfait annuel (rangé ici dans la ligne « demi-journée »)."
+  ],
+  "a_verifier": [
+    "Pause du midi et ateliers : interpolation linéaire supposée entre le tarif minimum et maximum de chaque tranche.",
+    "Formule exacte du QFM.",
+    "Accueils de loisirs des vacances (« Hé Hop ! ») : tarifs non trouvés."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Pause du midi (repas)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.lyon.fr/sites/lyonfr/files/content/documents/2026-04/Tableau%20tarifs%20p%C3%A9riscolaires%202026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 312,
+          "tarif": 0.8
+        },
+        {
+          "de": 312,
+          "a": 800,
+          "interpolation": [
+            0.8,
+            4.42
+          ]
+        },
+        {
+          "de": 800,
+          "a": 1150,
+          "interpolation": [
+            4.42,
+            4.68
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1400,
+          "interpolation": [
+            4.68,
+            5.05
+          ]
+        },
+        {
+          "de": 1400,
+          "a": 1800,
+          "interpolation": [
+            5.05,
+            6.83
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2100,
+          "interpolation": [
+            6.83,
+            7.3
+          ]
+        },
+        {
+          "de": 2100,
+          "a": null,
+          "tarif": 7.3
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.lyon.fr/sites/lyonfr/files/content/documents/2026-04/Tableau%20tarifs%20p%C3%A9riscolaires%202026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "tarif": 0
+        }
+      ],
+      "note": "Gratuit."
+    },
+    "garderie_soir": {
+      "libelle": "PEPS du soir — forfait annuel Max",
+      "unite": "an",
+      "statut": "ok",
+      "source": "https://www.lyon.fr/sites/lyonfr/files/content/documents/2026-04/Tableau%20tarifs%20p%C3%A9riscolaires%202026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 312,
+          "tarif": 20
+        },
+        {
+          "de": 312,
+          "a": 800,
+          "tarif": 40
+        },
+        {
+          "de": 800,
+          "a": 1150,
+          "tarif": 80
+        },
+        {
+          "de": 1150,
+          "a": 1400,
+          "tarif": 120
+        },
+        {
+          "de": 1400,
+          "a": 1800,
+          "tarif": 200
+        },
+        {
+          "de": 1800,
+          "a": 2100,
+          "tarif": 280
+        },
+        {
+          "de": 2100,
+          "a": null,
+          "tarif": 420
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs vacances — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarifs « Hé Hop ! » non trouvés."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Ateliers du mercredi — forfait annuel",
+      "unite": "an",
+      "statut": "ok",
+      "source": "https://www.lyon.fr/sites/lyonfr/files/content/documents/2026-04/Tableau%20tarifs%20p%C3%A9riscolaires%202026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 312,
+          "tarif": 38
+        },
+        {
+          "de": 312,
+          "a": 800,
+          "interpolation": [
+            38,
+            144
+          ]
+        },
+        {
+          "de": 800,
+          "a": 1150,
+          "interpolation": [
+            144,
+            161
+          ]
+        },
+        {
+          "de": 1150,
+          "a": 1400,
+          "interpolation": [
+            161,
+            174
+          ]
+        },
+        {
+          "de": 1400,
+          "a": 1800,
+          "interpolation": [
+            174,
+            198
+          ]
+        },
+        {
+          "de": 1800,
+          "a": 2100,
+          "interpolation": [
+            198,
+            212
+          ]
+        },
+        {
+          "de": 2100,
+          "a": null,
+          "tarif": 212
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

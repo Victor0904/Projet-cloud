@@ -1,0 +1,88 @@
+{
+  "code_insee": "33063",
+  "commune": "Bordeaux",
+  "departement": "33",
+  "periode": "Tarifs adoptés au 1er janvier 2025 (règlement publié en octobre 2025)",
+  "source": "https://www.bordeaux.fr/sites/bor-bdxfr-drupal/files/2025-10/reglement_pause_du_midi_1.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_fiscal",
+  "base_calcul_note": "Quotient familial calculé par la Ville : revenu fiscal de référence / 12 / nombre de parts fiscales.",
+  "notes": [
+    "Pause du midi : formule du second degré aQF² + bQF + c entre 146 et 2 242 €.",
+    "Accueil du matin en maternelle gratuit ; les autres accueils périscolaires sont associatifs (adhésion en plus)."
+  ],
+  "a_verifier": [
+    "Tarifs 2026 non confirmés (formule 2025).",
+    "Périscolaire et centres de loisirs : grilles non publiées en PDF (simulateur tarifs.bordeaux.fr inaccessible)."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Pause du midi (repas)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.bordeaux.fr/sites/bor-bdxfr-drupal/files/2025-10/reglement_pause_du_midi_1.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 145,
+          "tarif": 0.48
+        },
+        {
+          "de": 145,
+          "a": 2242,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              0.48,
+              0.00201552,
+              3.771e-07
+            ]
+          }
+        },
+        {
+          "de": 2242,
+          "a": null,
+          "tarif": 6.9
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Gratuit en maternelle ; élémentaire : tarif associatif non publié."
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarifs associatifs selon les revenus, non publiés."
+    },
+    "alsh_journee": {
+      "libelle": "Centre de loisirs — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Centre de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

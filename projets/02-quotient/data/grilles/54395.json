@@ -1,0 +1,216 @@
+{
+  "code_insee": "54395",
+  "commune": "Nancy",
+  "departement": "54",
+  "periode": "Tarifs en vigueur en octobre 2026 (simulateur officiel de la Ville)",
+  "source": "https://www.nancy.fr/services/famille-jeunesse/ecole-primaire/simulateur-de-tarifs",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF. Tarifs « au taux d'effort » : formule linéaire entre un plancher et un plafond.",
+  "notes": [
+    "Tarifs pour les familles domiciliées à Nancy (hors Nancy : tarif unique plus élevé).",
+    "L'accueil du matin est gratuit. Le soir est facturé par tranche d'une heure (16h30-17h30, 17h30-18h30)."
+  ],
+  "a_verifier": [],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restauration scolaire (repas + pause méridienne)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.nancy.fr/typo3conf/ext/dsit_confignansite/Resources/Public/Js/script-simulateur-tarifs-famille.js",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 450,
+          "tarif": 1.0
+        },
+        {
+          "de": 450,
+          "a": 850,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -1.21625,
+              0.004925
+            ]
+          }
+        },
+        {
+          "de": 850,
+          "a": 1450,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -1.8183333,
+              0.00563333
+            ]
+          }
+        },
+        {
+          "de": 1450,
+          "a": null,
+          "tarif": 6.35
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil périscolaire du matin",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.nancy.fr/typo3conf/ext/dsit_confignansite/Resources/Public/Js/script-simulateur-tarifs-famille.js",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "tarif": 0
+        }
+      ],
+      "note": "Gratuit."
+    },
+    "garderie_soir": {
+      "libelle": "Accueil périscolaire du soir (par heure)",
+      "unite": "heure",
+      "statut": "ok",
+      "source": "https://www.nancy.fr/typo3conf/ext/dsit_confignansite/Resources/Public/Js/script-simulateur-tarifs-famille.js",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 450,
+          "tarif": 0.6
+        },
+        {
+          "de": 450,
+          "a": 850,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.22125,
+              0.001825
+            ]
+          }
+        },
+        {
+          "de": 850,
+          "a": 1450,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.47429,
+              0.0021202
+            ]
+          }
+        },
+        {
+          "de": 1450,
+          "a": null,
+          "tarif": 2.6
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs vacances — journée",
+      "unite": "jour",
+      "statut": "ok",
+      "source": "https://www.nancy.fr/typo3conf/ext/dsit_confignansite/Resources/Public/Js/script-simulateur-tarifs-famille.js",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 250,
+          "tarif": 1.5
+        },
+        {
+          "de": 250,
+          "a": 450,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -0.25,
+              0.007
+            ]
+          }
+        },
+        {
+          "de": 450,
+          "a": 850,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -3.76,
+              0.0148
+            ]
+          }
+        },
+        {
+          "de": 850,
+          "a": 1450,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -5.23914858,
+              0.01654424
+            ]
+          }
+        },
+        {
+          "de": 1450,
+          "a": null,
+          "tarif": 18.75
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "Accueil de loisirs vacances — demi-journée",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://www.nancy.fr/typo3conf/ext/dsit_confignansite/Resources/Public/Js/script-simulateur-tarifs-famille.js",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 450,
+          "tarif": 2.2
+        },
+        {
+          "de": 450,
+          "a": 850,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -1.445,
+              0.0081
+            ]
+          }
+        },
+        {
+          "de": 850,
+          "a": 1450,
+          "formule": {
+            "x0": 0,
+            "coef": [
+              -2.46,
+              0.00928214
+            ]
+          }
+        },
+        {
+          "de": 1450,
+          "a": null,
+          "tarif": 11.0
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "code_insee": "67482",
+  "commune": "Strasbourg",
+  "departement": "67",
+  "periode": "Année scolaire 2026-2027 (tarifs au 1er septembre 2026)",
+  "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_fiscal",
+  "base_calcul_note": "« QF Unique » de la Ville, calculé uniquement à partir des revenus fiscaux. Approché ici par revenu fiscal de référence / 12 / nombre de parts fiscales.",
+  "notes": [
+    "Tarifs repas « standard ». Le repas sans viande / végétarien est 0,35 € moins cher.",
+    "L'accueil périscolaire (APM) et l'accueil de loisirs (ALM) municipaux concernent les enfants de maternelle.",
+    "APM : forfait mensuel facturé dès l'inscription, que l'enfant vienne ou non. Le forfait « soir » inclut le matin."
+  ],
+  "a_verifier": [
+    "Formule exacte du QF Unique (revenus fiscaux / parts / 12 supposé).",
+    "Nombre de mois facturés pour le forfait APM (10 mois supposés)."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Cantine scolaire (repas standard)",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 100,
+          "tarif": 1.4
+        },
+        {
+          "de": 100,
+          "a": 300,
+          "tarif": 1.95
+        },
+        {
+          "de": 300,
+          "a": 500,
+          "tarif": 2.5
+        },
+        {
+          "de": 500,
+          "a": 700,
+          "tarif": 3.05
+        },
+        {
+          "de": 700,
+          "a": 900,
+          "tarif": 3.6
+        },
+        {
+          "de": 900,
+          "a": 1100,
+          "tarif": 4.15
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 4.7
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 5.25
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 5.8
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 6.35
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 6.9
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil périscolaire maternelle — forfait matin",
+      "unite": "mois",
+      "statut": "ok",
+      "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 100,
+          "tarif": 5.88
+        },
+        {
+          "de": 100,
+          "a": 300,
+          "tarif": 8.04
+        },
+        {
+          "de": 300,
+          "a": 500,
+          "tarif": 10.19
+        },
+        {
+          "de": 500,
+          "a": 700,
+          "tarif": 12.35
+        },
+        {
+          "de": 700,
+          "a": 900,
+          "tarif": 14.51
+        },
+        {
+          "de": 900,
+          "a": 1100,
+          "tarif": 16.67
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 18.82
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 20.98
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 23.14
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 25.29
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 27.45
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Accueil périscolaire maternelle — forfait soir (ou matin + soir)",
+      "unite": "mois",
+      "statut": "ok",
+      "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+      "verifie_le": "2026-10-25",
+      "inclut": [
+        "garderie_matin"
+      ],
+      "tranches": [
+        {
+          "de": 0,
+          "a": 100,
+          "tarif": 11.85
+        },
+        {
+          "de": 100,
+          "a": 300,
+          "tarif": 16.16
+        },
+        {
+          "de": 300,
+          "a": 500,
+          "tarif": 20.46
+        },
+        {
+          "de": 500,
+          "a": 700,
+          "tarif": 24.77
+        },
+        {
+          "de": 700,
+          "a": 900,
+          "tarif": 29.07
+        },
+        {
+          "de": 900,
+          "a": 1100,
+          "tarif": 33.38
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 37.68
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 41.99
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 46.29
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 50.6
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 54.9
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs maternel — journée (hors repas)",
+      "unite": "jour",
+      "statut": "ok",
+      "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 100,
+          "tarif": 2.74
+        },
+        {
+          "de": 100,
+          "a": 300,
+          "tarif": 3.61
+        },
+        {
+          "de": 300,
+          "a": 500,
+          "tarif": 4.49
+        },
+        {
+          "de": 500,
+          "a": 700,
+          "tarif": 5.36
+        },
+        {
+          "de": 700,
+          "a": 900,
+          "tarif": 6.24
+        },
+        {
+          "de": 900,
+          "a": 1100,
+          "tarif": 7.11
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 7.98
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 8.86
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 9.73
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 10.61
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 11.48
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "Accueil de loisirs maternel — demi-journée (hors repas)",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://www.strasbourg.eu/documents/976405/1280877/Affiche_tarifs_services_periscolaires_2026_27.pdf/62fa6543-19ae-b69d-3313-13e881a6b866",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 100,
+          "tarif": 2.03
+        },
+        {
+          "de": 100,
+          "a": 300,
+          "tarif": 2.69
+        },
+        {
+          "de": 300,
+          "a": 500,
+          "tarif": 3.35
+        },
+        {
+          "de": 500,
+          "a": 700,
+          "tarif": 4.0
+        },
+        {
+          "de": 700,
+          "a": 900,
+          "tarif": 4.66
+        },
+        {
+          "de": 900,
+          "a": 1100,
+          "tarif": 5.32
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 5.98
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 6.64
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 7.29
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 7.95
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 8.61
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

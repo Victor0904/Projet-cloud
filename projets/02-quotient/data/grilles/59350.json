@@ -1,0 +1,474 @@
+{
+  "code_insee": "59350",
+  "commune": "Lille",
+  "departement": "59",
+  "periode": "Grille 2025-2026 (tarifs 2024 maintenus) + gratuité des repas QF 0-264 depuis septembre 2026",
+  "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF.",
+  "notes": [
+    "Familles monoparentales : 50 % de remise sur les tarifs de la catégorie 1 (non pris en compte ici).",
+    "La catégorie 1 (QF 0-404) est découpée en deux : repas gratuits jusqu'à 264 depuis la rentrée 2026."
+  ],
+  "a_verifier": [
+    "Grille 2026-2027 complète non publiée en ligne : valeurs 2025-2026 reprises.",
+    "Catégorie 14 notée « 2500-2499 » dans la plaquette : lue comme 2500-2999."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restaurant scolaire",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 264,
+          "tarif": 0
+        },
+        {
+          "de": 264,
+          "a": 404,
+          "tarif": 0.5
+        },
+        {
+          "de": 404,
+          "a": 444,
+          "tarif": 0.63
+        },
+        {
+          "de": 444,
+          "a": 484,
+          "tarif": 0.75
+        },
+        {
+          "de": 484,
+          "a": 524,
+          "tarif": 1.0
+        },
+        {
+          "de": 524,
+          "a": 569,
+          "tarif": 1.23
+        },
+        {
+          "de": 569,
+          "a": 629,
+          "tarif": 1.47
+        },
+        {
+          "de": 629,
+          "a": 709,
+          "tarif": 1.7
+        },
+        {
+          "de": 709,
+          "a": 809,
+          "tarif": 1.92
+        },
+        {
+          "de": 809,
+          "a": 929,
+          "tarif": 2.27
+        },
+        {
+          "de": 929,
+          "a": 1249,
+          "tarif": 2.65
+        },
+        {
+          "de": 1249,
+          "a": 1499,
+          "tarif": 2.91
+        },
+        {
+          "de": 1499,
+          "a": 1999,
+          "tarif": 3.19
+        },
+        {
+          "de": 1999,
+          "a": 2499,
+          "tarif": 3.73
+        },
+        {
+          "de": 2499,
+          "a": 2999,
+          "tarif": 4.26
+        },
+        {
+          "de": 2999,
+          "a": null,
+          "tarif": 4.82
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "CAPE / espace éducatif — matin",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 264,
+          "tarif": 0.25
+        },
+        {
+          "de": 264,
+          "a": 404,
+          "tarif": 0.25
+        },
+        {
+          "de": 404,
+          "a": 444,
+          "tarif": 0.45
+        },
+        {
+          "de": 444,
+          "a": 484,
+          "tarif": 0.45
+        },
+        {
+          "de": 484,
+          "a": 524,
+          "tarif": 0.45
+        },
+        {
+          "de": 524,
+          "a": 569,
+          "tarif": 0.6
+        },
+        {
+          "de": 569,
+          "a": 629,
+          "tarif": 0.6
+        },
+        {
+          "de": 629,
+          "a": 709,
+          "tarif": 0.6
+        },
+        {
+          "de": 709,
+          "a": 809,
+          "tarif": 0.94
+        },
+        {
+          "de": 809,
+          "a": 929,
+          "tarif": 1.2
+        },
+        {
+          "de": 929,
+          "a": 1249,
+          "tarif": 1.65
+        },
+        {
+          "de": 1249,
+          "a": 1499,
+          "tarif": 2.09
+        },
+        {
+          "de": 1499,
+          "a": 1999,
+          "tarif": 2.33
+        },
+        {
+          "de": 1999,
+          "a": 2499,
+          "tarif": 2.69
+        },
+        {
+          "de": 2499,
+          "a": 2999,
+          "tarif": 2.88
+        },
+        {
+          "de": 2999,
+          "a": null,
+          "tarif": 3.06
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "CAPE / espace éducatif — soir",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 264,
+          "tarif": 0.5
+        },
+        {
+          "de": 264,
+          "a": 404,
+          "tarif": 0.5
+        },
+        {
+          "de": 404,
+          "a": 444,
+          "tarif": 0.68
+        },
+        {
+          "de": 444,
+          "a": 484,
+          "tarif": 0.79
+        },
+        {
+          "de": 484,
+          "a": 524,
+          "tarif": 0.9
+        },
+        {
+          "de": 524,
+          "a": 569,
+          "tarif": 1.13
+        },
+        {
+          "de": 569,
+          "a": 629,
+          "tarif": 1.2
+        },
+        {
+          "de": 629,
+          "a": 709,
+          "tarif": 1.2
+        },
+        {
+          "de": 709,
+          "a": 809,
+          "tarif": 1.37
+        },
+        {
+          "de": 809,
+          "a": 929,
+          "tarif": 1.69
+        },
+        {
+          "de": 929,
+          "a": 1249,
+          "tarif": 2.25
+        },
+        {
+          "de": 1249,
+          "a": 1499,
+          "tarif": 2.8
+        },
+        {
+          "de": 1499,
+          "a": 1999,
+          "tarif": 3.1
+        },
+        {
+          "de": 1999,
+          "a": 2499,
+          "tarif": 3.58
+        },
+        {
+          "de": 2499,
+          "a": 2999,
+          "tarif": 3.8
+        },
+        {
+          "de": 2999,
+          "a": null,
+          "tarif": 4.01
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "ALSH — journée avec repas",
+      "unite": "jour",
+      "statut": "ok",
+      "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 264,
+          "tarif": 1.95
+        },
+        {
+          "de": 264,
+          "a": 404,
+          "tarif": 1.95
+        },
+        {
+          "de": 404,
+          "a": 444,
+          "tarif": 2.26
+        },
+        {
+          "de": 444,
+          "a": 484,
+          "tarif": 2.57
+        },
+        {
+          "de": 484,
+          "a": 524,
+          "tarif": 3.07
+        },
+        {
+          "de": 524,
+          "a": 569,
+          "tarif": 3.65
+        },
+        {
+          "de": 569,
+          "a": 629,
+          "tarif": 4.22
+        },
+        {
+          "de": 629,
+          "a": 709,
+          "tarif": 4.81
+        },
+        {
+          "de": 709,
+          "a": 809,
+          "tarif": 5.35
+        },
+        {
+          "de": 809,
+          "a": 929,
+          "tarif": 6.25
+        },
+        {
+          "de": 929,
+          "a": 1249,
+          "tarif": 7.22
+        },
+        {
+          "de": 1249,
+          "a": 1499,
+          "tarif": 8.0
+        },
+        {
+          "de": 1499,
+          "a": 1999,
+          "tarif": 8.78
+        },
+        {
+          "de": 1999,
+          "a": 2499,
+          "tarif": 10.41
+        },
+        {
+          "de": 2499,
+          "a": 2999,
+          "tarif": 11.95
+        },
+        {
+          "de": 2999,
+          "a": null,
+          "tarif": 13.54
+        }
+      ]
+    },
+    "alsh_demi_journee": {
+      "libelle": "ALSH — demi-journée sans repas",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://www.lille.fr/content/download/374894/3828898/file/Plaquette+tarifaire+2025-2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": 264,
+          "tarif": 0.74
+        },
+        {
+          "de": 264,
+          "a": 404,
+          "tarif": 0.74
+        },
+        {
+          "de": 404,
+          "a": 444,
+          "tarif": 0.82
+        },
+        {
+          "de": 444,
+          "a": 484,
+          "tarif": 0.9
+        },
+        {
+          "de": 484,
+          "a": 524,
+          "tarif": 1.05
+        },
+        {
+          "de": 524,
+          "a": 569,
+          "tarif": 1.2
+        },
+        {
+          "de": 569,
+          "a": 629,
+          "tarif": 1.36
+        },
+        {
+          "de": 629,
+          "a": 709,
+          "tarif": 1.54
+        },
+        {
+          "de": 709,
+          "a": 809,
+          "tarif": 1.73
+        },
+        {
+          "de": 809,
+          "a": 929,
+          "tarif": 1.98
+        },
+        {
+          "de": 929,
+          "a": 1249,
+          "tarif": 2.3
+        },
+        {
+          "de": 1249,
+          "a": 1499,
+          "tarif": 2.54
+        },
+        {
+          "de": 1499,
+          "a": 1999,
+          "tarif": 2.81
+        },
+        {
+          "de": 1999,
+          "a": 2499,
+          "tarif": 3.34
+        },
+        {
+          "de": 2499,
+          "a": 2999,
+          "tarif": 3.85
+        },
+        {
+          "de": 2999,
+          "a": null,
+          "tarif": 4.36
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

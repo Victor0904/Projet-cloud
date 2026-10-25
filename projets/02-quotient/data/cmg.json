@@ -1,0 +1,21 @@
+{
+  "description": "Complément de libre choix du mode de garde (CMG) « emploi direct » d'une assistante maternelle, mode de calcul en vigueur depuis le 1er septembre 2025.",
+  "source": "https://www.caf.fr/sites/default/files/medias/831/Presse/Cp_reformeCMG2025.pdf",
+  "verifie_le": "2026-10-25",
+  "formule": "CMG = coût de la garde pris en compte x (1 - ressources mensuelles x taux d'effort / coût horaire de référence). Le coût pris en compte est plafonné par heure. Les taux d'effort sont ceux de l'accueil collectif PSU (vérifié sur les 3 exemples chiffrés de la CAF).",
+  "cout_horaire_reference": 4.91,
+  "cout_horaire_reference_source": "https://www.weblex.fr/weblex-actualite/revalorisation-du-complement-de-libre-choix-du-mode-de-garde-des-enfants-de-moins-de-6-ans",
+  "cout_horaire_reference_statut": "A_VERIFIER",
+  "cout_horaire_reference_note": "4,85 € en 2025 (communiqué CAF). 4,91 € depuis le 1er avril 2026 selon des sources secondaires (WebLex, Wizbii) : page officielle non consultée.",
+  "plafond_horaire": 8.09,
+  "plafond_horaire_statut": "A_VERIFIER",
+  "plafond_horaire_note": "8,00 € en 2025 ; 8,09 € depuis le 1er avril 2026 selon des sources secondaires. Au-delà, le surcoût reste à la charge de la famille.",
+  "plancher_ressources_mensuelles": 814.62,
+  "plancher_statut": "A_VERIFIER",
+  "plancher_note": "Valeur du plancher PSU reprise par défaut : le plancher propre au CMG n'a pas été trouvé dans une source officielle.",
+  "plafond_ressources_mensuelles": 8500,
+  "plafond_statut": "A_VERIFIER",
+  "plafond_note": "8 500 €/mois cité par un relais petite enfance (janvier 2026), comme pour la PSU.",
+  "cotisations": "Les cotisations sociales de l'assistante maternelle agréée sont prises en charge à 100 % par le CMG (non comptées dans le coût affiché).",
+  "limites": "Hors complément transitoire, hors majoration AEEH, hors indemnités d'entretien et de repas."
+}

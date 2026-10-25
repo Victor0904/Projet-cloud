@@ -1,0 +1,73 @@
+{
+  "code_insee": "35238",
+  "commune": "Rennes",
+  "departement": "35",
+  "periode": "Fourchette publiée par la Ville (date non précisée)",
+  "source": "https://education-jeunesse.metropole.rennes.fr/restauration-scolaire/",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Revenus et composition de la famille (calcul par le service STEEL de la Ville).",
+  "notes": [
+    "La Ville publie seulement une fourchette (0,30 € à 7,10 €) commune à la cantine et au centre de loisirs."
+  ],
+  "a_verifier": [
+    "Site education-jeunesse.metropole.rennes.fr inaccessible lors de la collecte : fourchette relevée via le moteur de recherche.",
+    "Grille détaillée, accueils du matin et du soir, centres de loisirs : non trouvés."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restauration scolaire",
+      "unite": "repas",
+      "statut": "fourchette",
+      "source": "https://education-jeunesse.metropole.rennes.fr/restauration-scolaire/",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "fourchette": [
+            0.3,
+            7.1
+          ]
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir",
+      "unite": "seance",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_journee": {
+      "libelle": "Centre de loisirs — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Centre de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

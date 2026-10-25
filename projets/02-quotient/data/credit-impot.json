@@ -1,0 +1,11 @@
+{
+  "description": "Crédit d'impôt pour frais de garde des enfants de moins de 6 ans hors du domicile (crèche, assistante maternelle).",
+  "source": "https://moicombien.fr/blog/credit-impot-garde-enfant-2026-conditions-montant",
+  "verifie_le": "2026-10-25",
+  "statut": "A_VERIFIER",
+  "note": "Source secondaire ; impots.gouv.fr non consulté. Plafond relevé de 2 300 € à 3 500 € à partir des revenus 2024.",
+  "taux": 0.5,
+  "plafond_depenses_par_enfant": 3500,
+  "garde_alternee": "Plafond divisé par deux pour chaque parent.",
+  "regle": "Dépenses retenues = frais payés moins les aides reçues (CMG notamment)."
+}

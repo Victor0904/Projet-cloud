@@ -1,0 +1,94 @@
+{
+  "code_insee": "44109",
+  "commune": "Nantes",
+  "departement": "44",
+  "periode": "Tarifs 2026",
+  "source": "https://metropole.nantes.fr/tarifs-periscolaires",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF.",
+  "notes": [
+    "La Ville ne publie que le tarif minimum et maximum : le résultat est donc une fourchette.",
+    "Mercredi midi gratuit. Tarif identique quelle que soit la durée de l'accueil."
+  ],
+  "a_verifier": [
+    "Grille détaillée par QF : seulement disponible dans le simulateur nanteseservices.fr (inaccessible lors de la collecte).",
+    "Centres de loisirs : tarifs non trouvés."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Pause du midi",
+      "unite": "repas",
+      "statut": "fourchette",
+      "source": "https://metropole.nantes.fr/tarifs-periscolaires",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "fourchette": [
+            0.85,
+            7.35
+          ]
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Accueil du matin",
+      "unite": "seance",
+      "statut": "fourchette",
+      "source": "https://metropole.nantes.fr/tarifs-periscolaires",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "fourchette": [
+            0.37,
+            3.77
+          ]
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Accueil du soir",
+      "unite": "seance",
+      "statut": "fourchette",
+      "source": "https://metropole.nantes.fr/tarifs-periscolaires",
+      "verifie_le": "2026-10-25",
+      "tranches": [
+        {
+          "de": 0,
+          "a": null,
+          "fourchette": [
+            0.37,
+            4.04
+          ]
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Centre de loisirs — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Centre de loisirs — demi-journée",
+      "unite": "demi_journee",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarif non trouvé."
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Calcul du quotient familial CAF (base QF CNAF).",
+  "source": "https://www.caf.fr/allocataires/caf-d-ille-et-vilaine/offre-de-service/thematique-libre/calcul-du-quotient-familial-base-qf-cnaf",
+  "verifie_le": "2026-10-25",
+  "formule": "QF = (revenus annuels imposables / 12 + prestations familiales du mois) / nombre de parts",
+  "parts": {
+    "parents": 2,
+    "enfant_1": 0.5,
+    "enfant_2": 0.5,
+    "enfant_3": 1,
+    "enfant_suivant": 0.5,
+    "majoration_aeeh": 0.5
+  },
+  "parts_note": "Couple ou personne seule : 2 parts. 4e enfant et suivants : 0,5 part (information tarifaire de Dijon, qui cite le QF CNAF). Enfant bénéficiaire de l'AEEH : la page CAF indique « 1 part », Dijon « 0,5 part supplémentaire » ; on ajoute 0,5 part (identique pour les deux premiers enfants).",
+  "parts_source_complementaire": "https://www.dijon.fr/wp-content/uploads/sites/24/2025/06/info-tarifaire-avril-2025-1.pdf",
+  "majoration_aeeh_statut": "A_VERIFIER",
+  "residence_alternee": "Quand les parents séparés partagent la charge des enfants en résidence alternée, la CAF peut compter chaque enfant dans le QF de chacun des deux parents. Hypothèse retenue : l'enfant compte pour une part entière chez chaque parent.",
+  "residence_alternee_statut": "A_VERIFIER",
+  "parts_fiscales": {
+    "description": "Utilisé pour approcher les quotients « fiscaux » (Bordeaux, Strasbourg, Lyon) : revenu fiscal de référence / 12 / parts fiscales.",
+    "source": "https://www.impots.gouv.fr/",
+    "statut": "A_VERIFIER",
+    "couple": 2,
+    "personne_seule": 1,
+    "enfant_1": 0.5,
+    "enfant_2": 0.5,
+    "enfant_suivant": 1,
+    "parent_isole": 0.5,
+    "residence_alternee_coefficient": 0.5
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "code_insee": "57463",
+  "commune": "Metz",
+  "departement": "57",
+  "periode": "Tarifs affichés sur metz.fr en octobre 2026",
+  "source": "https://metz.fr/famille/ecole/cantine.php",
+  "verifie_le": "2026-10-25",
+  "base_calcul": "qf_caf",
+  "base_calcul_note": "Quotient familial CAF (attestation de moins de 3 mois).",
+  "notes": [
+    "Tarifs pour les familles messines. Abattement de 25 % à partir du 3e enfant.",
+    "Majoration de 50 % en cas d'absence de réservation (non prise en compte ici).",
+    "Le soir et le mercredi matin sont gérés par des associations, avec une adhésion annuelle en plus (non comptée)."
+  ],
+  "a_verifier": [
+    "Soir, tranche 651-800 : le site affiche 0,65 €/h, probablement une coquille (le tarif majoré de 50 % est 1,44 € et l'abattement 0,72 €, ce qui correspond à 0,96 €). Valeur retenue : 0,96 €.",
+    "Accueils de loisirs pendant les vacances : tarifs propres à chaque association, non publiés par la Ville."
+  ],
+  "prestations": {
+    "cantine": {
+      "libelle": "Restauration scolaire",
+      "unite": "repas",
+      "statut": "ok",
+      "source": "https://metz.fr/famille/ecole/cantine.php",
+      "verifie_le": "2026-10-25",
+      "reductions_fratrie": [
+        {
+          "a_partir_du_rang": 3,
+          "taux": 0.25
+        }
+      ],
+      "tranches": [
+        {
+          "de": 0,
+          "a": 350,
+          "tarif": 1.15
+        },
+        {
+          "de": 350,
+          "a": 500,
+          "tarif": 1.6
+        },
+        {
+          "de": 500,
+          "a": 650,
+          "tarif": 2.08
+        },
+        {
+          "de": 650,
+          "a": 800,
+          "tarif": 3.03
+        },
+        {
+          "de": 800,
+          "a": 950,
+          "tarif": 3.97
+        },
+        {
+          "de": 950,
+          "a": 1100,
+          "tarif": 4.73
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 5.14
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 5.66
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 6.09
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 6.6
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 7.05
+        }
+      ]
+    },
+    "garderie_matin": {
+      "libelle": "Périscolaire du matin (dès 7h30)",
+      "unite": "seance",
+      "statut": "ok",
+      "source": "https://metz.fr/famille/ecole/periscolaire.php",
+      "verifie_le": "2026-10-25",
+      "reductions_fratrie": [
+        {
+          "a_partir_du_rang": 3,
+          "taux": 0.25
+        }
+      ],
+      "tranches": [
+        {
+          "de": 0,
+          "a": 350,
+          "tarif": 0.95
+        },
+        {
+          "de": 350,
+          "a": 500,
+          "tarif": 0.99
+        },
+        {
+          "de": 500,
+          "a": 650,
+          "tarif": 1.02
+        },
+        {
+          "de": 650,
+          "a": 800,
+          "tarif": 1.08
+        },
+        {
+          "de": 800,
+          "a": 950,
+          "tarif": 1.13
+        },
+        {
+          "de": 950,
+          "a": 1100,
+          "tarif": 1.18
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 1.3
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 1.43
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 1.54
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 1.66
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 1.81
+        }
+      ]
+    },
+    "garderie_soir": {
+      "libelle": "Périscolaire du soir (par heure, 1 h minimum)",
+      "unite": "heure",
+      "statut": "ok",
+      "source": "https://metz.fr/famille/ecole/periscolaire.php",
+      "verifie_le": "2026-10-25",
+      "reductions_fratrie": [
+        {
+          "a_partir_du_rang": 3,
+          "taux": 0.25
+        }
+      ],
+      "tranches": [
+        {
+          "de": 0,
+          "a": 350,
+          "tarif": 0.35
+        },
+        {
+          "de": 350,
+          "a": 500,
+          "tarif": 0.54
+        },
+        {
+          "de": 500,
+          "a": 650,
+          "tarif": 0.67
+        },
+        {
+          "de": 650,
+          "a": 800,
+          "tarif": 0.96
+        },
+        {
+          "de": 800,
+          "a": 950,
+          "tarif": 1.25
+        },
+        {
+          "de": 950,
+          "a": 1100,
+          "tarif": 1.54
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 1.86
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 2.14
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 2.43
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 2.74
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 3.05
+        }
+      ]
+    },
+    "alsh_journee": {
+      "libelle": "Accueil de loisirs vacances — journée",
+      "unite": "jour",
+      "statut": "A_VERIFIER",
+      "tranches": [],
+      "note": "Tarifs fixés par chaque association : non publiés par la Ville de Metz."
+    },
+    "alsh_demi_journee": {
+      "libelle": "Mercredi matin (forfait 4,5 h)",
+      "unite": "demi_journee",
+      "statut": "ok",
+      "source": "https://metz.fr/famille/ecole/periscolaire.php",
+      "verifie_le": "2026-10-25",
+      "reductions_fratrie": [
+        {
+          "a_partir_du_rang": 3,
+          "taux": 0.25
+        }
+      ],
+      "tranches": [
+        {
+          "de": 0,
+          "a": 350,
+          "tarif": 1.57
+        },
+        {
+          "de": 350,
+          "a": 500,
+          "tarif": 2.01
+        },
+        {
+          "de": 500,
+          "a": 650,
+          "tarif": 2.97
+        },
+        {
+          "de": 650,
+          "a": 800,
+          "tarif": 4.32
+        },
+        {
+          "de": 800,
+          "a": 950,
+          "tarif": 5.61
+        },
+        {
+          "de": 950,
+          "a": 1100,
+          "tarif": 6.91
+        },
+        {
+          "de": 1100,
+          "a": 1300,
+          "tarif": 8.38
+        },
+        {
+          "de": 1300,
+          "a": 1500,
+          "tarif": 9.67
+        },
+        {
+          "de": 1500,
+          "a": 1700,
+          "tarif": 10.98
+        },
+        {
+          "de": 1700,
+          "a": 1900,
+          "tarif": 12.27
+        },
+        {
+          "de": 1900,
+          "a": null,
+          "tarif": 13.72
+        }
+      ]
+    },
+    "creche": {
+      "libelle": "Crèche municipale (barème national PSU)",
+      "unite": "psu",
+      "statut": "ok",
+      "source": "https://www.caf.fr/sites/default/files/medias/031/partenaireslocaux/EAJE/INFOCAFPLAFONDPLANCHERPSU2026.pdf",
+      "verifie_le": "2026-10-25",
+      "tranches": [],
+      "note": "Crèches municipales conventionnées CAF : tarif horaire = ressources mensuelles x taux d'effort national (voir onglet Crèche)."
+    }
+  }
+}

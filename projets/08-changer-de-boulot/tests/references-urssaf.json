@@ -1,0 +1,33 @@
+{
+  "source": "https://mon-entreprise.urssaf.fr/api/v1/evaluate (moteur des simulateurs officiels Urssaf, modele-social 11.1.0, date de calcul par défaut 01/07/2026)",
+  "verifie_le": "2026-10-25",
+  "note": "Le simulateur impots.gouv.fr était en maintenance le 2026-10-25 : les références d'impôt viennent du moteur Urssaf, qui implémente le barème de l'article 197 du CGI (loi de finances pour 2026). Mutuelle par défaut du simulateur : 40 €/mois, 50 % employeur.",
+  "salaires": [
+    { "nom": "SMIC temps plein (12,31 €/h × 151,67 h × 12)", "brutAnnuel": 22404.2, "cadre": false, "netMensuel": 1455.99, "netImposableMensuel": 1529.76 },
+    { "nom": "30 000 € non-cadre", "brutAnnuel": 30000, "cadre": false, "netMensuel": 1957.05, "netImposableMensuel": 2048.87 },
+    { "nom": "45 000 € cadre", "brutAnnuel": 45000, "cadre": true, "netMensuel": 2940.19, "netImposableMensuel": 3125.5 },
+    { "nom": "70 000 € cadre", "brutAnnuel": 70000, "cadre": true, "netMensuel": 4602.08, "netImposableMensuel": 4850.68 },
+    { "nom": "120 000 € cadre", "brutAnnuel": 120000, "cadre": true, "netMensuel": 7943.15, "netImposableMensuel": 8310.47 }
+  ],
+  "foyers": [
+    { "nom": "Célibataire, revenus bas (décote)", "situation": "seul", "enfants": 0, "parentIsole": false, "revenuImposable": 20000, "parts": 1, "impot": 445.11 },
+    { "nom": "Célibataire, hauts revenus (CEHR)", "situation": "seul", "enfants": 0, "parentIsole": false, "revenuImposable": 300000, "parts": 1, "impot": 113023.84 },
+    { "nom": "Couple sans enfant", "situation": "couple", "enfants": 0, "parentIsole": false, "revenuImposable": 45000, "parts": 2, "impot": 2000.1 },
+    { "nom": "Couple, 1 enfant", "situation": "couple", "enfants": 1, "parentIsole": false, "revenuImposable": 60000, "parts": 2.5, "impot": 3410 },
+    { "nom": "Couple, 2 enfants, hauts revenus (plafonnement du quotient familial)", "situation": "couple", "enfants": 2, "parentIsole": false, "revenuImposable": 150000, "parts": 3, "impot": 27593.98 },
+    { "nom": "Parent isolé, 1 enfant", "situation": "seul", "enfants": 1, "parentIsole": true, "revenuImposable": 30000, "parts": 2, "impot": 189.47 },
+    { "nom": "Couple, 2 enfants, revenus bas (non imposable)", "situation": "couple", "enfants": 2, "parentIsole": false, "revenuImposable": 35000, "parts": 3, "impot": 0 },
+    { "nom": "Couple, 3 enfants", "situation": "couple", "enfants": 3, "parentIsole": false, "revenuImposable": 90000, "parts": 4, "impot": 5979.98 }
+  ],
+  "micro": [
+    { "nom": "BNC 90 000 € (450 €/j × 200 j)", "activite": "bnc", "ca": 90000, "cotisationsAnnuelles": 23220, "revenuNet": 66780, "revenuAbattu": 59400, "impotSeul": 10924, "seuilDepasse": true }
+  ],
+  "sasu": [
+    { "nom": "SASU, rémunération totale 50 000 € (AT/MP au taux moyen 2,08 %, mutuelle 40 €/mois à 50 %)", "coutTotal": 50000, "brutAnnuel": 35509.88, "netAnnuel": 27794.59 }
+  ],
+  "eurl": [
+    { "coutTotal": 20000, "net": 14151 },
+    { "coutTotal": 50000, "net": 34347 },
+    { "coutTotal": 100000, "net": 69156 }
+  ]
+}

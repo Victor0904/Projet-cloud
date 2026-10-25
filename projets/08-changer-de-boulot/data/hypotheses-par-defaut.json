@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "titre": "Hypothèses par défaut des formulaires (modifiables par l'utilisateur)",
+    "verifie_le": "2026-10-25",
+    "note": "Ces valeurs ne sont pas des règles : ce sont des points de départ réalistes pour pré-remplir les formulaires. Statut HYPOTHESE = choix de conception, à adapter à sa situation."
+  },
+  "mutuelle_entreprise_mensuelle": {
+    "valeur": 40,
+    "unite": "€/mois (cotisation totale salarié + employeur)",
+    "note": "Valeur par défaut du simulateur salarié de l'Urssaf.",
+    "source": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "mutuelle_part_employeur": {
+    "valeur": 0.5,
+    "unite": "part employeur (minimum légal)",
+    "source": "https://www.service-public.fr/particuliers/vosdroits/F20739",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "mutuelle_individuelle_mensuelle": {
+    "valeur": 70,
+    "unite": "€/mois pour une complémentaire santé individuelle (indépendant)",
+    "note": "Ordre de grandeur pour un adulte de 30-45 ans ; très variable selon l'âge et les garanties.",
+    "source": "https://www.service-public.fr/particuliers/vosdroits/F20739",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "jours_travailles_salarie": {
+    "valeur": 218,
+    "unite": "jours/an (forfait jours des cadres ; 1 607 h/an pour 35 h)",
+    "source": "https://www.service-public.fr/particuliers/vosdroits/F19261",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "heures_par_jour": {
+    "valeur": 7.5,
+    "unite": "heures travaillées par jour",
+    "source": "https://www.service-public.fr/particuliers/vosdroits/F1911",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "jours_factures_independant": {
+    "valeur": 200,
+    "unite": "jours facturés par an",
+    "source": "https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "jours_non_factures_independant": {
+    "valeur": 20,
+    "unite": "jours/an de prospection, administratif, formation (non facturés mais travaillés)",
+    "source": "https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "tjm_independant": {
+    "valeur": 450,
+    "unite": "€ HT par jour",
+    "source": "https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "brut_annuel_salarie": {
+    "valeur": 45000,
+    "unite": "€ bruts par an",
+    "source": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "titre_restaurant_valeur": {
+    "valeur": 10,
+    "unite": "€ de valeur faciale",
+    "source": "https://www.urssaf.fr/accueil/employeur/cotisations/avantages-en-nature.html",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "titres_restaurant_par_mois": {
+    "valeur": 18,
+    "unite": "titres par mois",
+    "source": "https://www.urssaf.fr/accueil/employeur/cotisations/avantages-en-nature.html",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "frais_activite_micro": {
+    "valeur": 1500,
+    "unite": "€/an (logiciels, matériel, assurance RC pro, banque)",
+    "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "frais_activite_societe": {
+    "valeur": 4000,
+    "unite": "€/an (expert-comptable, banque, assurance, logiciels)",
+    "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "capital_social": {
+    "valeur": 1000,
+    "unite": "€",
+    "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F36153",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  },
+  "abonnement_navigo_mensuel": {
+    "valeur": 90.8,
+    "unite": "€/mois — forfait Navigo mois (Île-de-France), utilisé dans l'exemple « CDI cadre à Paris »",
+    "source": "https://www.iledefrance-mobilites.fr/titres-et-tarifs/detail/forfait-navigo-mois",
+    "verifie_le": "2026-10-25",
+    "statut": "A_VERIFIER"
+  },
+  "trajet_minutes_aller_retour": {
+    "valeur": 70,
+    "unite": "minutes par jour sur site (aller + retour)",
+    "note": "Ordre de grandeur pour un trajet en Île-de-France.",
+    "source": "https://www.insee.fr/fr/statistiques",
+    "verifie_le": "2026-10-25",
+    "statut": "HYPOTHESE"
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "meta": {
+    "titre": "Taux, seuils et barèmes 2026 utilisés par le comparateur « Et si je change de boulot ? »",
+    "annee": 2026,
+    "verifie_le": "2026-10-25",
+    "methode": "Chaque valeur a été relevée le 2026-10-25 dans le moteur de calcul public de l'Urssaf (mon-entreprise.urssaf.fr, API /api/v1/rules et paquet npm modele-social 11.1.0), qui cite lui-même les textes officiels. Les sites service-public.fr, urssaf.fr et legifrance.gouv.fr n'étaient pas accessibles depuis l'environnement de développement et impots.gouv.fr était en maintenance : les valeurs qui n'ont pas pu être recoupées dans ce moteur sont marquées statut = A_VERIFIER.",
+    "statuts": {
+      "VERIFIE": "valeur lue dans le moteur officiel Urssaf à la date verifie_le",
+      "A_VERIFIER": "valeur connue mais non recoupée en 2026, ou hypothèse de marché : à contrôler avant de s'y fier"
+    }
+  },
+  "general": {
+    "pass_annuel": {
+      "valeur": 48060,
+      "unite": "€/an",
+      "note": "Plafond annuel de la sécurité sociale 2026 (4 005 €/mois).",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "smic_horaire": {
+      "valeur": 12.31,
+      "unite": "€/heure",
+      "note": "SMIC horaire brut depuis le 1er juin 2026 (12,02 € du 1er janvier au 31 mai 2026).",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2300",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "heures_mensuelles_35h": {
+      "valeur": 151.67,
+      "unite": "heures/mois",
+      "note": "Durée légale mensuelle (35 h × 52 / 12).",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2300",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "heures_smic_par_trimestre_retraite": {
+      "valeur": 150,
+      "unite": "heures de SMIC par trimestre",
+      "note": "Un trimestre de retraite est validé pour 150 heures de SMIC cotisées (600 h pour 4 trimestres).",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1761",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  },
+  "salarie": {
+    "vieillesse_plafonnee": {
+      "valeur": 0.069,
+      "unite": "taux sur le salaire dans la limite du PASS",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "vieillesse_deplafonnee": {
+      "valeur": 0.004,
+      "unite": "taux sur tout le salaire",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "retraite_complementaire_t1": {
+      "valeur": 0.0315,
+      "unite": "taux tranche 1 (jusqu'à 1 PASS)",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "retraite_complementaire_t2": {
+      "valeur": 0.0864,
+      "unite": "taux tranche 2 (de 1 à 8 PASS)",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "ceg_t1": {
+      "valeur": 0.0086,
+      "unite": "contribution d'équilibre général, tranche 1",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "ceg_t2": {
+      "valeur": 0.0108,
+      "unite": "contribution d'équilibre général, tranche 2",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "cet": {
+      "valeur": 0.0014,
+      "unite": "contribution d'équilibre technique, sur tout le salaire (jusqu'à 8 PASS) si salaire > PASS",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "apec": {
+      "valeur": 0.00024,
+      "unite": "cadres uniquement, dans la limite de 4 PASS",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "csg_deductible": {
+      "valeur": 0.068,
+      "unite": "taux sur l'assiette CSG",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "csg_non_deductible": {
+      "valeur": 0.024,
+      "unite": "taux sur l'assiette CSG",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "crds": {
+      "valeur": 0.005,
+      "unite": "taux sur l'assiette CSG",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "assiette_csg_part_retenue": {
+      "valeur": 0.9825,
+      "unite": "part du salaire retenue (abattement de 1,75 % pour frais pro) dans la limite de 4 PASS",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "assiette_csg_limite_pass": {
+      "valeur": 4,
+      "unite": "nombre de PASS",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "csg_crds_epargne_salariale": {
+      "valeur": 0.097,
+      "unite": "CSG 9,2 % + CRDS 0,5 % sur la participation / l'intéressement (pas d'abattement de 1,75 %)",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  },
+  "employeur": {
+    "maladie": {
+      "valeur": 0.13,
+      "unite": "taux plein, sans réduction générale",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/maladie-maternite-invalidite.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "vieillesse_plafonnee": {
+      "valeur": 0.0855,
+      "unite": "dans la limite du PASS",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "vieillesse_deplafonnee": {
+      "valeur": 0.0211,
+      "unite": "sur tout le salaire (2,11 % depuis le 1er janvier 2026)",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "allocations_familiales": {
+      "valeur": 0.0525,
+      "unite": "taux plein",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "atmp": {
+      "valeur": 0.0064,
+      "unite": "taux « fonctions support » (activité de bureau) 2026 ; le taux moyen national est de 2,08 %",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "fnal": {
+      "valeur": 0.001,
+      "unite": "entreprise de moins de 50 salariés, dans la limite du PASS",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "csa": {
+      "valeur": 0.003,
+      "unite": "contribution solidarité autonomie",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "chomage": {
+      "valeur": 0.04,
+      "unite": "dans la limite de 4 PASS (salariés et salariés portés, pas les présidents de SASU)",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/assurance-chomage-ags.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "ags": {
+      "valeur": 0.0025,
+      "unite": "garantie des salaires, dans la limite de 4 PASS",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/assurance-chomage-ags.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "retraite_complementaire_t1": {
+      "valeur": 0.0472,
+      "unite": "tranche 1",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "retraite_complementaire_t2": {
+      "valeur": 0.1295,
+      "unite": "tranche 2",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "ceg_t1": {
+      "valeur": 0.0129,
+      "unite": "tranche 1",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "ceg_t2": {
+      "valeur": 0.0162,
+      "unite": "tranche 2",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "cet": {
+      "valeur": 0.0021,
+      "unite": "si salaire > PASS",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "apec": {
+      "valeur": 0.00036,
+      "unite": "cadres salariés, dans la limite de 4 PASS",
+      "source": "https://www.agirc-arrco.fr/mon-entreprise/calculer-et-declarer/calculer-les-cotisations-de-retraite-complementaire/",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "prevoyance_cadre": {
+      "valeur": 0.015,
+      "unite": "prévoyance obligatoire des cadres, sur la tranche 1",
+      "source": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/prevoyance-complementaire.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "formation_professionnelle": {
+      "valeur": 0.01,
+      "unite": "entreprise de 11 salariés et plus (0,55 % en dessous)",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "formation_professionnelle_moins_11": {
+      "valeur": 0.0055,
+      "unite": "entreprise de moins de 11 salariés",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "taxe_apprentissage": {
+      "valeur": 0.0068,
+      "unite": "0,59 % + solde 0,09 %",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "dialogue_social": {
+      "valeur": 0.00016,
+      "unite": "contribution au dialogue social",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/at-vieillesse-csa-dialoguesocial.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    }
+  },
+  "avantages": {
+    "titre_restaurant_exoneration_max": {
+      "valeur": 7.32,
+      "unite": "€ de part employeur exonérée par titre",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/avantages-en-nature.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "titre_restaurant_part_employeur_min": {
+      "valeur": 0.5,
+      "unite": "part minimale de l'employeur pour l'exonération",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/avantages-en-nature.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "titre_restaurant_part_employeur_max": {
+      "valeur": 0.6,
+      "unite": "part maximale de l'employeur pour l'exonération",
+      "source": "https://www.urssaf.fr/accueil/employeur/cotisations/avantages-en-nature.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "transport_prise_en_charge_obligatoire": {
+      "valeur": 0.5,
+      "unite": "part de l'abonnement de transport public remboursée par l'employeur au minimum",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F19846",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "mutuelle_part_employeur_min": {
+      "valeur": 0.5,
+      "unite": "part minimale de la mutuelle d'entreprise payée par l'employeur",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F20739",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "teletravail_allocation_exoneree_mois": {
+      "valeur": 59.4,
+      "unite": "€/mois d'allocation forfaitaire de télétravail présumée utilisée conformément à son objet (2,70 €/jour)",
+      "source": "https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/frais-professionnels/teletravail.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  },
+  "impot": {
+    "bareme": {
+      "valeur": [
+        { "jusqua": 11600, "taux": 0 },
+        { "jusqua": 29579, "taux": 0.11 },
+        { "jusqua": 84577, "taux": 0.3 },
+        { "jusqua": 181917, "taux": 0.41 },
+        { "jusqua": null, "taux": 0.45 }
+      ],
+      "unite": "€ par part, barème progressif",
+      "note": "Barème de la loi de finances pour 2026 (revenus 2025). Appliqué aux revenus 2026 en attendant le barème suivant : l'écart attendu est une revalorisation d'environ 1 %.",
+      "source": "https://www.economie.gouv.fr/particuliers/tranches-imposition-impot-revenu",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "decote_seuil_personne_seule": {
+      "valeur": 897,
+      "unite": "€",
+      "source": "https://www.economie.gouv.fr/particuliers/decote-impot-revenu",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "decote_seuil_couple": {
+      "valeur": 1483,
+      "unite": "€",
+      "source": "https://www.economie.gouv.fr/particuliers/decote-impot-revenu",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "decote_taux": {
+      "valeur": 0.4525,
+      "unite": "part de l'impôt brut retranchée du seuil",
+      "source": "https://www.economie.gouv.fr/particuliers/decote-impot-revenu",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "plafond_quotient_familial_demi_part": {
+      "valeur": 1807,
+      "unite": "€ d'avantage maximal par demi-part supplémentaire",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F34328",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "plafond_quotient_familial_parent_isole": {
+      "valeur": 4262,
+      "unite": "€ d'avantage maximal pour la part du premier enfant d'un parent isolé",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F34328",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_10_pourcent_taux": {
+      "valeur": 0.1,
+      "unite": "déduction forfaitaire pour frais professionnels sur les salaires",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1989",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_10_pourcent_min": {
+      "valeur": 509,
+      "unite": "€ par personne",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1989",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_10_pourcent_max": {
+      "valeur": 14555,
+      "unite": "€ par personne",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1989",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "frais_reels_distance_max_km": {
+      "valeur": 40,
+      "unite": "km aller retenus au maximum pour les frais réels de trajet, sauf circonstances particulières",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1989",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "cehr_personne_seule": {
+      "valeur": [
+        { "jusqua": 250000, "taux": 0 },
+        { "jusqua": 500000, "taux": 0.03 },
+        { "jusqua": null, "taux": 0.04 }
+      ],
+      "unite": "barème sur le revenu fiscal de référence",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F31130",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "cehr_couple": {
+      "valeur": [
+        { "jusqua": 500000, "taux": 0 },
+        { "jusqua": 1000000, "taux": 0.03 },
+        { "jusqua": null, "taux": 0.04 }
+      ],
+      "unite": "barème sur le revenu fiscal de référence",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F31130",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "pfu_impot": {
+      "valeur": 0.128,
+      "unite": "part impôt du prélèvement forfaitaire unique sur les dividendes",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F32963",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "prelevements_sociaux_capital": {
+      "valeur": 0.186,
+      "unite": "CSG 10,6 % + CRDS 0,5 % + prélèvement de solidarité 7,5 % sur les dividendes (2026)",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2329",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "taux_neutre_grille": {
+      "valeur": [
+        { "jusqua": 1635, "taux": 0 },
+        { "jusqua": 1698, "taux": 0.005 },
+        { "jusqua": 1807, "taux": 0.013 },
+        { "jusqua": 1928, "taux": 0.021 },
+        { "jusqua": 2060, "taux": 0.029 },
+        { "jusqua": 2170, "taux": 0.035 },
+        { "jusqua": 2315, "taux": 0.041 },
+        { "jusqua": 2738, "taux": 0.053 },
+        { "jusqua": 3135, "taux": 0.075 },
+        { "jusqua": 3571, "taux": 0.099 },
+        { "jusqua": 4019, "taux": 0.119 },
+        { "jusqua": 4690, "taux": 0.138 },
+        { "jusqua": 5624, "taux": 0.158 },
+        { "jusqua": 7037, "taux": 0.179 },
+        { "jusqua": 8789, "taux": 0.2 },
+        { "jusqua": 12200, "taux": 0.24 },
+        { "jusqua": 16523, "taux": 0.28 },
+        { "jusqua": 25937, "taux": 0.33 },
+        { "jusqua": 55558, "taux": 0.38 },
+        { "jusqua": null, "taux": 0.43 }
+      ],
+      "unite": "grille du taux non personnalisé (métropole), selon le net imposable mensuel",
+      "source": "https://bofip.impots.gouv.fr/bofip/11255-PGP.html/identifiant=BOI-BAREME-000037",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    }
+  },
+  "bareme_kilometrique": {
+    "voiture": {
+      "valeur": [
+        { "cv": 3, "jusqua5000": [0.529, 0], "jusqua20000": [0.316, 1065], "audela": [0.37, 0] },
+        { "cv": 4, "jusqua5000": [0.606, 0], "jusqua20000": [0.34, 1330], "audela": [0.407, 0] },
+        { "cv": 5, "jusqua5000": [0.636, 0], "jusqua20000": [0.357, 1395], "audela": [0.427, 0] },
+        { "cv": 6, "jusqua5000": [0.665, 0], "jusqua20000": [0.374, 1457], "audela": [0.447, 0] },
+        { "cv": 7, "jusqua5000": [0.697, 0], "jusqua20000": [0.394, 1515], "audela": [0.47, 0] }
+      ],
+      "unite": "[coefficient € par km, forfait €] selon la distance annuelle ; 7 = 7 CV et plus",
+      "note": "Barème des revenus 2023, reconduit pour les revenus 2024. Non recoupé pour les revenus 2025-2026.",
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mes-frais-de-transport",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "majoration_electrique": {
+      "valeur": 0.2,
+      "unite": "majoration du barème pour un véhicule 100 % électrique",
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mes-frais-de-transport",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  },
+  "micro": {
+    "taux_cotisations_bnc": {
+      "valeur": 0.256,
+      "unite": "part du chiffre d'affaires, professions libérales non réglementées (Sécurité sociale des indépendants), 2026",
+      "source": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "taux_cotisations_bic_services": {
+      "valeur": 0.212,
+      "unite": "part du chiffre d'affaires, prestations de services commerciales ou artisanales (BIC)",
+      "source": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "cfp_bnc": {
+      "valeur": 0.002,
+      "unite": "contribution à la formation professionnelle, libéral",
+      "source": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F23459",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "cfp_bic": {
+      "valeur": 0.001,
+      "unite": "contribution à la formation professionnelle, commerçant (0,3 % pour un artisan)",
+      "source": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F23459",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_bnc": {
+      "valeur": 0.34,
+      "unite": "abattement forfaitaire pour frais (impôt)",
+      "source": "https://entreprendre.service-public.fr/vosdroits/F23267",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_bic_services": {
+      "valeur": 0.5,
+      "unite": "abattement forfaitaire pour frais (impôt)",
+      "source": "https://entreprendre.service-public.fr/vosdroits/F23267",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "abattement_minimum": {
+      "valeur": 305,
+      "unite": "€",
+      "source": "https://entreprendre.service-public.fr/vosdroits/F23267",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "versement_liberatoire_bnc": {
+      "valeur": 0.022,
+      "unite": "part du chiffre d'affaires",
+      "source": "https://www.impots.gouv.fr/professionnel/le-versement-liberatoire",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "versement_liberatoire_bic_services": {
+      "valeur": 0.017,
+      "unite": "part du chiffre d'affaires",
+      "source": "https://www.impots.gouv.fr/professionnel/le-versement-liberatoire",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "versement_liberatoire_plafond_rfr_par_part": {
+      "valeur": 29315,
+      "unite": "€ de revenu fiscal de référence N-2 par part (limite de la 2e tranche du barème de l'année précédente)",
+      "source": "https://www.impots.gouv.fr/professionnel/le-versement-liberatoire",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "acre_coefficient": {
+      "valeur": 0.75,
+      "unite": "les cotisations sont multipliées par ce coefficient pendant la période ACRE (création à partir du 1er juillet 2026 ; 0,5 avant)",
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F11677",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "seuil_ca_services": {
+      "valeur": 83600,
+      "unite": "€ de chiffre d'affaires annuel (prestations de services, BNC et BIC services)",
+      "source": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F32353",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "seuil_ca_ventes": {
+      "valeur": 203100,
+      "unite": "€ de chiffre d'affaires annuel (ventes, hébergement)",
+      "source": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F32353",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "tva_franchise_services": {
+      "valeur": 37500,
+      "unite": "€ : seuil de franchise en base de TVA (prestations de services)",
+      "note": "Seuil maintenu après l'abandon du seuil unique de 25 000 € envisagé en 2025 ; non recoupé (impots.gouv.fr en maintenance).",
+      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base-de-tva",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tva_franchise_services_majore": {
+      "valeur": 41250,
+      "unite": "€ : au-delà, la TVA est due dès le dépassement",
+      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base-de-tva",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tva_franchise_ventes": {
+      "valeur": 85000,
+      "unite": "€ : seuil de franchise en base de TVA (ventes)",
+      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base-de-tva",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tva_franchise_ventes_majore": {
+      "valeur": 93500,
+      "unite": "€ : au-delà, la TVA est due dès le dépassement",
+      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base-de-tva",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tva_taux_normal": {
+      "valeur": 0.2,
+      "unite": "taux normal de TVA",
+      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base-de-tva",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    }
+  },
+  "societe": {
+    "is_taux_reduit": {
+      "valeur": 0.15,
+      "unite": "taux réduit d'impôt sur les sociétés (PME, capital détenu à 75 % par des personnes physiques)",
+      "source": "https://www.impots.gouv.fr/international-professionnel/impot-sur-les-societes",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "is_plafond_taux_reduit": {
+      "valeur": 42500,
+      "unite": "€ de bénéfice taxés au taux réduit",
+      "source": "https://www.impots.gouv.fr/international-professionnel/impot-sur-les-societes",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "is_taux_normal": {
+      "valeur": 0.25,
+      "unite": "taux normal d'impôt sur les sociétés",
+      "source": "https://www.impots.gouv.fr/international-professionnel/impot-sur-les-societes",
+      "verifie_le": "2026-10-25",
+      "statut": "VERIFIE"
+    },
+    "tns_taux_global_sur_remuneration": {
+      "valeur": 0.31,
+      "unite": "approximation : cotisations du gérant majoritaire d'EURL / rémunération totale (net + cotisations)",
+      "note": "Calibré le 2026-10-25 sur le simulateur Urssaf (29,2 % à 20 000 €, 31,3 % à 50 000 €, 30,8 % à 100 000 €). Approximation grossière.",
+      "source": "https://mon-entreprise.urssaf.fr/simulateurs/eurl",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tns_ratio_imposable_sur_net": {
+      "valeur": 1.039,
+      "unite": "approximation : net imposable / net du gérant (CSG non déductible réintégrée)",
+      "source": "https://mon-entreprise.urssaf.fr/simulateurs/eurl",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tns_seuil_dividendes_capital": {
+      "valeur": 0.1,
+      "unite": "part du capital social (+ comptes courants) au-delà de laquelle les dividendes d'EURL subissent les cotisations sociales",
+      "source": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F32963",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "tns_taux_sur_dividendes_excedentaires": {
+      "valeur": 0.45,
+      "unite": "approximation : cotisations TNS sur la part de dividendes au-delà de 10 % du capital",
+      "source": "https://mon-entreprise.urssaf.fr/simulateurs/eurl",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  },
+  "portage": {
+    "frais_gestion_defaut": {
+      "valeur": 0.07,
+      "unite": "part du chiffre d'affaires prélevée par la société de portage (hypothèse de marché, souvent entre 5 et 10 %)",
+      "source": "https://travail-emploi.gouv.fr/le-portage-salarial",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    },
+    "salaire_minimum_part_pass": {
+      "valeur": 0.75,
+      "unite": "rémunération minimale du salarié porté à temps plein, en part du PASS",
+      "source": "https://travail-emploi.gouv.fr/le-portage-salarial",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER"
+    }
+  }
+}

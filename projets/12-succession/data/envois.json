@@ -1,0 +1,44 @@
+{
+  "_lisez_moi": "Explication des modes d'envoi. Aucun tarif n'est indiqué volontairement (ils changent chaque année).",
+  "source": "https://www.service-public.fr/particuliers/vosdroits/F16507",
+  "verifie_le": "2026-10-25",
+  "statut": "A_VERIFIER",
+  "modes": [
+    {
+      "id": "lrar",
+      "nom": "Lettre recommandée avec accusé de réception",
+      "quand": "Pour tout ce qui met fin à un contrat (bail, abonnement, assurance) ou ouvre un droit à paiement (capital, remboursement). C'est la seule façon de prouver la date d'envoi et de réception.",
+      "conseil": "Gardez la preuve de dépôt et l'accusé de réception avec une copie de la lettre. Elle existe aussi en version électronique (« lettre recommandée en ligne »)."
+    },
+    {
+      "id": "courrier",
+      "nom": "Courrier simple",
+      "quand": "Pour informer, quand aucun délai ni paiement n'est en jeu (association, syndic, abonnement gratuit).",
+      "conseil": "Aucune preuve d'envoi : notez la date dans le suivi et relancez sans réponse au bout d'un mois."
+    },
+    {
+      "id": "en_ligne",
+      "nom": "Espace en ligne ou formulaire de l'organisme",
+      "quand": "Quand l'organisme le propose (CPAM, caisses de retraite, CAF, impôts, plateformes numériques). C'est souvent le plus rapide.",
+      "conseil": "Téléchargez ou faites une capture de l'accusé de dépôt. Ne vous connectez jamais au compte personnel du défunt avec ses identifiants : utilisez les démarches prévues pour les proches."
+    },
+    {
+      "id": "guichet",
+      "nom": "Au guichet ou sur rendez-vous",
+      "quand": "Pour la mairie, la banque ou le notaire, quand des originaux sont demandés.",
+      "conseil": "Demandez un récépissé ou un tampon sur une copie de votre courrier."
+    },
+    {
+      "id": "telephone",
+      "nom": "Par téléphone",
+      "quand": "Pour un premier contact (pompes funèbres, fournisseur d'énergie, notaire).",
+      "conseil": "Notez la date, le nom de l'interlocuteur et la référence du dossier, puis confirmez par écrit si un contrat est concerné."
+    },
+    {
+      "id": "formulaire",
+      "nom": "Formulaire officiel (cerfa)",
+      "quand": "Quand l'organisme impose un formulaire (capital décès, réversion sur papier).",
+      "conseil": "Joignez une lettre d'accompagnement : elle résume votre demande et liste les pièces jointes."
+    }
+  ]
+}

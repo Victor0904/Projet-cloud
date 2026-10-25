@@ -1,0 +1,273 @@
+{
+  "_lisez_moi": "Montants et règles utilisés par la page « Droits et aides ». statut : verifie (lu sur le site officiel à la date indiquée) ou A_VERIFIER (site officiel inaccessible lors du développement ; valeur relevée via des sources secondaires concordantes, à confirmer avant mise en production).",
+  "valeurs": [
+    {
+      "id": "capital_deces_forfait",
+      "libelle": "Capital décès versé par l'Assurance maladie (salarié, demandeur d'emploi indemnisé, invalide)",
+      "valeur": 4009,
+      "unite": "euros",
+      "date_effet": "2026-04-01",
+      "source": "https://www.ameli.fr/assure/remboursements/pensions-allocations-rentes/deces",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "ameli.fr inaccessible (403). Montant forfaitaire au 1er avril 2026 relevé sur plusieurs sites d'information ; 3 977 € était le montant précédent."
+    },
+    {
+      "id": "pass_annuel",
+      "libelle": "Plafond annuel de la Sécurité sociale (PASS)",
+      "valeur": 48060,
+      "unite": "euros",
+      "date_effet": "2026-01-01",
+      "source": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "urssaf.fr inaccessible. Valeur déduite du capital décès des indépendants annoncé à 9 612 € (20 % du PASS) par des sources secondaires."
+    },
+    {
+      "id": "capital_deces_independant_taux",
+      "libelle": "Capital décès d'un travailleur indépendant en activité (part du PASS)",
+      "valeur": 0.2,
+      "unite": "taux",
+      "source": "https://www.ameli.fr/assure/remboursements/pensions-allocations-rentes/deces",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via des sources secondaires (20 % du PASS)."
+    },
+    {
+      "id": "capital_deces_independant_retraite_taux",
+      "libelle": "Capital décès d'un travailleur indépendant retraité (part du PASS)",
+      "valeur": 0.08,
+      "unite": "taux",
+      "source": "https://www.ameli.fr/assure/remboursements/pensions-allocations-rentes/deces",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via des sources secondaires (8 % du PASS). Conditions d'attribution à confirmer."
+    },
+    {
+      "id": "veuvage_montant_max",
+      "libelle": "Allocation de veuvage : montant mensuel maximum",
+      "valeur": 719.58,
+      "unite": "euros_par_mois",
+      "date_effet": "2026-01-01",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/actif/vie-personnelle-retraite/veuvage.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Les conditions ont été lues sur lassuranceretraite.fr ; le barème (legislation.lassuranceretraite.fr) était inaccessible. Montant 2026 relevé sur plusieurs sources concordantes (713,17 € en 2025)."
+    },
+    {
+      "id": "veuvage_plafond_trimestriel",
+      "libelle": "Allocation de veuvage : plafond de ressources sur 3 mois",
+      "valeur": 2698.42,
+      "unite": "euros",
+      "date_effet": "2026-01-01",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/actif/vie-personnelle-retraite/veuvage.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Plafond = 3,75 fois le montant maximum. Relevé via des sources secondaires (2 698,42 € ou 2 698,43 € selon les sites)."
+    },
+    {
+      "id": "veuvage_age_max",
+      "libelle": "Allocation de veuvage : avoir moins de",
+      "valeur": 55,
+      "unite": "ans",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/actif/vie-personnelle-retraite/veuvage.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "veuvage_duree",
+      "libelle": "Allocation de veuvage : durée de versement",
+      "valeur": 2,
+      "unite": "ans",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/actif/vie-personnelle-retraite/veuvage.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie",
+      "note": "Versée 2 ans ; jusqu'à 55 ans si le conjoint survivant avait au moins 50 ans au décès."
+    },
+    {
+      "id": "reversion_base_taux",
+      "libelle": "Réversion du régime général : part de la retraite de base du défunt",
+      "valeur": 0.54,
+      "unite": "taux",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/retraite/retraite-reversion-veuvage/pension-reversion.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "reversion_age_min",
+      "libelle": "Réversion (régime général et Agirc-Arrco) : âge minimum",
+      "valeur": 55,
+      "unite": "ans",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/retraite/retraite-reversion-veuvage/pension-reversion.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "reversion_plafond_seul",
+      "libelle": "Réversion du régime général : plafond de ressources annuelles (personne seule)",
+      "valeur": 25001.6,
+      "unite": "euros_par_an",
+      "date_effet": "2026-01-01",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/retraite/retraite-reversion-veuvage/pension-reversion.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "2 080 fois le Smic horaire. Barème officiel inaccessible ; valeur relevée via plusieurs sources secondaires concordantes."
+    },
+    {
+      "id": "reversion_plafond_couple",
+      "libelle": "Réversion du régime général : plafond de ressources annuelles (en couple)",
+      "valeur": 40002.56,
+      "unite": "euros_par_an",
+      "date_effet": "2026-01-01",
+      "source": "https://www.lassuranceretraite.fr/portail-info/home/retraite/retraite-reversion-veuvage/pension-reversion.html",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "1,6 fois le plafond « personne seule ». Valeur relevée via des sources secondaires."
+    },
+    {
+      "id": "reversion_agirc_arrco_taux",
+      "libelle": "Réversion Agirc-Arrco : part de la retraite complémentaire du défunt",
+      "valeur": 0.6,
+      "unite": "taux",
+      "source": "https://www.agirc-arrco.fr/particuliers/ma-retraite/demander-ma-retraite/la-pension-de-reversion/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie",
+      "note": "Sans condition de ressources ; supprimée en cas de remariage ; pas de réversion pour le Pacs ou le concubinage."
+    },
+    {
+      "id": "asf_un_parent",
+      "libelle": "Allocation de soutien familial : par enfant ayant perdu un parent, par mois",
+      "valeur": 200.78,
+      "unite": "euros_par_mois",
+      "date_effet": "2026-04-01",
+      "source": "https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-personnelle/l-allocation-de-soutien-familial-asf",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "caf.fr protégé par un anti-robot. Montant au 1er avril 2026 relevé via des sources secondaires."
+    },
+    {
+      "id": "asf_deux_parents",
+      "libelle": "Allocation de soutien familial : par enfant ayant perdu ses deux parents, par mois",
+      "valeur": 267.63,
+      "unite": "euros_par_mois",
+      "date_effet": "2026-04-01",
+      "source": "https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-personnelle/l-allocation-de-soutien-familial-asf",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "caf.fr protégé par un anti-robot. Montant relevé via des sources secondaires."
+    },
+    {
+      "id": "obseques_prelevement_banque",
+      "libelle": "Somme que la banque peut verser, sur les comptes du défunt, pour payer les obsèques",
+      "valeur": 5965,
+      "unite": "euros",
+      "date_effet": "2026-01-01",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1451",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "service-public.fr inaccessible ; plafond 2026 relevé via le moteur de recherche (5 910 € en 2025). Dans la limite du solde disponible."
+    },
+    {
+      "id": "cloture_compte_sans_notaire",
+      "libelle": "En dessous de ce total, un héritier peut clôturer les comptes sans notaire (s'il n'y a pas de bien immobilier)",
+      "valeur": 5965,
+      "unite": "euros",
+      "date_effet": "2026-01-01",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F1451",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via le moteur de recherche."
+    },
+    {
+      "id": "frais_bancaires_succession_plafond",
+      "libelle": "Plafond des frais bancaires de succession",
+      "valeur": 857,
+      "unite": "euros",
+      "date_effet": "2026-01-01",
+      "source": "https://www.service-public.fr/particuliers/actualites/A18753",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Plafonnés à 1 % des avoirs et à 857 € ; gratuits notamment si le total est inférieur à 5 965 €. Relevé via le moteur de recherche."
+    },
+    {
+      "id": "succession_dispense_ligne_directe",
+      "libelle": "Pas de déclaration de succession si la succession revient au conjoint, partenaire de Pacs ou enfants et vaut moins de",
+      "valeur": 50000,
+      "unite": "euros",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F80",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Valeur brute, avant déduction des dettes, et à condition qu'il n'y ait pas eu de donation non déclarée. Relevé via le moteur de recherche."
+    },
+    {
+      "id": "succession_dispense_autres",
+      "libelle": "Pour les autres héritiers, pas de déclaration si la succession vaut moins de",
+      "valeur": 3000,
+      "unite": "euros",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F80",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via le moteur de recherche."
+    },
+    {
+      "id": "conge_conjoint",
+      "libelle": "Congé pour le décès du conjoint, partenaire de Pacs ou concubin",
+      "valeur": 3,
+      "unite": "jours_ouvrables",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Minimum du Code du travail (art. L3142-4) ; la convention collective peut prévoir plus."
+    },
+    {
+      "id": "conge_parent_ou_fratrie",
+      "libelle": "Congé pour le décès d'un parent, beau-parent, frère ou sœur",
+      "valeur": 3,
+      "unite": "jours_ouvrables",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Minimum du Code du travail ; la convention collective peut prévoir plus."
+    },
+    {
+      "id": "conge_enfant",
+      "libelle": "Congé pour le décès d'un enfant (25 ans ou plus, sans enfant)",
+      "valeur": 12,
+      "unite": "jours_ouvrables",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via le moteur de recherche (fiche F2278)."
+    },
+    {
+      "id": "conge_enfant_moins_25",
+      "libelle": "Congé pour le décès d'un enfant de moins de 25 ans, ou d'un enfant lui-même parent",
+      "valeur": 14,
+      "unite": "jours_ouvrables",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via le moteur de recherche (fiche F2278)."
+    },
+    {
+      "id": "conge_deuil",
+      "libelle": "Congé de deuil supplémentaire (enfant de moins de 25 ans)",
+      "valeur": 8,
+      "unite": "jours",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Fractionnable en 2 périodes, à prendre dans l'année du décès. Relevé via le moteur de recherche."
+    },
+    {
+      "id": "conge_enfant_age_seuil",
+      "libelle": "Âge en dessous duquel le décès d'un enfant ouvre le congé allongé et le congé de deuil",
+      "valeur": 25,
+      "unite": "ans",
+      "source": "https://www.service-public.fr/particuliers/vosdroits/F2278",
+      "verifie_le": "2026-10-25",
+      "statut": "A_VERIFIER",
+      "note": "Relevé via le moteur de recherche (fiche F2278)."
+    }
+  ]
+}

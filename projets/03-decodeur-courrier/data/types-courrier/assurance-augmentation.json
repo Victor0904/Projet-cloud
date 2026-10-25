@@ -1,0 +1,87 @@
+{
+  "id": "assurance-augmentation",
+  "organisme": "assurance",
+  "libelle": "Assurance / mutuelle — Augmentation de cotisation",
+  "motsCles": [
+    {
+      "terme": "augmentation",
+      "poids": 5
+    },
+    {
+      "terme": "hausse",
+      "poids": 4
+    },
+    {
+      "terme": "nouvelle cotisation",
+      "poids": 5
+    },
+    {
+      "terme": "nouveau tarif",
+      "poids": 5
+    },
+    {
+      "terme": "nouveau montant de votre cotisation",
+      "poids": 5
+    },
+    {
+      "terme": "evolution de votre cotisation",
+      "poids": 4
+    },
+    {
+      "terme": "revalorisation",
+      "poids": 4
+    },
+    {
+      "terme": "avis d'echeance",
+      "poids": 4
+    },
+    {
+      "terme": "indexation",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure",
+      "poids": -3
+    },
+    {
+      "terme": "loyer",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "Votre assureur ou votre mutuelle augmente votre cotisation pour l'année à venir.",
+  "risques": [
+    "Si vous ne faites rien, le contrat continue au nouveau tarif."
+  ],
+  "actions": [
+    "Comparez le nouveau tarif avec d'autres offres.",
+    "Après un an de contrat, vous pouvez en principe résilier à tout moment (assurance auto, habitation, complémentaire santé) : le nouvel assureur peut s'en charger.",
+    "Si l'avis d'échéance vous est parvenu tard, vous disposez d'un délai pour résilier (loi Chatel)."
+  ],
+  "delais": [
+    {
+      "id": "chatel",
+      "libelle": "Résilier après réception de l'avis d'échéance (loi Chatel)",
+      "depart": "reception",
+      "duree": 20,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code des assurances, art. L113-15-1",
+      "explication": "20 jours à compter de l'envoi de l'avis d'échéance si celui-ci arrive moins de 15 jours avant la date limite de résiliation (A_VERIFIER).",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L113-15-1%20code%20des%20assurances",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "assurance-resiliation-hausse",
+    "demande-explications"
+  ],
+  "contacts": [
+    "mediation-assurance",
+    "ufc"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L113-15-2%20code%20des%20assurances",
+  "verifie_le": "A_VERIFIER"
+}

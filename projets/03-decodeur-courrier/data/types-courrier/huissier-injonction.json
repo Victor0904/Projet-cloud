@@ -1,0 +1,70 @@
+{
+  "id": "huissier-injonction",
+  "organisme": "huissier",
+  "libelle": "Ordonnance d'injonction de payer (signifiée)",
+  "motsCles": [
+    {
+      "terme": "injonction de payer",
+      "poids": 8
+    },
+    {
+      "terme": "ordonnance",
+      "poids": 3
+    },
+    {
+      "terme": "opposition",
+      "poids": 4
+    },
+    {
+      "terme": "tribunal judiciaire",
+      "poids": 2
+    },
+    {
+      "terme": "greffe",
+      "poids": 3
+    },
+    {
+      "terme": "formule executoire",
+      "poids": 3
+    },
+    {
+      "terme": "requete",
+      "poids": 1
+    }
+  ],
+  "cestQuoi": "Un juge a ordonné, à la demande d'un créancier et sans vous entendre, que vous payiez une somme. Le commissaire de justice vous la « signifie ». Vous pouvez vous y opposer : il y aura alors une audience.",
+  "risques": [
+    "Sans opposition dans le délai, l'ordonnance devient définitive (comme un jugement) et permet les saisies."
+  ],
+  "actions": [
+    "Notez la date de signification (sur l'acte).",
+    "Si vous contestez la dette ou le montant, faites opposition auprès du greffe du tribunal indiqué (lettre recommandée ou dépôt au greffe).",
+    "Même si vous devez la somme, l'opposition permet de demander des délais au juge."
+  ],
+  "delais": [
+    {
+      "id": "opposition",
+      "libelle": "Faire opposition",
+      "depart": "reception",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de procédure civile, art. 1416",
+      "explication": "Un mois à compter de la signification faite à votre personne ; d'autres règles s'appliquent si l'acte a été remis autrement.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=1416%20code%20de%20proc%C3%A9dure%20civile",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "huissier-opposition",
+    "huissier-justificatifs"
+  ],
+  "contacts": [
+    "point-justice",
+    "conciliateur",
+    "chambre-commissaires"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=1416%20code%20de%20proc%C3%A9dure%20civile",
+  "verifie_le": "2026-10-25"
+}

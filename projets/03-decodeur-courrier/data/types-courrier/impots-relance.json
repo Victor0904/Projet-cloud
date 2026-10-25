@@ -1,0 +1,88 @@
+{
+  "id": "impots-relance",
+  "organisme": "impots",
+  "libelle": "Impôts — Lettre de relance",
+  "motsCles": [
+    {
+      "terme": "lettre de relance",
+      "poids": 6
+    },
+    {
+      "terme": "relance",
+      "poids": 4
+    },
+    {
+      "terme": "sauf erreur de notre part",
+      "poids": 2
+    },
+    {
+      "terme": "nous n'avons pas recu votre paiement",
+      "poids": 4
+    },
+    {
+      "terme": "majoration de 10",
+      "poids": 3
+    },
+    {
+      "terme": "reste du",
+      "poids": 2
+    },
+    {
+      "terme": "impaye",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure de payer",
+      "poids": -4
+    },
+    {
+      "terme": "loyer",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "Un rappel amiable : un impôt n'a pas été payé (ou pas en totalité) à la date limite. Une majoration a souvent déjà été ajoutée.",
+  "risques": [
+    "Si vous ne payez pas, une mise en demeure de payer suit, puis des saisies peuvent intervenir rapidement (8 jours après la mise en demeure lorsqu'une relance l'a précédée)."
+  ],
+  "actions": [
+    "Vérifiez si le paiement n'a pas déjà été fait (relevé bancaire).",
+    "Payez ou demandez un plan de règlement au service indiqué.",
+    "Demandez une remise gracieuse de la majoration si vous avez une raison sérieuse (difficultés, première fois)."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date indiquée pour payer",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "med",
+      "libelle": "Après la mise en demeure qui suivrait cette relance",
+      "depart": "reception",
+      "duree": 8,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. L257-0 B",
+      "source": "https://bofip.impots.gouv.fr/export/pdf/294792",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "echeancier",
+    "remise-dette"
+  ],
+  "contacts": [
+    "conciliateur-fiscal",
+    "mediateur-economie",
+    "cresus"
+  ],
+  "source": "https://bofip.impots.gouv.fr/export/pdf/294792",
+  "verifie_le": "2026-10-25"
+}

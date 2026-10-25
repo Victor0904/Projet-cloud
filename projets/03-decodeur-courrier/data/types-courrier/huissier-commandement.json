@@ -1,0 +1,91 @@
+{
+  "id": "huissier-commandement",
+  "organisme": "huissier",
+  "libelle": "Commissaire de justice — Commandement de payer",
+  "motsCles": [
+    {
+      "terme": "commandement de payer",
+      "poids": 7
+    },
+    {
+      "terme": "commandement",
+      "poids": 4
+    },
+    {
+      "terme": "clause resolutoire",
+      "poids": 4
+    },
+    {
+      "terme": "saisie-vente",
+      "poids": 4
+    },
+    {
+      "terme": "valant saisie",
+      "poids": 3
+    },
+    {
+      "terme": "aux fins de saisie",
+      "poids": 3
+    },
+    {
+      "terme": "signifie",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "injonction de payer",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "Un commissaire de justice vous signifie un « commandement de payer ». Selon le cas, il prépare une saisie (il s'appuie alors sur un jugement) ou, pour un loyer, il fait jouer la clause du bail qui permet de le résilier.",
+  "risques": [
+    "Commandement aux fins de saisie-vente : passé le délai, vos biens peuvent être saisis.",
+    "Commandement visant la clause résolutoire du bail : si la dette n'est pas réglée dans le délai, le bailleur peut demander au juge de constater la fin du bail et votre expulsion."
+  ],
+  "actions": [
+    "Lisez quel type de commandement vous avez reçu et le délai mentionné.",
+    "Pour un loyer : contactez immédiatement le bailleur, l'ADIL et le fonds de solidarité pour le logement (FSL) ; vous pouvez demander des délais au juge.",
+    "Demandez le décompte détaillé et le titre (jugement) sur lequel s'appuie l'acte.",
+    "Proposez un échéancier par écrit."
+  ],
+  "delais": [
+    {
+      "id": "bail",
+      "libelle": "Commandement visant la clause résolutoire d'un bail d'habitation : régler la dette",
+      "depart": "reception",
+      "duree": 6,
+      "unite": "semaines",
+      "mode": "calendaire",
+      "reference_legale": "Loi du 6 juillet 1989, art. 24 (modifié par la loi du 27 juillet 2023)",
+      "explication": "Six semaines pour les commandements délivrés depuis le 29 juillet 2023 ; certains baux anciens prévoient deux mois. Le jour de la signification fait courir le délai.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2024%20loi%2089-462%20du%206%20juillet%201989",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "saisie-vente",
+      "libelle": "Commandement aux fins de saisie-vente : délai avant saisie",
+      "depart": "reception",
+      "duree": 8,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code des procédures civiles d'exécution (A_VERIFIER)",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R221-10%20code%20des%20proc%C3%A9dures%20civiles%20d%27ex%C3%A9cution",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "huissier-justificatifs",
+    "echeancier"
+  ],
+  "contacts": [
+    "adil",
+    "point-justice",
+    "chambre-commissaires",
+    "assistante-sociale"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2024%20loi%2089-462%20du%206%20juillet%201989",
+  "verifie_le": "2026-10-25"
+}

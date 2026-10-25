@@ -1,0 +1,85 @@
+{
+  "id": "impots-mise-en-demeure",
+  "organisme": "impots",
+  "libelle": "Impôts — Mise en demeure de payer",
+  "motsCles": [
+    {
+      "terme": "mise en demeure de payer",
+      "poids": 7
+    },
+    {
+      "terme": "mise en demeure",
+      "poids": 3
+    },
+    {
+      "terme": "poursuites",
+      "poids": 3
+    },
+    {
+      "terme": "frais de poursuite",
+      "poids": 3
+    },
+    {
+      "terme": "comptable public",
+      "poids": 2
+    },
+    {
+      "terme": "saisie administrative a tiers detenteur",
+      "poids": 4
+    },
+    {
+      "terme": "l257-0",
+      "poids": 4
+    }
+  ],
+  "cestQuoi": "Le Trésor public constate qu'un impôt n'a pas été payé à la date limite. Ce courrier est la dernière étape avant les « poursuites » (saisies).",
+  "risques": [
+    "Passé le délai, le comptable public peut engager des poursuites : saisie sur votre compte bancaire ou votre salaire (saisie administrative à tiers détenteur), avec des frais.",
+    "Les majorations déjà appliquées restent dues."
+  ],
+  "actions": [
+    "Payez si la somme est due, ou contactez immédiatement le service indiqué pour demander un plan de règlement.",
+    "Si vous contestez l'impôt lui-même, faites une réclamation en demandant le « sursis de paiement ».",
+    "Vous pouvez ensuite demander une remise gracieuse des majorations en expliquant vos difficultés."
+  ],
+  "delais": [
+    {
+      "id": "poursuites",
+      "libelle": "Payer avant le début des poursuites (mise en demeure sans relance préalable)",
+      "depart": "reception",
+      "duree": 30,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. L257-0 A",
+      "explication": "Si la mise en demeure est le premier rappel, les poursuites peuvent commencer 30 jours après.",
+      "source": "https://bofip.impots.gouv.fr/export/pdf/294792",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "poursuites-relance",
+      "libelle": "Si une lettre de relance a déjà été envoyée avant",
+      "depart": "reception",
+      "duree": 8,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. L257-0 B",
+      "explication": "Le délai n'est plus que de 8 jours lorsqu'une lettre de relance a précédé la mise en demeure.",
+      "source": "https://bofip.impots.gouv.fr/export/pdf/294792",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "echeancier",
+    "remise-dette"
+  ],
+  "contacts": [
+    "conciliateur-fiscal",
+    "mediateur-economie",
+    "cresus",
+    "france-services"
+  ],
+  "source": "https://bofip.impots.gouv.fr/export/pdf/294792",
+  "verifie_le": "2026-10-25"
+}

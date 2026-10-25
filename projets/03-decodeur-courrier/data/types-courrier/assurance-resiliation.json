@@ -1,0 +1,93 @@
+{
+  "id": "assurance-resiliation",
+  "organisme": "assurance",
+  "libelle": "Assurance / mutuelle — Résiliation par l'assureur",
+  "motsCles": [
+    {
+      "terme": "resiliation",
+      "poids": 5
+    },
+    {
+      "terme": "resilier",
+      "poids": 3
+    },
+    {
+      "terme": "nous avons decide de resilier",
+      "poids": 5
+    },
+    {
+      "terme": "resilie",
+      "poids": 4
+    },
+    {
+      "terme": "fin de votre contrat",
+      "poids": 3
+    },
+    {
+      "terme": "fin du contrat",
+      "poids": 3
+    },
+    {
+      "terme": "sinistralite",
+      "poids": 3
+    },
+    {
+      "terme": "sinistres",
+      "poids": 2
+    },
+    {
+      "terme": "a l'echeance",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure",
+      "poids": -3
+    },
+    {
+      "terme": "augmentation",
+      "poids": -2
+    },
+    {
+      "terme": "convention de compte",
+      "poids": -5
+    },
+    {
+      "terme": "bail",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "Votre assureur ou votre mutuelle met fin à votre contrat (à l'échéance, après des sinistres, pour non-paiement…).",
+  "risques": [
+    "Vous ne serez plus couvert à partir de la date indiquée : pour l'assurance auto ou habitation (locataire), l'assurance est obligatoire.",
+    "Une résiliation pour non-paiement ou fausse déclaration peut rendre plus difficile la souscription ailleurs."
+  ],
+  "actions": [
+    "Notez la date d'effet et le motif.",
+    "Souscrivez un nouveau contrat avant cette date.",
+    "Si le motif vous semble injustifié, contestez par écrit puis saisissez la Médiation de l'assurance.",
+    "Pour l'assurance auto, en cas de refus répétés, le Bureau central de tarification peut imposer un assureur."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date d'effet de la résiliation",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "assurance-contestation-resiliation"
+  ],
+  "contacts": [
+    "mediation-assurance",
+    "ufc",
+    "conciliateur"
+  ],
+  "source": "https://www.mediation-assurance.org/",
+  "verifie_le": "A_VERIFIER"
+}

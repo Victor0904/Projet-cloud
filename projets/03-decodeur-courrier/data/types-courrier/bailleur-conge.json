@@ -1,0 +1,104 @@
+{
+  "id": "bailleur-conge",
+  "organisme": "bailleur",
+  "libelle": "Bailleur — Congé donné au locataire",
+  "motsCles": [
+    {
+      "terme": "conge",
+      "poids": 5
+    },
+    {
+      "terme": "donner conge",
+      "poids": 5
+    },
+    {
+      "terme": "delivrons conge",
+      "poids": 5
+    },
+    {
+      "terme": "donne conge",
+      "poids": 5
+    },
+    {
+      "terme": "fin du bail",
+      "poids": 4
+    },
+    {
+      "terme": "terme du bail",
+      "poids": 4
+    },
+    {
+      "terme": "conge pour vente",
+      "poids": 6
+    },
+    {
+      "terme": "conge pour reprise",
+      "poids": 6
+    },
+    {
+      "terme": "liberer les lieux",
+      "poids": 4
+    },
+    {
+      "terme": "non-renouvellement",
+      "poids": 4
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "france travail",
+      "poids": -4
+    },
+    {
+      "terme": "conges payes",
+      "poids": -6
+    }
+  ],
+  "cestQuoi": "Votre bailleur met fin au bail à son échéance, pour vendre le logement, le reprendre pour y habiter ou pour un motif sérieux. Ce congé est très encadré : forme, délai et motif.",
+  "risques": [
+    "Si le congé est valable, vous devez quitter le logement à la fin du bail ; sinon le bailleur peut demander votre expulsion.",
+    "Un congé mal fait (délai non respecté, motif absent) peut être nul."
+  ],
+  "actions": [
+    "Vérifiez la date de fin du bail, la date de réception du congé et le motif indiqué.",
+    "Pour un congé pour vente, vous avez en principe un droit de priorité pour acheter.",
+    "En cas de doute sur la validité, contactez l'ADIL et écrivez au bailleur pour contester."
+  ],
+  "delais": [
+    {
+      "id": "preavis-vide",
+      "libelle": "Logement vide : fin du bail au plus tôt (préavis du bailleur)",
+      "depart": "reception",
+      "duree": 6,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Loi du 6 juillet 1989, art. 15",
+      "explication": "Le congé doit être reçu au moins 6 mois avant la fin du bail. Si la fin du bail est antérieure à cette date, le congé est contestable.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2015%20loi%2089-462%20du%206%20juillet%201989",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "preavis-meuble",
+      "libelle": "Logement meublé : fin du bail au plus tôt",
+      "depart": "reception",
+      "duree": 3,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Loi du 6 juillet 1989, art. 25-8",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2025-8%20loi%2089-462%20du%206%20juillet%201989",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "bailleur-contestation-conge"
+  ],
+  "contacts": [
+    "adil",
+    "conciliateur",
+    "point-justice"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2015%20loi%2089-462%20du%206%20juillet%201989",
+  "verifie_le": "A_VERIFIER"
+}

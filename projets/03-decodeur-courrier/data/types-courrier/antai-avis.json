@@ -1,0 +1,111 @@
+{
+  "id": "antai-avis",
+  "organisme": "antai",
+  "libelle": "ANTAI — Avis de contravention",
+  "motsCles": [
+    {
+      "terme": "avis de contravention",
+      "poids": 6
+    },
+    {
+      "terme": "amende forfaitaire",
+      "poids": 3
+    },
+    {
+      "terme": "amende minoree",
+      "poids": 3
+    },
+    {
+      "terme": "minoree",
+      "poids": 2
+    },
+    {
+      "terme": "exces de vitesse",
+      "poids": 3
+    },
+    {
+      "terme": "vitesse retenue",
+      "poids": 3
+    },
+    {
+      "terme": "requete en exoneration",
+      "poids": 2
+    },
+    {
+      "terme": "radar",
+      "poids": 2
+    },
+    {
+      "terme": "retrait de points",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "majoree",
+      "poids": -5
+    },
+    {
+      "terme": "representant legal",
+      "poids": -4
+    },
+    {
+      "terme": "personne morale",
+      "poids": -4
+    },
+    {
+      "terme": "post-stationnement",
+      "poids": -6
+    }
+  ],
+  "cestQuoi": "Une infraction au code de la route a été constatée (souvent par radar) avec un véhicule dont vous êtes titulaire de la carte grise. Le courrier indique le montant de l'amende et comment payer, contester ou désigner le conducteur.",
+  "risques": [
+    "Sans paiement ni contestation dans les 45 jours, l'amende devient « majorée » (montant plus élevé), recouvrée par le Trésor public.",
+    "Selon l'infraction, des points sont retirés du permis du conducteur."
+  ],
+  "actions": [
+    "Si vous conduisiez : payez (montant minoré si vous payez vite) ou contestez si vous avez un motif.",
+    "Si vous ne conduisiez pas : désignez le conducteur (en ligne ou formulaire « requête en exonération »), sans payer.",
+    "Pour contester un radar, une consignation égale au montant de l'amende est en général exigée.",
+    "Envoyez par courrier recommandé avec accusé de réception avec l'original de l'avis, ou faites-le en ligne sur antai.gouv.fr."
+  ],
+  "delais": [
+    {
+      "id": "minoree",
+      "libelle": "Payer le montant minoré (paiement hors télépaiement)",
+      "depart": "date_courrier",
+      "duree": 15,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code de procédure pénale, art. 529-8 (A_VERIFIER)",
+      "explication": "15 jours à partir de l'envoi de l'avis ; 15 jours de plus en cas de télépaiement.",
+      "source": "https://www.cours-appel.justice.fr/nancy/lamende-forfaitaire",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "contestation",
+      "libelle": "Payer, contester ou désigner le conducteur",
+      "depart": "date_courrier",
+      "duree": 45,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code de procédure pénale, art. 529-2",
+      "explication": "45 jours à partir de l'envoi de l'avis (date figurant sur l'avis).",
+      "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "antai-exoneration",
+    "antai-designation"
+  ],
+  "contacts": [
+    "antai",
+    "point-justice",
+    "defenseur-droits"
+  ],
+  "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+  "verifie_le": "2026-10-25"
+}

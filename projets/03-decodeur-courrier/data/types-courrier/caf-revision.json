@@ -1,0 +1,93 @@
+{
+  "id": "caf-revision",
+  "organisme": "caf",
+  "libelle": "CAF — Révision de vos droits",
+  "motsCles": [
+    {
+      "terme": "revision",
+      "poids": 4
+    },
+    {
+      "terme": "nouveau montant",
+      "poids": 4
+    },
+    {
+      "terme": "recalcul",
+      "poids": 4
+    },
+    {
+      "terme": "recalcules",
+      "poids": 4
+    },
+    {
+      "terme": "modification de vos droits",
+      "poids": 4
+    },
+    {
+      "terme": "droits ont ete revus",
+      "poids": 4
+    },
+    {
+      "terme": "reexamen",
+      "poids": 3
+    },
+    {
+      "terme": "a compter du",
+      "poids": 1
+    },
+    {
+      "terme": "revus",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "notification d'indu",
+      "poids": -4
+    },
+    {
+      "terme": "suspension",
+      "poids": -2
+    },
+    {
+      "terme": "france travail",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "La CAF a recalculé vos droits (à la hausse ou à la baisse), en général après un changement de ressources, de situation familiale ou de logement. Le courrier indique le nouveau montant et la date à partir de laquelle il s'applique.",
+  "risques": [
+    "Si la baisse est rétroactive, elle peut entraîner un indu (somme à rembourser).",
+    "Si le calcul repose sur une information fausse et que vous ne réagissez pas, l'erreur se prolonge sur les mois suivants."
+  ],
+  "actions": [
+    "Comparez les ressources et la situation retenues par la CAF avec votre situation réelle.",
+    "En cas d'erreur, demandez le détail du calcul puis, si besoin, contestez devant la commission de recours amiable.",
+    "Mettez à jour votre situation dans votre espace Mon compte si elle a changé depuis."
+  ],
+  "delais": [
+    {
+      "id": "cra",
+      "libelle": "Contester devant la commission de recours amiable (CRA) de la CAF",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. R142-1",
+      "explication": "Le recours amiable est obligatoire avant tout recours devant le tribunal. Le délai court à partir de la réception de la décision.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "demande-explications",
+    "recours-cra"
+  ],
+  "contacts": [
+    "mediateur-caf",
+    "defenseur-droits",
+    "france-services"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+  "verifie_le": "2026-10-25"
+}

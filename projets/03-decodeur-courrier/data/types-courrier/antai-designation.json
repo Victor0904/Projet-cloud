@@ -1,0 +1,77 @@
+{
+  "id": "antai-designation",
+  "organisme": "antai",
+  "libelle": "ANTAI — Désignation du conducteur (personne morale)",
+  "motsCles": [
+    {
+      "terme": "designation du conducteur",
+      "poids": 6
+    },
+    {
+      "terme": "designer le conducteur",
+      "poids": 6
+    },
+    {
+      "terme": "personne morale",
+      "poids": 5
+    },
+    {
+      "terme": "representant legal",
+      "poids": 5
+    },
+    {
+      "terme": "l121-6",
+      "poids": 5
+    },
+    {
+      "terme": "non-designation",
+      "poids": 5
+    },
+    {
+      "terme": "obligation de designer",
+      "poids": 5
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "majoree",
+      "poids": -2
+    },
+    {
+      "terme": "post-stationnement",
+      "poids": -5
+    }
+  ],
+  "cestQuoi": "Le véhicule en infraction appartient à une société ou une association. Son représentant légal doit indiquer qui conduisait.",
+  "risques": [
+    "Ne pas désigner le conducteur est une infraction distincte, punie d'une amende à la charge de la personne morale (souvent bien plus élevée que l'amende initiale)."
+  ],
+  "actions": [
+    "Identifiez le conducteur (planning, carnet de bord).",
+    "Désignez-le en ligne sur antai.gouv.fr ou par LRAR avec le formulaire joint, en indiquant ses nom, adresse et numéro de permis.",
+    "Si le véhicule avait été volé ou les plaques usurpées, joignez le récépissé de plainte."
+  ],
+  "delais": [
+    {
+      "id": "designation",
+      "libelle": "Désigner le conducteur",
+      "depart": "date_courrier",
+      "duree": 45,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code de la route, art. L121-6",
+      "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "antai-designation"
+  ],
+  "contacts": [
+    "antai",
+    "point-justice"
+  ],
+  "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+  "verifie_le": "2026-10-25"
+}

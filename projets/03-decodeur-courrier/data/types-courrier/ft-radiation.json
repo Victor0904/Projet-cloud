@@ -1,0 +1,87 @@
+{
+  "id": "ft-radiation",
+  "organisme": "france-travail",
+  "libelle": "France Travail — Radiation ou sanction",
+  "motsCles": [
+    {
+      "terme": "radiation",
+      "poids": 6
+    },
+    {
+      "terme": "radie",
+      "poids": 5
+    },
+    {
+      "terme": "liste des demandeurs d'emploi",
+      "poids": 3
+    },
+    {
+      "terme": "suppression du revenu de remplacement",
+      "poids": 4
+    },
+    {
+      "terme": "sanction",
+      "poids": 3
+    },
+    {
+      "terme": "remobilisation",
+      "poids": 4
+    },
+    {
+      "terme": "manquement",
+      "poids": 3
+    },
+    {
+      "terme": "recours prealable",
+      "poids": 2
+    }
+  ],
+  "cestQuoi": "France Travail vous retire de la liste des demandeurs d'emploi, ou suspend / réduit votre allocation, parce qu'il vous reproche un manquement (absence, recherche d'emploi jugée insuffisante, refus d'offre…).",
+  "risques": [
+    "Perte ou réduction de l'allocation pendant la durée de la sanction.",
+    "Vous n'êtes plus accompagné pendant la radiation."
+  ],
+  "actions": [
+    "Vérifiez le motif exact reproché et la durée.",
+    "Si vous avez un motif légitime ou une preuve, faites un recours préalable écrit (obligatoire avant tout recours au tribunal).",
+    "Si le recours échoue, saisissez le médiateur régional de France Travail (médiation préalable obligatoire avant le tribunal administratif).",
+    "Réinscrivez-vous dès la fin de la sanction."
+  ],
+  "delais": [
+    {
+      "id": "recours",
+      "libelle": "Faire le recours préalable obligatoire",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code du travail, art. R5412-8",
+      "explication": "Le recours au directeur régional est obligatoire avant le tribunal ; son silence pendant deux mois vaut rejet.",
+      "source": "https://toulouse.tribunal-administratif.fr/Media/mediatheque-ta-toulouse/documents/2025/septembre/france-travail-radiation-1",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "observations",
+      "libelle": "Faire valoir vos observations (préavis de sanction, si le courrier l'annonce)",
+      "depart": "reception",
+      "duree": 10,
+      "unite": "jours",
+      "mode": "calendaire",
+      "explication": "Selon une source non officielle, le nouveau régime de 2025 laisse 10 jours pour répondre avant la sanction. A_VERIFIER.",
+      "source": "https://www.aide-sociale.fr/pole-emploi-radiation/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "ft-recours-radiation"
+  ],
+  "contacts": [
+    "mediateur-france-travail",
+    "defenseur-droits",
+    "point-justice"
+  ],
+  "source": "https://toulouse.tribunal-administratif.fr/Media/mediatheque-ta-toulouse/documents/2025/septembre/france-travail-radiation-1",
+  "verifie_le": "2026-10-25"
+}

@@ -1,0 +1,150 @@
+{
+  "source": "Mots-clés choisis à partir des en-têtes usuels des courriers de chaque organisme (pas de source officielle : règles de l'outil).",
+  "verifie_le": "2026-10-25",
+  "organismes": [
+    {
+      "id": "caf",
+      "nom": "Caisse d'allocations familiales (CAF)",
+      "motsCles": [
+        { "terme": "caf", "poids": 4 },
+        { "terme": "caisse d'allocations familiales", "poids": 6 },
+        { "terme": "allocataire", "poids": 4 },
+        { "terme": "caf.fr", "poids": 4 },
+        { "terme": "prestations familiales", "poids": 3 },
+        { "terme": "aide personnalisee au logement", "poids": 2 },
+        { "terme": "apl", "poids": 2 },
+        { "terme": "rsa", "poids": 2 },
+        { "terme": "prime d'activite", "poids": 3 },
+        { "terme": "allocations familiales", "poids": 3 },
+        { "terme": "mon compte", "poids": 1 }
+      ]
+    },
+    {
+      "id": "impots",
+      "nom": "Administration fiscale (DGFiP)",
+      "motsCles": [
+        { "terme": "dgfip", "poids": 5 },
+        { "terme": "finances publiques", "poids": 5 },
+        { "terme": "impots.gouv.fr", "poids": 4 },
+        { "terme": "centre des finances publiques", "poids": 5 },
+        { "terme": "service des impots", "poids": 5 },
+        { "terme": "numero fiscal", "poids": 4 },
+        { "terme": "impot sur le revenu", "poids": 3 },
+        { "terme": "contribuable", "poids": 3 },
+        { "terme": "sip", "poids": 2 },
+        { "terme": "tresor public", "poids": 1 }
+      ]
+    },
+    {
+      "id": "urssaf",
+      "nom": "URSSAF",
+      "motsCles": [
+        { "terme": "urssaf", "poids": 7 },
+        { "terme": "cotisant", "poids": 3 },
+        { "terme": "cotisations sociales", "poids": 3 },
+        { "terme": "travailleur independant", "poids": 3 },
+        { "terme": "micro-entrepreneur", "poids": 3 },
+        { "terme": "auto-entrepreneur", "poids": 3 },
+        { "terme": "net-entreprises", "poids": 2 },
+        { "terme": "siret", "poids": 1 }
+      ]
+    },
+    {
+      "id": "france-travail",
+      "nom": "France Travail (ex-Pôle emploi)",
+      "motsCles": [
+        { "terme": "france travail", "poids": 7 },
+        { "terme": "pole emploi", "poids": 7 },
+        { "terme": "francetravail.fr", "poids": 4 },
+        { "terme": "demandeur d'emploi", "poids": 4 },
+        { "terme": "demandeurs d'emploi", "poids": 4 },
+        { "terme": "aide au retour a l'emploi", "poids": 4 },
+        { "terme": "are", "poids": 1 },
+        { "terme": "conseiller", "poids": 1 }
+      ]
+    },
+    {
+      "id": "antai",
+      "nom": "ANTAI / forfait post-stationnement",
+      "motsCles": [
+        { "terme": "antai", "poids": 7 },
+        { "terme": "agence nationale de traitement automatise des infractions", "poids": 7 },
+        { "terme": "contravention", "poids": 4 },
+        { "terme": "infraction", "poids": 3 },
+        { "terme": "certificat d'immatriculation", "poids": 4 },
+        { "terme": "titulaire du certificat", "poids": 4 },
+        { "terme": "vehicule", "poids": 2 },
+        { "terme": "officier du ministere public", "poids": 4 },
+        { "terme": "forfait post-stationnement", "poids": 6 },
+        { "terme": "amende", "poids": 2 },
+        { "terme": "code de la route", "poids": 3 }
+      ]
+    },
+    {
+      "id": "huissier",
+      "nom": "Commissaire de justice (ex-huissier)",
+      "motsCles": [
+        { "terme": "commissaire de justice", "poids": 7 },
+        { "terme": "commissaires de justice", "poids": 7 },
+        { "terme": "huissier", "poids": 6 },
+        { "terme": "huissier de justice", "poids": 7 },
+        { "terme": "signification", "poids": 3 },
+        { "terme": "signifie", "poids": 2 },
+        { "terme": "cout de l'acte", "poids": 4 },
+        { "terme": "acte d'huissier", "poids": 5 },
+        { "terme": "etude", "poids": 1 }
+      ]
+    },
+    {
+      "id": "bailleur",
+      "nom": "Bailleur / propriétaire",
+      "motsCles": [
+        { "terme": "bailleur", "poids": 4 },
+        { "terme": "proprietaire", "poids": 3 },
+        { "terme": "locataire", "poids": 4 },
+        { "terme": "bail", "poids": 3 },
+        { "terme": "loyer", "poids": 3 },
+        { "terme": "loyers", "poids": 3 },
+        { "terme": "logement", "poids": 2 },
+        { "terme": "gestion locative", "poids": 4 },
+        { "terme": "agence immobiliere", "poids": 3 },
+        { "terme": "office public de l'habitat", "poids": 4 },
+        { "terme": "lot", "poids": 1 }
+      ]
+    },
+    {
+      "id": "banque",
+      "nom": "Banque",
+      "motsCles": [
+        { "terme": "banque", "poids": 4 },
+        { "terme": "compte courant", "poids": 3 },
+        { "terme": "compte de depot", "poids": 4 },
+        { "terme": "iban", "poids": 3 },
+        { "terme": "bic", "poids": 2 },
+        { "terme": "convention de compte", "poids": 4 },
+        { "terme": "conseiller clientele", "poids": 2 },
+        { "terme": "carte bancaire", "poids": 2 },
+        { "terme": "decouvert", "poids": 3 },
+        { "terme": "agence bancaire", "poids": 3 }
+      ]
+    },
+    {
+      "id": "assurance",
+      "nom": "Assurance / mutuelle",
+      "motsCles": [
+        { "terme": "assurance", "poids": 3 },
+        { "terme": "assureur", "poids": 4 },
+        { "terme": "mutuelle", "poids": 5 },
+        { "terme": "complementaire sante", "poids": 5 },
+        { "terme": "adherent", "poids": 3 },
+        { "terme": "assure", "poids": 2 },
+        { "terme": "garanties", "poids": 3 },
+        { "terme": "souscripteur", "poids": 3 },
+        { "terme": "sinistre", "poids": 2 },
+        { "terme": "code des assurances", "poids": 5 },
+        { "terme": "code de la mutualite", "poids": 5 },
+        { "terme": "cotisation", "poids": 1 }
+      ]
+    }
+  ]
+}

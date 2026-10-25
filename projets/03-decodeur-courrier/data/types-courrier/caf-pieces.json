@@ -1,0 +1,104 @@
+{
+  "id": "caf-pieces",
+  "organisme": "caf",
+  "libelle": "CAF — Demande de pièces justificatives",
+  "motsCles": [
+    {
+      "terme": "pieces justificatives",
+      "poids": 4
+    },
+    {
+      "terme": "justificatifs",
+      "poids": 3
+    },
+    {
+      "terme": "nous transmettre",
+      "poids": 3
+    },
+    {
+      "terme": "merci de nous adresser",
+      "poids": 3
+    },
+    {
+      "terme": "documents manquants",
+      "poids": 4
+    },
+    {
+      "terme": "dossier incomplet",
+      "poids": 4
+    },
+    {
+      "terme": "faute de reponse",
+      "poids": 2
+    },
+    {
+      "terme": "pieces",
+      "poids": 2
+    },
+    {
+      "terme": "transmettre",
+      "poids": 1
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "indu",
+      "poids": -3
+    },
+    {
+      "terme": "controleur",
+      "poids": -2
+    },
+    {
+      "terme": "suspension",
+      "poids": -2
+    },
+    {
+      "terme": "france travail",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "La CAF a besoin de documents (justificatif de ressources, de logement, de situation…) pour calculer ou continuer à verser vos droits.",
+  "risques": [
+    "Si les pièces n'arrivent pas à temps, la CAF peut suspendre le versement de vos prestations jusqu'à réception.",
+    "Une suspension prolongée peut conduire à un indu si la CAF estime ensuite que vous n'aviez pas droit aux sommes versées."
+  ],
+  "actions": [
+    "Listez exactement les pièces demandées dans le courrier.",
+    "Envoyez-les de préférence par l'espace Mon compte sur caf.fr (preuve de dépôt immédiate) ou par courrier avec la référence allocataire.",
+    "Si un document est impossible à obtenir, écrivez-le en expliquant pourquoi et proposez un justificatif de remplacement."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date limite indiquée pour envoyer les pièces",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "defaut",
+      "libelle": "À défaut de date dans le courrier : répondre sous un mois",
+      "depart": "reception",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "explication": "Aucun délai légal général n'a été trouvé : la CAF fixe elle-même la date. Le délai d'un mois est une valeur prudente, A_VERIFIER.",
+      "source": "Aucun texte trouvé fixant un délai général.",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "envoi-pieces"
+  ],
+  "contacts": [
+    "france-services",
+    "assistante-sociale",
+    "defenseur-droits"
+  ],
+  "source": "https://www.caf.fr/",
+  "verifie_le": "A_VERIFIER"
+}

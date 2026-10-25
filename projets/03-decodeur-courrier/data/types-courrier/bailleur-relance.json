@@ -1,0 +1,93 @@
+{
+  "id": "bailleur-relance",
+  "organisme": "bailleur",
+  "libelle": "Bailleur — Relance de loyer impayé",
+  "motsCles": [
+    {
+      "terme": "loyer impaye",
+      "poids": 5
+    },
+    {
+      "terme": "loyers impayes",
+      "poids": 5
+    },
+    {
+      "terme": "retard de loyer",
+      "poids": 5
+    },
+    {
+      "terme": "relance",
+      "poids": 3
+    },
+    {
+      "terme": "arriere de loyer",
+      "poids": 4
+    },
+    {
+      "terme": "arrieres",
+      "poids": 3
+    },
+    {
+      "terme": "regulariser votre situation",
+      "poids": 3
+    },
+    {
+      "terme": "reste du",
+      "poids": 2
+    },
+    {
+      "terme": "echeance",
+      "poids": 1
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "commandement de payer",
+      "poids": -4
+    },
+    {
+      "terme": "conge",
+      "poids": -3
+    },
+    {
+      "terme": "regularisation des charges",
+      "poids": -4
+    },
+    {
+      "terme": "impot",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "Votre bailleur (ou son agence) vous signale un retard de loyer et vous demande de régulariser.",
+  "risques": [
+    "Si l'impayé dure, le bailleur peut faire délivrer un commandement de payer par commissaire de justice, puis demander la résiliation du bail.",
+    "Votre aide au logement (APL) peut être affectée en cas d'impayé déclaré."
+  ],
+  "actions": [
+    "Vérifiez le décompte (paiements faits, APL versée directement au bailleur).",
+    "Répondez par écrit en proposant un plan d'apurement réaliste.",
+    "Contactez rapidement l'ADIL, la CAF et le FSL de votre département : il existe des aides pour les impayés de loyer."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date indiquée pour régulariser",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "echeancier"
+  ],
+  "contacts": [
+    "adil",
+    "assistante-sociale",
+    "conciliateur",
+    "france-services"
+  ],
+  "source": "https://www.anil.org/",
+  "verifie_le": "A_VERIFIER"
+}

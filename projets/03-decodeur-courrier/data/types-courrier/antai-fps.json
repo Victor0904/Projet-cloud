@@ -1,0 +1,74 @@
+{
+  "id": "antai-fps",
+  "organisme": "antai",
+  "libelle": "Forfait post-stationnement (FPS) — avis de paiement",
+  "motsCles": [
+    {
+      "terme": "forfait post-stationnement",
+      "poids": 8
+    },
+    {
+      "terme": "forfait de post-stationnement",
+      "poids": 8
+    },
+    {
+      "terme": "fps",
+      "poids": 4
+    },
+    {
+      "terme": "stationnement",
+      "poids": 3
+    },
+    {
+      "terme": "rapo",
+      "poids": 5
+    },
+    {
+      "terme": "recours administratif prealable obligatoire",
+      "poids": 5
+    },
+    {
+      "terme": "commission du contentieux du stationnement payant",
+      "poids": 4
+    },
+    {
+      "terme": "avis de paiement",
+      "poids": 3
+    }
+  ],
+  "cestQuoi": "Le stationnement n'a pas été payé (ou pas assez) : la commune vous réclame un « forfait post-stationnement ». Ce n'est pas une amende pénale, c'est une redevance : on la conteste par un recours à la commune (RAPO).",
+  "risques": [
+    "Sans paiement, le FPS est majoré et recouvré par le Trésor public.",
+    "Sans RAPO dans le délai, vous ne pourrez plus contester devant la commission du contentieux du stationnement payant."
+  ],
+  "actions": [
+    "Vérifiez l'heure, le lieu, l'immatriculation et votre ticket ou paiement par application.",
+    "Pour contester, envoyez un RAPO à l'organisme indiqué sur l'avis (en ligne ou par LRAR), avec copie de l'avis et de la carte grise.",
+    "Le RAPO ne suspend pas le délai de paiement : renseignez-vous sur les règles en vigueur avant de ne pas payer."
+  ],
+  "delais": [
+    {
+      "id": "rapo",
+      "libelle": "Faire le recours administratif préalable obligatoire (RAPO)",
+      "depart": "date_courrier",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code général des collectivités territoriales, art. R2333-120-1 et suivants (A_VERIFIER)",
+      "explication": "Un mois à compter de la notification de l'avis. Certaines communes considèrent la notification à la date d'envoi + 5 jours ; on part de la date d'envoi par prudence.",
+      "source": "https://www.lyon.fr/demarche/stationnement/forfait-post-stationnement-recours",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "antai-rapo"
+  ],
+  "contacts": [
+    "antai",
+    "defenseur-droits",
+    "point-justice"
+  ],
+  "source": "https://www.lyon.fr/demarche/stationnement/forfait-post-stationnement-recours",
+  "verifie_le": "2026-10-25"
+}

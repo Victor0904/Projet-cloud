@@ -1,0 +1,149 @@
+{
+  "note": "Contacts gratuits. statut « verifie » = site joint avec succès le 2026-10-25 ; « A_VERIFIER » = site inaccessible depuis l'environnement de développement, adresse à confirmer.",
+  "contacts": [
+    {
+      "id": "defenseur-droits",
+      "nom": "Défenseur des droits",
+      "role": "Autorité indépendante, gratuite : aide en cas de litige avec un service public (CAF, France Travail, impôts…) ou de discrimination. Délégués dans chaque département.",
+      "url": "https://www.defenseurdesdroits.fr/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "point-justice",
+      "nom": "Point-justice (accès au droit)",
+      "role": "Consultations juridiques gratuites et confidentielles avec des avocats, notaires, juristes d'associations, près de chez vous.",
+      "url": "https://www.justice.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "conciliateur",
+      "nom": "Conciliateur de justice",
+      "role": "Bénévole qui aide gratuitement à trouver un accord amiable (litige avec un bailleur, un voisin, une entreprise…).",
+      "url": "https://www.conciliateurs.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "france-services",
+      "nom": "France services",
+      "role": "Guichets publics où un agent vous aide gratuitement dans vos démarches (CAF, impôts, France Travail, ANTAI…).",
+      "url": "https://www.france-services.gouv.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "assistante-sociale",
+      "nom": "Service social (CCAS ou service social du département)",
+      "role": "Un travailleur social peut vous aider à constituer un dossier, demander une aide d'urgence ou un fonds de solidarité. Coordonnées dans l'annuaire de l'administration.",
+      "url": "https://lannuaire.service-public.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "mediateur-caf",
+      "nom": "Médiateur de votre CAF",
+      "role": "Chaque CAF a un médiateur, à saisir après un premier échange ou un recours sans réponse satisfaisante. Coordonnées sur le site de votre CAF (caf.fr, rubrique « Ma Caf »).",
+      "url": "https://www.caf.fr/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "mediateur-france-travail",
+      "nom": "Médiateur régional de France Travail",
+      "role": "Gratuit et indépendant ; à saisir après une réclamation auprès de votre agence. Médiation obligatoire avant le tribunal pour une radiation ou une suppression d'allocation.",
+      "url": "https://www.francetravail.fr/candidat/vos-droits-et-demarches/reclamations/le-mediateur-de-pole-emploi.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "conciliateur-fiscal",
+      "nom": "Conciliateur fiscal départemental",
+      "role": "À saisir par écrit si la réponse de votre centre des finances publiques ne vous satisfait pas. Coordonnées sur impots.gouv.fr (rubrique Contact).",
+      "url": "https://www.impots.gouv.fr/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "mediateur-economie",
+      "nom": "Médiateur des ministères économiques et financiers",
+      "role": "Recours amiable en dernier ressort pour un litige fiscal, après le conciliateur fiscal.",
+      "url": "https://www.economie.gouv.fr/mediateur",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "mediateur-urssaf",
+      "nom": "Médiateur de l'URSSAF",
+      "role": "Gratuit ; à saisir depuis votre espace en ligne URSSAF après une réclamation restée sans réponse satisfaisante.",
+      "url": "https://www.urssaf.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "antai",
+      "nom": "ANTAI — désignation et contestation en ligne",
+      "role": "Site officiel pour payer, désigner le conducteur ou contester un avis de contravention.",
+      "url": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "chambre-commissaires",
+      "nom": "Chambre nationale des commissaires de justice",
+      "role": "Pour vérifier qu'un commissaire de justice existe vraiment ou signaler un comportement abusif.",
+      "url": "https://commissaire-justice.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "adil",
+      "nom": "ADIL (Agence départementale d'information sur le logement)",
+      "role": "Conseils juridiques gratuits sur le bail, les loyers impayés, le congé, les charges. Une ADIL par département.",
+      "url": "https://www.anil.org/lanil-et-les-adil/votre-adil/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "banque-de-france",
+      "nom": "Banque de France",
+      "role": "Droit au compte (si une banque refuse de vous ouvrir un compte), surendettement, accueil gratuit.",
+      "url": "https://particuliers.banque-france.fr/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "mediateur-bancaire",
+      "nom": "Médiateur de votre banque",
+      "role": "Chaque banque doit proposer un médiateur gratuit. Ses coordonnées figurent sur vos relevés et sur le site de la banque.",
+      "url": "https://www.economie.gouv.fr/mediation-conso",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "cresus",
+      "nom": "Crésus (association)",
+      "role": "Aide gratuite aux personnes en difficulté financière ou surendettées.",
+      "url": "https://www.cresus.org/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "ufc",
+      "nom": "Associations de consommateurs (UFC-Que Choisir, CLCV…)",
+      "role": "Permanences locales pour vous aider dans un litige avec une banque, un assureur, une entreprise (adhésion parfois demandée).",
+      "url": "https://www.quechoisir.org/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    },
+    {
+      "id": "mediation-assurance",
+      "nom": "La Médiation de l'assurance",
+      "role": "Médiateur gratuit pour les litiges avec un assureur, après une réclamation écrite au service client.",
+      "url": "https://www.mediation-assurance.org/",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ]
+}

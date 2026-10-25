@@ -1,0 +1,90 @@
+{
+  "id": "assurance-mise-en-demeure",
+  "organisme": "assurance",
+  "libelle": "Assurance / mutuelle — Mise en demeure pour cotisation impayée",
+  "motsCles": [
+    {
+      "terme": "mise en demeure",
+      "poids": 6
+    },
+    {
+      "terme": "cotisation impayee",
+      "poids": 5
+    },
+    {
+      "terme": "cotisations impayees",
+      "poids": 5
+    },
+    {
+      "terme": "defaut de paiement",
+      "poids": 5
+    },
+    {
+      "terme": "suspension des garanties",
+      "poids": 6
+    },
+    {
+      "terme": "garanties seront suspendues",
+      "poids": 6
+    },
+    {
+      "terme": "l113-3",
+      "poids": 5
+    },
+    {
+      "terme": "l221-7",
+      "poids": 5
+    },
+    {
+      "terme": "trente jours",
+      "poids": 2
+    }
+  ],
+  "cestQuoi": "Une cotisation d'assurance ou de mutuelle n'a pas été payée. L'assureur vous met en demeure : sans paiement, vos garanties seront suspendues puis le contrat résilié.",
+  "risques": [
+    "30 jours après la mise en demeure, les garanties sont suspendues : un sinistre survenu alors ne serait pas couvert.",
+    "10 jours plus tard, l'assureur peut résilier le contrat, et la cotisation reste due."
+  ],
+  "actions": [
+    "Payez la cotisation due au plus vite : les garanties reprennent le lendemain du paiement.",
+    "Si vous ne pouvez pas tout payer, demandez un échelonnement par écrit.",
+    "Pour une complémentaire santé, renseignez-vous sur la Complémentaire santé solidaire (CSS) si vos ressources sont faibles."
+  ],
+  "delais": [
+    {
+      "id": "suspension",
+      "libelle": "Payer avant la suspension des garanties",
+      "depart": "reception",
+      "duree": 30,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code des assurances, art. L113-3 (code de la mutualité, art. L221-7 pour les mutuelles — A_VERIFIER)",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L113-3%20code%20des%20assurances",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "resiliation",
+      "libelle": "Date à partir de laquelle l'assureur peut résilier",
+      "depart": "reception",
+      "duree": 40,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Code des assurances, art. L113-3",
+      "explication": "30 jours de suspension puis 10 jours.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L113-3%20code%20des%20assurances",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "echeancier"
+  ],
+  "contacts": [
+    "mediation-assurance",
+    "cresus",
+    "assistante-sociale"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L113-3%20code%20des%20assurances",
+  "verifie_le": "2026-10-25"
+}

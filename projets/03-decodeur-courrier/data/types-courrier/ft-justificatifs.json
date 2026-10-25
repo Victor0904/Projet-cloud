@@ -1,0 +1,90 @@
+{
+  "id": "ft-justificatifs",
+  "organisme": "france-travail",
+  "libelle": "France Travail — Demande de justificatifs",
+  "motsCles": [
+    {
+      "terme": "justificatif",
+      "poids": 4
+    },
+    {
+      "terme": "justificatifs",
+      "poids": 4
+    },
+    {
+      "terme": "attestation employeur",
+      "poids": 4
+    },
+    {
+      "terme": "pieces",
+      "poids": 2
+    },
+    {
+      "terme": "transmettre",
+      "poids": 2
+    },
+    {
+      "terme": "documents",
+      "poids": 2
+    },
+    {
+      "terme": "dossier incomplet",
+      "poids": 3
+    },
+    {
+      "terme": "bulletins de salaire",
+      "poids": 3
+    },
+    {
+      "terme": "actualisation",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "trop-percu",
+      "poids": -3
+    },
+    {
+      "terme": "convocation",
+      "poids": -2
+    },
+    {
+      "terme": "caf",
+      "poids": -4
+    },
+    {
+      "terme": "allocataire",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "France Travail a besoin de documents (attestation employeur, bulletins de salaire, justificatif d'identité…) pour ouvrir ou continuer vos droits.",
+  "risques": [
+    "Sans ces pièces, l'allocation peut ne pas être calculée, ou être suspendue."
+  ],
+  "actions": [
+    "Repérez la liste des documents demandés.",
+    "Déposez-les dans votre espace personnel francetravail.fr (rubrique « Mes échanges / Transmettre un document »).",
+    "Si un employeur ne vous donne pas l'attestation, signalez-le à votre conseiller."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date limite indiquée pour envoyer les documents",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "envoi-pieces"
+  ],
+  "contacts": [
+    "mediateur-france-travail",
+    "france-services"
+  ],
+  "source": "https://www.francetravail.fr/",
+  "verifie_le": "A_VERIFIER"
+}

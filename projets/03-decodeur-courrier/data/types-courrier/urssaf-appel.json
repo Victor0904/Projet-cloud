@@ -1,0 +1,80 @@
+{
+  "id": "urssaf-appel",
+  "organisme": "urssaf",
+  "libelle": "URSSAF — Appel / échéancier de cotisations",
+  "motsCles": [
+    {
+      "terme": "appel de cotisations",
+      "poids": 6
+    },
+    {
+      "terme": "echeancier de cotisations",
+      "poids": 6
+    },
+    {
+      "terme": "cotisations provisionnelles",
+      "poids": 4
+    },
+    {
+      "terme": "votre echeancier",
+      "poids": 3
+    },
+    {
+      "terme": "echeance",
+      "poids": 2
+    },
+    {
+      "terme": "montant a payer",
+      "poids": 2
+    },
+    {
+      "terme": "regularisation",
+      "poids": 1
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure",
+      "poids": -4
+    },
+    {
+      "terme": "majorations de retard",
+      "poids": -3
+    },
+    {
+      "terme": "notification de majorations",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "L'URSSAF vous indique les cotisations sociales à payer et leurs dates d'échéance, calculées sur vos revenus (ou estimées).",
+  "risques": [
+    "Un paiement en retard entraîne des majorations de retard, puis une mise en demeure.",
+    "Des cotisations calculées sur un revenu estimé trop élevé pèsent sur votre trésorerie."
+  ],
+  "actions": [
+    "Vérifiez le revenu pris en compte.",
+    "Si votre revenu baisse, vous pouvez demander une modulation (estimation) depuis votre espace en ligne.",
+    "En cas de difficulté, demandez un échéancier AVANT l'échéance."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date d'échéance indiquée",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "demande-explications",
+    "echeancier"
+  ],
+  "contacts": [
+    "mediateur-urssaf",
+    "france-services"
+  ],
+  "source": "https://www.urssaf.fr/",
+  "verifie_le": "A_VERIFIER"
+}

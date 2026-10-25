@@ -1,0 +1,20 @@
+{
+  "note": "Courriers fictifs pour essayer l'outil. Toute ressemblance avec une personne réelle serait fortuite.",
+  "exemples": [
+    {
+      "id": "caf-indu",
+      "titre": "CAF : trop-perçu d'APL",
+      "texte": "Caisse d'allocations familiales de la Gironde\n33078 Bordeaux Cedex\n\nMadame Camille MARTIN\n12 rue des Lilas\n33000 Bordeaux\n\nN° allocataire : 1234567\nBordeaux, le 3 mars 2026\n\nObjet : notification d'indu\n\nMadame,\n\nSuite à l'examen de votre dossier, nous avons constaté que vous avez perçu des sommes auxquelles vous n'aviez pas droit au titre de l'aide personnalisée au logement pour la période du 01/09/2025 au 31/12/2025.\n\nLe montant de l'indu s'élève à 742,18 €.\n\nCe trop-perçu résulte de la prise en compte tardive de vos ressources du 4e trimestre. Vous devez rembourser cette somme. À défaut de remboursement, des retenues seront effectuées sur vos prestations à venir.\n\nSi vous contestez cette décision, vous pouvez saisir la Commission de recours amiable dans un délai de deux mois à compter de la réception de ce courrier. Vous pouvez également solliciter une remise de dette.\n\nLe Directeur"
+    },
+    {
+      "id": "antai-avis",
+      "titre": "ANTAI : excès de vitesse",
+      "texte": "AVIS DE CONTRAVENTION\nAgence nationale de traitement automatisé des infractions\n\nN° d'avis : 1234 5678 9012 3\nDate d'envoi : 14/10/2026\n\nMadame Anne BERNARD, titulaire du certificat d'immatriculation\nVéhicule immatriculé : AB-123-CD\n\nInfraction : excès de vitesse inférieur à 20 km/h, vitesse retenue 87 km/h pour 80 km/h autorisés.\nConstatée le 02/10/2026 par radar automatique.\n\nAmende forfaitaire minorée : 45 €\nAmende forfaitaire : 135 €\n\nSi vous n'étiez pas le conducteur, vous pouvez désigner le conducteur ou contester au moyen de la requête en exonération dans un délai de 45 jours."
+    },
+    {
+      "id": "bailleur-relance",
+      "titre": "Bailleur : loyer en retard",
+      "texte": "Agence Immo Centre - Gestion locative\n45000 Orléans\n\nMonsieur Bruno CHEVALIER\nLocataire - 15 rue Royale, 45000 Orléans\n\nOrléans, le 12/03/2026\n\nObjet : retard de loyer\n\nMonsieur,\n\nSauf erreur de notre part, nous n'avons pas reçu le règlement de votre loyer du mois de mars 2026. Le montant restant dû est de 650,00 €.\n\nNous vous remercions de bien vouloir régulariser votre situation avant le 25/03/2026. À défaut, nous serons contraints de transmettre le dossier à notre commissaire de justice."
+    }
+  ]
+}

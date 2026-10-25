@@ -1,0 +1,86 @@
+{
+  "id": "caf-suspension",
+  "organisme": "caf",
+  "libelle": "CAF — Suspension du versement",
+  "motsCles": [
+    {
+      "terme": "suspension",
+      "poids": 5
+    },
+    {
+      "terme": "suspendu",
+      "poids": 4
+    },
+    {
+      "terme": "suspendre",
+      "poids": 3
+    },
+    {
+      "terme": "versement interrompu",
+      "poids": 4
+    },
+    {
+      "terme": "interruption",
+      "poids": 3
+    },
+    {
+      "terme": "nous suspendons",
+      "poids": 5
+    },
+    {
+      "terme": "ne sera plus verse",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "france travail",
+      "poids": -4
+    },
+    {
+      "terme": "garanties",
+      "poids": -3
+    },
+    {
+      "terme": "pole emploi",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "La CAF arrête temporairement de vous verser une ou plusieurs prestations, souvent parce qu'une information ou une pièce manque (déclaration trimestrielle, justificatif, contrôle en cours).",
+  "risques": [
+    "Tant que la situation n'est pas régularisée, vous ne recevez plus les sommes concernées.",
+    "Si la CAF conclut que vous n'aviez pas droit aux prestations, elle peut réclamer un indu."
+  ],
+  "actions": [
+    "Identifiez la raison précise de la suspension (pièce manquante, déclaration non faite, contrôle).",
+    "Fournissez au plus vite ce qui manque, via Mon compte ou par courrier.",
+    "Si vous estimez la suspension injustifiée, contestez devant la commission de recours amiable et signalez une situation de précarité (le versement peut être prioritaire)."
+  ],
+  "delais": [
+    {
+      "id": "cra",
+      "libelle": "Contester devant la commission de recours amiable (CRA) de la CAF",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. R142-1",
+      "explication": "Le recours amiable est obligatoire avant tout recours devant le tribunal. Le délai court à partir de la réception de la décision.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "envoi-pieces",
+    "recours-cra"
+  ],
+  "contacts": [
+    "mediateur-caf",
+    "defenseur-droits",
+    "assistante-sociale",
+    "france-services"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+  "verifie_le": "2026-10-25"
+}

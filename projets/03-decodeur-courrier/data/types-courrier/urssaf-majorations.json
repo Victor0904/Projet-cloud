@@ -1,0 +1,79 @@
+{
+  "id": "urssaf-majorations",
+  "organisme": "urssaf",
+  "libelle": "URSSAF — Majorations et pénalités de retard",
+  "motsCles": [
+    {
+      "terme": "majorations de retard",
+      "poids": 5
+    },
+    {
+      "terme": "notification de majorations",
+      "poids": 6
+    },
+    {
+      "terme": "penalites",
+      "poids": 3
+    },
+    {
+      "terme": "remise des majorations",
+      "poids": 4
+    },
+    {
+      "terme": "majoration complementaire",
+      "poids": 4
+    },
+    {
+      "terme": "paiement tardif",
+      "poids": 3
+    },
+    {
+      "terme": "declaration tardive",
+      "poids": 3
+    },
+    {
+      "terme": "retard de paiement",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "L'URSSAF vous facture des majorations parce qu'une déclaration ou un paiement est arrivé en retard (5 % du montant puis une majoration complémentaire par mois de retard, selon les sources consultées).",
+  "risques": [
+    "Les majorations s'ajoutent à la dette et peuvent faire l'objet d'une mise en demeure."
+  ],
+  "actions": [
+    "Vérifiez les dates de paiement et de déclaration.",
+    "Si vous avez payé dans les temps ou si le retard a une cause sérieuse, demandez la remise des majorations (une fois les cotisations payées).",
+    "Si vous contestez le calcul, saisissez la commission de recours amiable."
+  ],
+  "delais": [
+    {
+      "id": "cra-majorations",
+      "libelle": "Contester les majorations (délai prudent)",
+      "depart": "reception",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. R243-20 (A_VERIFIER)",
+      "explication": "Une source indique un mois pour les majorations au lieu de deux : on retient le plus court par prudence.",
+      "source": "https://www.agn-avocats.fr/blog/controle-urssaf/cotisations-urssaf-quand-payer-agn-avocats",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "remise-dette",
+    "recours-cra"
+  ],
+  "contacts": [
+    "mediateur-urssaf",
+    "france-services"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R243-18%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+  "verifie_le": "A_VERIFIER"
+}

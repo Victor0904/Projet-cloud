@@ -1,0 +1,74 @@
+{
+  "id": "huissier-sommation",
+  "organisme": "huissier",
+  "libelle": "Commissaire de justice — Sommation de payer",
+  "motsCles": [
+    {
+      "terme": "sommation de payer",
+      "poids": 7
+    },
+    {
+      "terme": "sommation",
+      "poids": 4
+    },
+    {
+      "terme": "faisons sommation",
+      "poids": 5
+    },
+    {
+      "terme": "a defaut de paiement",
+      "poids": 2
+    },
+    {
+      "terme": "procedure judiciaire",
+      "poids": 2
+    },
+    {
+      "terme": "recouvrement amiable",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "commandement",
+      "poids": -3
+    },
+    {
+      "terme": "injonction de payer",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "Un commissaire de justice (anciennement huissier) vous demande de payer une dette pour le compte d'un créancier. Une sommation seule n'est pas un jugement : elle ne permet pas de saisir vos biens.",
+  "risques": [
+    "Sans paiement, le créancier peut saisir le tribunal pour obtenir un titre exécutoire (jugement, injonction de payer), puis faire procéder à des saisies.",
+    "Attention : en recouvrement amiable, les frais facturés au débiteur sont en principe interdits, sauf exceptions — A_VERIFIER."
+  ],
+  "actions": [
+    "Vérifiez que la dette est réelle, son montant et qu'elle n'est pas prescrite.",
+    "Demandez le décompte détaillé et la copie du contrat ou de la facture d'origine.",
+    "Si la dette est due, proposez un échéancier réaliste par écrit."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Délai indiqué dans la sommation",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "huissier-justificatifs",
+    "echeancier"
+  ],
+  "contacts": [
+    "chambre-commissaires",
+    "point-justice",
+    "cresus",
+    "conciliateur"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L111-8%20code%20des%20proc%C3%A9dures%20civiles%20d%27ex%C3%A9cution",
+  "verifie_le": "A_VERIFIER"
+}

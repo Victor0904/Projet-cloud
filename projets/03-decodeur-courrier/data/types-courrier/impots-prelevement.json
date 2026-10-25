@@ -1,0 +1,101 @@
+{
+  "id": "impots-prelevement",
+  "organisme": "impots",
+  "libelle": "Impôts — Prélèvement à la source / mensualisation",
+  "motsCles": [
+    {
+      "terme": "prelevement a la source",
+      "poids": 6
+    },
+    {
+      "terme": "taux de prelevement",
+      "poids": 5
+    },
+    {
+      "terme": "acompte",
+      "poids": 3
+    },
+    {
+      "terme": "acomptes",
+      "poids": 3
+    },
+    {
+      "terme": "prelevement mensuel",
+      "poids": 3
+    },
+    {
+      "terme": "mensualisation",
+      "poids": 4
+    },
+    {
+      "terme": "echeancier de prelevement",
+      "poids": 4
+    },
+    {
+      "terme": "taux personnalise",
+      "poids": 3
+    },
+    {
+      "terme": "modulation",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "rejet",
+      "poids": -3
+    },
+    {
+      "terme": "loyer",
+      "poids": -3
+    },
+    {
+      "terme": "urssaf",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "Ce courrier vous informe du taux de prélèvement à la source appliqué à vos revenus, ou des acomptes / mensualités qui seront prélevés sur votre compte.",
+  "risques": [
+    "Un taux mal adapté (changement de revenus, de situation) peut entraîner un gros solde à payer l'année suivante.",
+    "Un prélèvement rejeté peut entraîner une majoration."
+  ],
+  "actions": [
+    "Vérifiez le taux et les montants annoncés.",
+    "Si votre situation a changé, modifiez votre taux ou vos acomptes dans « Gérer mon prélèvement à la source » sur impots.gouv.fr.",
+    "Assurez-vous que le compte est approvisionné aux dates annoncées."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date du prochain prélèvement indiquée",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "reclamation",
+      "libelle": "Faire une réclamation (contester l'impôt)",
+      "depart": "date_courrier",
+      "duree": 2,
+      "unite": "fin_annee",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. R*196-1",
+      "explication": "Pour l'impôt sur le revenu, la réclamation est possible jusqu'au 31 décembre de la 2e année qui suit la mise en recouvrement (date figurant sur l'avis). Pour les impôts locaux, c'est la 1re année seulement : vérifiez.",
+      "source": "https://www.impots.gouv.fr/particulier/delais-de-reclamation",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "demande-explications",
+    "impots-reclamation"
+  ],
+  "contacts": [
+    "conciliateur-fiscal",
+    "france-services"
+  ],
+  "source": "https://www.impots.gouv.fr/",
+  "verifie_le": "A_VERIFIER"
+}

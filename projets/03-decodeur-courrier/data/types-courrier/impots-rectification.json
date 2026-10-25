@@ -1,0 +1,92 @@
+{
+  "id": "impots-rectification",
+  "organisme": "impots",
+  "libelle": "Impôts — Proposition de rectification (contrôle fiscal)",
+  "motsCles": [
+    {
+      "terme": "proposition de rectification",
+      "poids": 8
+    },
+    {
+      "terme": "rectification",
+      "poids": 3
+    },
+    {
+      "terme": "rehaussement",
+      "poids": 4
+    },
+    {
+      "terme": "rehaussements",
+      "poids": 4
+    },
+    {
+      "terme": "controle fiscal",
+      "poids": 3
+    },
+    {
+      "terme": "controle sur pieces",
+      "poids": 3
+    },
+    {
+      "terme": "procedure de rectification contradictoire",
+      "poids": 5
+    },
+    {
+      "terme": "interet de retard",
+      "poids": 2
+    },
+    {
+      "terme": "observations",
+      "poids": 2
+    }
+  ],
+  "cestQuoi": "Après un contrôle, l'administration fiscale propose de modifier (en général augmenter) votre impôt. Ce n'est pas encore une décision : vous pouvez répondre et donner vos arguments.",
+  "risques": [
+    "Sans réponse dans le délai, les rectifications proposées sont appliquées : impôt supplémentaire, intérêt de retard et parfois majorations.",
+    "Votre silence vous prive aussi de certains recours (saisine de la commission, interlocuteur)."
+  ],
+  "actions": [
+    "Lisez chaque point contesté et rassemblez vos justificatifs.",
+    "Répondez par écrit (observations) avant la fin du délai, ou demandez une prolongation de 30 jours AVANT son expiration.",
+    "Vous pouvez vous faire assister d'un conseil de votre choix."
+  ],
+  "delais": [
+    {
+      "id": "reponse",
+      "libelle": "Répondre à la proposition (observations)",
+      "depart": "reception",
+      "duree": 30,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. L57 et R*57-1",
+      "explication": "Le délai court à partir de la réception de la proposition.",
+      "source": "https://bofip.impots.gouv.fr/bofip/876-PGP.html/identifiant%3DBOI-CF-IOR-10-30-20120912",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "prorogation",
+      "libelle": "Avec la prolongation de 30 jours (à demander avant la fin du premier délai)",
+      "depart": "reception",
+      "duree": 60,
+      "unite": "jours",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. L57",
+      "explication": "La prolongation n'est accordée que si la demande arrive avant l'expiration du premier délai de 30 jours.",
+      "source": "https://bofip.impots.gouv.fr/bofip/876-PGP.html/identifiant%3DBOI-CF-IOR-10-30-20120912",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "impots-observations",
+    "impots-prorogation"
+  ],
+  "contacts": [
+    "conciliateur-fiscal",
+    "mediateur-economie",
+    "point-justice"
+  ],
+  "source": "https://bofip.impots.gouv.fr/bofip/876-PGP.html/identifiant%3DBOI-CF-IOR-10-30-20120912",
+  "verifie_le": "2026-10-25"
+}

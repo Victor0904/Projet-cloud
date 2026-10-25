@@ -1,0 +1,74 @@
+{
+  "id": "antai-majoree",
+  "organisme": "antai",
+  "libelle": "ANTAI — Amende forfaitaire majorée",
+  "motsCles": [
+    {
+      "terme": "amende forfaitaire majoree",
+      "poids": 8
+    },
+    {
+      "terme": "majoree",
+      "poids": 4
+    },
+    {
+      "terme": "titre executoire",
+      "poids": 3
+    },
+    {
+      "terme": "tresor public",
+      "poids": 2
+    },
+    {
+      "terme": "reclamation",
+      "poids": 2
+    },
+    {
+      "terme": "tresorerie du controle automatise",
+      "poids": 3
+    },
+    {
+      "terme": "comptable public",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "post-stationnement",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "L'amende initiale n'a été ni payée ni contestée à temps : son montant a augmenté et le Trésor public est chargé de la récupérer.",
+  "risques": [
+    "Sans paiement ni réclamation, le Trésor public peut saisir les sommes sur votre compte ou votre salaire."
+  ],
+  "actions": [
+    "Si vous n'avez jamais reçu l'avis initial (déménagement…) ou si vous contestez, faites une réclamation en ligne ou par LRAR avec le formulaire de réclamation.",
+    "Sinon, payez ou demandez des délais de paiement au comptable indiqué."
+  ],
+  "delais": [
+    {
+      "id": "reclamation",
+      "libelle": "Faire une réclamation",
+      "depart": "date_courrier",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de procédure pénale, art. 530",
+      "explication": "Un mois en règle générale ; 3 mois pour une infraction routière notifiée par lettre recommandée. Par prudence, on retient un mois.",
+      "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "antai-reclamation-majoree",
+    "echeancier"
+  ],
+  "contacts": [
+    "antai",
+    "point-justice"
+  ],
+  "source": "https://www.antai.gouv.fr/particulier/designation-ou-contestation/",
+  "verifie_le": "2026-10-25"
+}

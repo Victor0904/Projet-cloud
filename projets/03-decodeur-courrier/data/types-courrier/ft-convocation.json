@@ -1,0 +1,79 @@
+{
+  "id": "ft-convocation",
+  "organisme": "france-travail",
+  "libelle": "France Travail — Convocation",
+  "motsCles": [
+    {
+      "terme": "convocation",
+      "poids": 5
+    },
+    {
+      "terme": "convoque",
+      "poids": 4
+    },
+    {
+      "terme": "rendez-vous",
+      "poids": 3
+    },
+    {
+      "terme": "entretien",
+      "poids": 2
+    },
+    {
+      "terme": "presentez-vous",
+      "poids": 3
+    },
+    {
+      "terme": "votre presence est obligatoire",
+      "poids": 4
+    },
+    {
+      "terme": "atelier",
+      "poids": 2
+    },
+    {
+      "terme": "munissez-vous",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "radiation",
+      "poids": -2
+    },
+    {
+      "terme": "trop-percu",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "France Travail vous convoque à un rendez-vous (entretien, atelier, information collective). La présence est en principe obligatoire.",
+  "risques": [
+    "Une absence sans motif valable peut entraîner une sanction : suspension ou suppression de l'allocation, voire radiation (régime de sanctions modifié en 2025 — A_VERIFIER)."
+  ],
+  "actions": [
+    "Notez la date, l'heure et le lieu ou le mode (téléphone, visio).",
+    "Si vous ne pouvez pas venir (maladie, entretien d'embauche, formation…), prévenez AVANT le rendez-vous avec un justificatif et demandez un report.",
+    "Conservez la preuve de votre message (espace personnel, courriel)."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date du rendez-vous",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "ft-report"
+  ],
+  "contacts": [
+    "mediateur-france-travail",
+    "defenseur-droits",
+    "france-services"
+  ],
+  "source": "https://www.francetravail.fr/",
+  "verifie_le": "A_VERIFIER"
+}

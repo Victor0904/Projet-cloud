@@ -1,0 +1,98 @@
+{
+  "id": "banque-rejet",
+  "organisme": "banque",
+  "libelle": "Banque — Rejet de prélèvement",
+  "motsCles": [
+    {
+      "terme": "rejet de prelevement",
+      "poids": 7
+    },
+    {
+      "terme": "prelevement rejete",
+      "poids": 6
+    },
+    {
+      "terme": "prelevement a ete rejete",
+      "poids": 6
+    },
+    {
+      "terme": "rejet",
+      "poids": 3
+    },
+    {
+      "terme": "provision insuffisante",
+      "poids": 5
+    },
+    {
+      "terme": "insuffisance de provision",
+      "poids": 5
+    },
+    {
+      "terme": "defaut de provision",
+      "poids": 5
+    },
+    {
+      "terme": "creancier",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "impot",
+      "poids": -2
+    },
+    {
+      "terme": "prelevement a la source",
+      "poids": -6
+    }
+  ],
+  "cestQuoi": "Un prélèvement n'a pas pu être payé parce que le solde du compte était insuffisant. La banque l'a rejeté et vous facture des frais.",
+  "risques": [
+    "Le créancier (fournisseur, bailleur…) n'est pas payé : il peut ajouter des pénalités ou suspendre le service.",
+    "Des rejets répétés peuvent conduire la banque à fermer le compte."
+  ],
+  "actions": [
+    "Prévenez le créancier et régularisez le paiement.",
+    "Vérifiez les frais : ils sont plafonnés. En cas de rejets répétés du même prélèvement, demandez le remboursement des frais au-delà du premier rejet.",
+    "Si vous êtes en difficulté, demandez le statut de « client fragile » et l'offre spécifique (frais plafonnés)."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date de nouvelle présentation du prélèvement (si indiquée)",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "controles": [
+    {
+      "libelle": "Frais de rejet de prélèvement",
+      "contexte": [
+        "frais",
+        "commission",
+        "rejet"
+      ],
+      "plafond": 20,
+      "message": "Les frais pour un prélèvement rejeté ne peuvent dépasser ni le montant du prélèvement, ni 20 € par opération.",
+      "reference_legale": "Code monétaire et financier, art. D133-6",
+      "source": "https://selectra.info/finance/actualites/marche/prelevement-rejete-plafond-20-euros-frais",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "banque-remboursement-frais",
+    "echeancier"
+  ],
+  "contacts": [
+    "mediateur-bancaire",
+    "banque-de-france",
+    "cresus",
+    "ufc"
+  ],
+  "source": "https://selectra.info/finance/actualites/marche/prelevement-rejete-plafond-20-euros-frais",
+  "verifie_le": "2026-10-25"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "bailleur-charges",
+  "organisme": "bailleur",
+  "libelle": "Bailleur — Régularisation des charges",
+  "motsCles": [
+    {
+      "terme": "regularisation des charges",
+      "poids": 8
+    },
+    {
+      "terme": "charges locatives",
+      "poids": 5
+    },
+    {
+      "terme": "decompte de charges",
+      "poids": 5
+    },
+    {
+      "terme": "decompte des charges",
+      "poids": 5
+    },
+    {
+      "terme": "provisions sur charges",
+      "poids": 4
+    },
+    {
+      "terme": "provisions",
+      "poids": 2
+    },
+    {
+      "terme": "charges recuperables",
+      "poids": 4
+    },
+    {
+      "terme": "tantiemes",
+      "poids": 2
+    }
+  ],
+  "cestQuoi": "Une fois par an, le bailleur compare les provisions de charges que vous avez payées avec les dépenses réelles. Il vous réclame un complément ou vous rembourse.",
+  "risques": [
+    "Le complément est dû s'il est justifié ; à défaut de paiement, il s'ajoute à votre dette locative."
+  ],
+  "actions": [
+    "Demandez les justificatifs (factures, répartition) : le bailleur doit les tenir à votre disposition.",
+    "Vérifiez que seules des charges « récupérables » sont facturées.",
+    "Si la régularisation arrive tardivement, vous pouvez demander à payer en 12 mois (A_VERIFIER)."
+  ],
+  "delais": [
+    {
+      "id": "justificatifs",
+      "libelle": "Consulter les justificatifs (tenus à disposition après l'envoi du décompte)",
+      "depart": "date_courrier",
+      "duree": 6,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Loi du 6 juillet 1989, art. 23",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2023%20loi%2089-462%20du%206%20juillet%201989",
+      "verifie_le": "A_VERIFIER",
+      "statut": "A_VERIFIER"
+    }
+  ],
+  "lettres": [
+    "bailleur-justificatifs-charges",
+    "echeancier"
+  ],
+  "contacts": [
+    "adil",
+    "conciliateur"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=article%2023%20loi%2089-462%20du%206%20juillet%201989",
+  "verifie_le": "A_VERIFIER"
+}

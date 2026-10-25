@@ -1,0 +1,99 @@
+{
+  "id": "caf-indu",
+  "organisme": "caf",
+  "libelle": "CAF — Notification d'indu (trop-perçu)",
+  "motsCles": [
+    {
+      "terme": "indu",
+      "poids": 5
+    },
+    {
+      "terme": "trop-percu",
+      "poids": 4
+    },
+    {
+      "terme": "trop percu",
+      "poids": 4
+    },
+    {
+      "terme": "montant de l'indu",
+      "poids": 5
+    },
+    {
+      "terme": "notification d'indu",
+      "poids": 6
+    },
+    {
+      "terme": "vous devez rembourser",
+      "poids": 3
+    },
+    {
+      "terme": "rembourser",
+      "poids": 2
+    },
+    {
+      "terme": "retenue",
+      "poids": 2
+    },
+    {
+      "terme": "retenues sur vos prestations",
+      "poids": 3
+    },
+    {
+      "terme": "somme versee a tort",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "france travail",
+      "poids": -4
+    },
+    {
+      "terme": "pole emploi",
+      "poids": -4
+    }
+  ],
+  "cestQuoi": "La CAF estime vous avoir versé plus que ce à quoi vous aviez droit (un « indu » ou « trop-perçu »). Elle vous demande de rembourser la différence. Ce n'est pas une amende : c'est le remboursement d'une somme déjà reçue.",
+  "risques": [
+    "Sans réponse ni paiement, la CAF récupère la somme en retenant une partie de vos prochaines prestations (retenues plafonnées selon vos ressources).",
+    "Si vous ne percevez plus de prestations, la CAF peut délivrer une contrainte (équivalent d'un jugement) puis faire saisir les sommes.",
+    "En cas de fraude retenue, une pénalité financière peut s'ajouter."
+  ],
+  "actions": [
+    "Vérifiez la période et le motif de l'indu : changement de situation déclaré ? ressources prises en compte ? erreur de la CAF ?",
+    "Si vous n'êtes pas d'accord : écrivez à la commission de recours amiable (CRA) dans le délai, en expliquant pourquoi.",
+    "Si vous êtes d'accord mais ne pouvez pas tout payer : demandez un échéancier ou une remise de dette (totale ou partielle) en joignant vos justificatifs de ressources.",
+    "Une remise de dette peut en principe être demandée tant que la dette n'est pas remboursée (aucun délai trouvé dans un texte : A_VERIFIER) ; la demander tôt limite les retenues.",
+    "Gardez une copie de tout ce que vous envoyez et la preuve d'envoi (accusé de réception ou capture de l'espace Mon compte)."
+  ],
+  "delais": [
+    {
+      "id": "cra",
+      "libelle": "Contester devant la commission de recours amiable (CRA) de la CAF",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. R142-1",
+      "explication": "Le recours amiable est obligatoire avant tout recours devant le tribunal. Le délai court à partir de la réception de la décision.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "recours-cra",
+    "remise-dette",
+    "echeancier"
+  ],
+  "contacts": [
+    "mediateur-caf",
+    "defenseur-droits",
+    "point-justice",
+    "france-services",
+    "assistante-sociale"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+  "verifie_le": "2026-10-25"
+}

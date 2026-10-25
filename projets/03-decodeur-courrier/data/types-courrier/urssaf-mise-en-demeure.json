@@ -1,0 +1,79 @@
+{
+  "id": "urssaf-mise-en-demeure",
+  "organisme": "urssaf",
+  "libelle": "URSSAF — Mise en demeure",
+  "motsCles": [
+    {
+      "terme": "mise en demeure",
+      "poids": 6
+    },
+    {
+      "terme": "dans le delai d'un mois",
+      "poids": 3
+    },
+    {
+      "terme": "contrainte",
+      "poids": 3
+    },
+    {
+      "terme": "recouvrement force",
+      "poids": 3
+    },
+    {
+      "terme": "commission de recours amiable",
+      "poids": 2
+    },
+    {
+      "terme": "cotisations impayees",
+      "poids": 2
+    }
+  ],
+  "cestQuoi": "L'URSSAF constate des cotisations (et majorations) impayées et vous demande officiellement de payer. C'est l'étape obligatoire avant une procédure de recouvrement forcé.",
+  "risques": [
+    "Sans paiement dans le mois, l'URSSAF peut délivrer une « contrainte », qui a la force d'un jugement, puis faire procéder à des saisies.",
+    "Les majorations de retard continuent de courir."
+  ],
+  "actions": [
+    "Vérifiez les périodes et montants réclamés.",
+    "Payez, ou demandez un échéancier au plus vite.",
+    "Si vous contestez, saisissez la commission de recours amiable dans le délai."
+  ],
+  "delais": [
+    {
+      "id": "paiement",
+      "libelle": "Payer ou régulariser",
+      "depart": "reception",
+      "duree": 1,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. L244-2",
+      "source": "https://www.agn-avocats.fr/blog/controle-urssaf/cotisations-urssaf-quand-payer-agn-avocats",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    },
+    {
+      "id": "cra",
+      "libelle": "Contester devant la commission de recours amiable de l'URSSAF",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "reference_legale": "Code de la sécurité sociale, art. R142-1",
+      "explication": "Les sources consultées divergent pour certaines contestations (un mois pour les majorations) : prudence.",
+      "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=R142-1%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+      "verifie_le": "2026-10-25",
+      "statut": "recoupe"
+    }
+  ],
+  "lettres": [
+    "recours-cra",
+    "echeancier"
+  ],
+  "contacts": [
+    "mediateur-urssaf",
+    "point-justice",
+    "cresus"
+  ],
+  "source": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=L244-2%20code%20de%20la%20s%C3%A9curit%C3%A9%20sociale",
+  "verifie_le": "2026-10-25"
+}

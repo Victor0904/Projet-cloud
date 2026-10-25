@@ -1,0 +1,85 @@
+{
+  "id": "ft-trop-percu",
+  "organisme": "france-travail",
+  "libelle": "France Travail — Trop-perçu d'allocations",
+  "motsCles": [
+    {
+      "terme": "trop-percu",
+      "poids": 6
+    },
+    {
+      "terme": "trop percu",
+      "poids": 6
+    },
+    {
+      "terme": "indu",
+      "poids": 3
+    },
+    {
+      "terme": "rembourser",
+      "poids": 2
+    },
+    {
+      "terme": "notification de trop",
+      "poids": 4
+    },
+    {
+      "terme": "percue a tort",
+      "poids": 4
+    },
+    {
+      "terme": "versee a tort",
+      "poids": 4
+    },
+    {
+      "terme": "questionnaire de ressources",
+      "poids": 3
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "caf",
+      "poids": -4
+    },
+    {
+      "terme": "allocataire",
+      "poids": -3
+    }
+  ],
+  "cestQuoi": "France Travail estime vous avoir versé trop d'allocations (reprise d'emploi non déclarée, erreur de calcul…) et vous demande de rembourser.",
+  "risques": [
+    "Sans réponse, la somme est récupérée sur vos allocations futures (retenues) ou par une procédure de recouvrement forcé (contrainte)."
+  ],
+  "actions": [
+    "Demandez le détail du calcul si vous ne comprenez pas l'origine de la dette.",
+    "Si vous contestez, écrivez à votre agence dans les 2 mois (recours obligatoire avant le tribunal), puis au médiateur si besoin.",
+    "Si vous ne pouvez pas rembourser, demandez une remise de dette (totale ou partielle) avec le questionnaire de ressources, ou un échéancier.",
+    "Ne payez pas tout de suite si vous comptez contester : contestez d'abord."
+  ],
+  "delais": [
+    {
+      "id": "contestation",
+      "libelle": "Contester le trop-perçu",
+      "depart": "reception",
+      "duree": 2,
+      "unite": "mois",
+      "mode": "calendaire",
+      "explication": "Le délai court à compter de la réception de la notification de trop-perçu.",
+      "source": "https://www.francetravail.fr/faq/candidat/mes-allocations---mes-aides/les-trop-percus/trop-percu-france-travail.html",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "ft-contestation-trop-percu",
+    "remise-dette",
+    "echeancier"
+  ],
+  "contacts": [
+    "mediateur-france-travail",
+    "defenseur-droits",
+    "point-justice"
+  ],
+  "source": "https://www.francetravail.fr/faq/candidat/mes-allocations---mes-aides/les-trop-percus/trop-percu-france-travail.html",
+  "verifie_le": "2026-10-25"
+}

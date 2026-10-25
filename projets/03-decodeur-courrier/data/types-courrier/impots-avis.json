@@ -1,0 +1,110 @@
+{
+  "id": "impots-avis",
+  "organisme": "impots",
+  "libelle": "Impôts — Avis d'imposition",
+  "motsCles": [
+    {
+      "terme": "avis d'impot",
+      "poids": 5
+    },
+    {
+      "terme": "avis d'imposition",
+      "poids": 5
+    },
+    {
+      "terme": "impot sur le revenu",
+      "poids": 2
+    },
+    {
+      "terme": "revenu fiscal de reference",
+      "poids": 4
+    },
+    {
+      "terme": "montant de votre impot",
+      "poids": 3
+    },
+    {
+      "terme": "date limite de paiement",
+      "poids": 2
+    },
+    {
+      "terme": "taxe fonciere",
+      "poids": 3
+    },
+    {
+      "terme": "taxe d'habitation",
+      "poids": 3
+    },
+    {
+      "terme": "date de mise en recouvrement",
+      "poids": 3
+    },
+    {
+      "terme": "impot net",
+      "poids": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "terme": "mise en demeure",
+      "poids": -4
+    },
+    {
+      "terme": "proposition de rectification",
+      "poids": -6
+    },
+    {
+      "terme": "lettre de relance",
+      "poids": -4
+    },
+    {
+      "terme": "taux de prelevement",
+      "poids": -2
+    }
+  ],
+  "cestQuoi": "C'est le résultat du calcul de votre impôt par l'administration fiscale : il indique ce que vous devez payer (ou ce qui vous est remboursé) et la date limite de paiement.",
+  "risques": [
+    "Si vous ne payez pas avant la date limite, une majoration de 10 % peut être ajoutée (art. 1730 du code général des impôts) — A_VERIFIER selon l'impôt concerné.",
+    "Une erreur non contestée dans les délais devient définitive."
+  ],
+  "actions": [
+    "Vérifiez les revenus, la situation de famille et les charges retenus.",
+    "En cas d'erreur, faites une réclamation depuis la messagerie sécurisée de impots.gouv.fr ou par courrier au centre des finances publiques.",
+    "Si vous ne pouvez pas payer d'un coup, demandez un plan de règlement AVANT la date limite."
+  ],
+  "delais": [
+    {
+      "id": "date-courrier",
+      "libelle": "Date limite de paiement indiquée sur l'avis",
+      "depart": "date_limite_courrier",
+      "explication": "Le courrier fixe lui-même cette date : c'est celle qu'il faut respecter.",
+      "source": "Date lue dans le courrier lui-même.",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    },
+    {
+      "id": "reclamation",
+      "libelle": "Faire une réclamation (contester l'impôt)",
+      "depart": "date_courrier",
+      "duree": 2,
+      "unite": "fin_annee",
+      "mode": "calendaire",
+      "reference_legale": "Livre des procédures fiscales, art. R*196-1",
+      "explication": "Pour l'impôt sur le revenu, la réclamation est possible jusqu'au 31 décembre de la 2e année qui suit la mise en recouvrement (date figurant sur l'avis). Pour les impôts locaux, c'est la 1re année seulement : vérifiez.",
+      "source": "https://www.impots.gouv.fr/particulier/delais-de-reclamation",
+      "verifie_le": "2026-10-25",
+      "statut": "verifie"
+    }
+  ],
+  "lettres": [
+    "impots-reclamation",
+    "echeancier"
+  ],
+  "contacts": [
+    "conciliateur-fiscal",
+    "mediateur-economie",
+    "france-services"
+  ],
+  "source": "https://www.impots.gouv.fr/particulier/delais-de-reclamation",
+  "verifie_le": "2026-10-25"
+}

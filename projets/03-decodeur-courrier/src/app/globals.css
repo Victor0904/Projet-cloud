@@ -1,2 +1,23 @@
 @import "tailwindcss";
 @source "../../../../packages/ui/src";
+
+/* Impression de la lettre seule (bouton « Imprimer / enregistrer en PDF » du générateur). */
+@media print {
+  body.impression-lettre * {
+    visibility: hidden;
+  }
+  body.impression-lettre #lettre-imprimable,
+  body.impression-lettre #lettre-imprimable * {
+    visibility: visible;
+  }
+  body.impression-lettre #lettre-imprimable {
+    display: block !important;
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    padding: 0;
+  }
+  @page {
+    margin: 2cm;
+  }
+}

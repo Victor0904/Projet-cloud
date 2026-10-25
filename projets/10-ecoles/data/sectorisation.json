@@ -1,0 +1,23 @@
+{
+  "_description": "Ce qui est publié en données ouvertes sur la sectorisation (carte scolaire), par niveau.",
+  "verifie_le": "2026-10-25",
+  "colleges": {
+    "jeu": "Carte scolaire des collèges publics",
+    "source": "https://data.education.gouv.fr/explore/dataset/fr-en-carte-scolaire-colleges-publics/information/",
+    "verifie_le": "2026-10-25",
+    "couverture": "Jeu national : 88 départements y figurent au 2026-10-25 (compte par code_departement). Absents : Ariège (09), Haute-Garonne (31), Aveyron (12), Charente-Maritime (17), Côtes-d'Armor (22), Gers (32), Lot (46), Hautes-Pyrénées (65), Tarn (81), Tarn-et-Garonne (82), Corse-du-Sud (2A), Guadeloupe (971), Martinique (972), Mayotte (976). La Haute-Corse figure sous le code 720.",
+    "qui_decide": "Le conseil départemental définit les secteurs des collèges publics ; le directeur académique (DASEN) affecte les élèves."
+  },
+  "ecoles": {
+    "jeu": null,
+    "couverture": "Pas de jeu national. La sectorisation des écoles maternelles et élémentaires publiques est fixée par délibération du conseil municipal ; certaines villes la publient sur leur propre portail open data (Paris, Lyon, Toulouse…) mais ces portails n'étaient pas accessibles lors de la construction (A_VERIFIER).",
+    "qui_decide": "La mairie de votre commune de résidence.",
+    "statut": "A_VERIFIER"
+  },
+  "lycees": {
+    "jeu": null,
+    "couverture": "Pas de jeu national. L'affectation en seconde passe par la procédure Affelnet, avec des « secteurs » ou « districts » définis par chaque académie, rarement publiés en données ouvertes.",
+    "qui_decide": "Le recteur / la DSDEN, via Affelnet lycée.",
+    "statut": "A_VERIFIER"
+  }
+}

@@ -1,9 +1,13 @@
-import { Gabarit } from "@vie-fr/ui";
+import { Accueil } from "@/components/Accueil";
+import { Cadre } from "@/components/Cadre";
 
-export default function Accueil() {
+export default function PageAccueil() {
   return (
-    <Gabarit titre={"Comparateur d'écoles, collèges et lycées"}>
-      <p>Application en construction. Voir PROMPT.md pour le cahier des charges.</p>
-    </Gabarit>
+    <Cadre
+      titre="Écoles, collèges et lycées autour de chez moi"
+      sousTitre="Carte, collège de secteur et comparaison avec des indicateurs expliqués, à partir des données ouvertes de l'Éducation nationale."
+    >
+      <Accueil />
+    </Cadre>
   );
 }

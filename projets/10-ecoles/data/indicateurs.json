@@ -1,0 +1,32 @@
+{
+  "_description": "Règles d'interprétation des indicateurs affichés. Les valeurs elles-mêmes viennent des jeux de données (voir public/donnees/<dep>/etablissements.json, champ sources).",
+  "valeur_ajoutee": {
+    "definition": "Écart entre le résultat réel de l'établissement et le résultat « attendu », c'est-à-dire celui qu'obtiendraient en moyenne au niveau national des élèves de même âge, même origine sociale, même sexe et même niveau scolaire de départ. Valeur ajoutée = taux réel − taux attendu.",
+    "source": "https://www.education.gouv.fr/indicateurs-de-resultats-des-lycees-1118",
+    "source_colleges": "https://www.education.gouv.fr/les-indicateurs-de-valeur-ajoutee-des-colleges-ivac-377985",
+    "verifie_le": "A_VERIFIER",
+    "note_source": "A_VERIFIER : URLs des notes méthodologiques de la DEPP non consultables depuis l'environnement de construction (education.gouv.fr refusé par le proxy). Définition reformulée d'après les descriptions des jeux sur data.education.gouv.fr, consultées le 2026-10-25.",
+    "seuils": {
+      "_choix": "Choix éditorial A_VERIFIER : la DEPP ne publie pas en open data la marge d'incertitude de chaque valeur ajoutée. En dessous de ces écarts on parle de résultat « conforme à l'attendu ».",
+      "points_de_pourcentage": 3,
+      "points_de_note_sur_20": 0.3,
+      "statut": "A_VERIFIER"
+    }
+  },
+  "ips": {
+    "definition": "L'indice de position sociale résume le milieu social des élèves à partir de la profession de leurs parents. Plus il est élevé, plus les familles sont, en moyenne, favorisées. Il sert à comparer des établissements entre eux, pas à juger un élève.",
+    "source": "https://data.education.gouv.fr/explore/dataset/fr-en-ips-colleges-ap2023/information/",
+    "verifie_le": "2026-10-25",
+    "ecart_notable": {
+      "_choix": "Choix éditorial A_VERIFIER : écart d'IPS au-delà duquel on dit « nettement plus / moins favorisé que la moyenne du département ».",
+      "valeur": 10,
+      "statut": "A_VERIFIER"
+    }
+  },
+  "langues_courantes": {
+    "_description": "Langues vivantes considérées comme « courantes » ; toute autre langue vivante enseignée est signalée comme « langue moins répandue » dans les filtres. Choix éditorial.",
+    "liste": ["Anglais", "Allemand", "Espagnol", "Italien"],
+    "source": "https://data.education.gouv.fr/explore/dataset/fr-en-offre-langues-2d/information/",
+    "verifie_le": "2026-10-25"
+  }
+}

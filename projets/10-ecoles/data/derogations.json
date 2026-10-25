@@ -1,0 +1,31 @@
+{
+  "_description": "Demande de dérogation à la carte scolaire (collège public). Texte reformulé en langage clair.",
+  "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1856",
+  "source_juridique": "Code de l'éducation, article D211-11 (affectation des élèves dans les collèges publics par le directeur académique)",
+  "source_juridique_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020743226",
+  "sources_complementaires": [
+    "https://www.letudiant.fr/college/entree-en-6e-quels-motifs-de-derogation-pour-integrer-un-college-hors-secteur.html",
+    "https://www1.ac-grenoble.fr/media/16175/download"
+  ],
+  "verifie_le": "A_VERIFIER",
+  "note_verification": "A_VERIFIER : service-public.gouv.fr et legifrance.gouv.fr étaient inaccessibles depuis l'environnement de construction le 2026-10-25 ; le numéro de fiche F1856 et l'URL de l'article D211-11 sont à confirmer. L'ordre des critères a été recoupé le 2026-10-25 avec des documents d'académies (Grenoble, Strasbourg) trouvés par recherche web.",
+  "qui_decide": "Le directeur académique des services de l'Éducation nationale (DASEN) de votre département, dans la limite des places disponibles dans le collège demandé.",
+  "principe": "Votre enfant est d'abord affecté dans son collège de secteur. Une dérogation n'est accordée que s'il reste de la place après l'accueil des élèves du secteur ; quand il y a plus de demandes que de places, elles sont classées selon des critères nationaux, dans l'ordre ci-dessous.",
+  "criteres": [
+    { "code": "handicap", "libelle": "Élève en situation de handicap", "justificatif": "Notification de la MDPH (souvent à envoyer sous pli cacheté au médecin de la DSDEN)" },
+    { "code": "medical", "libelle": "Prise en charge médicale importante à proximité du collège demandé", "justificatif": "Certificat médical sous pli cacheté" },
+    { "code": "boursier", "libelle": "Élève boursier (bourse de collège)", "justificatif": "Notification ou avis d'imposition permettant d'estimer le droit à bourse" },
+    { "code": "fratrie", "libelle": "Frère ou sœur déjà scolarisé(e) dans le collège demandé l'année de l'entrée", "justificatif": "Certificat de scolarité du frère ou de la sœur" },
+    { "code": "limite_secteur", "libelle": "Domicile en limite de secteur, proche du collège demandé", "justificatif": "Justificatif de domicile et plan" },
+    { "code": "parcours", "libelle": "Parcours scolaire particulier (option, section, langue non proposée dans le collège de secteur)", "justificatif": "Préciser l'option ou la section ; joindre l'avis de l'école si nécessaire" },
+    { "code": "autre", "libelle": "Autre motif (convenance personnelle)", "justificatif": "Toute pièce utile" }
+  ],
+  "calendrier": {
+    "texte": "Pour une entrée en 6e, la demande se fait en général au printemps de l'année de CM2 (souvent entre mars et mai), avec le dossier d'entrée en 6e remis par l'école. Pour un changement en cours de scolarité, s'adresser à la DSDEN. Les dates exactes sont fixées chaque année par chaque département.",
+    "statut": "A_VERIFIER"
+  },
+  "recours": "En cas de refus, vous pouvez demander un réexamen (recours gracieux) au DASEN ou un recours hiérarchique auprès du recteur, dans les 2 mois suivant la notification. Le délai de recours contentieux devant le tribunal administratif est aussi de 2 mois.",
+  "ecoles": "Pour une école maternelle ou élémentaire publique, la dérogation se demande à la mairie : celle de votre commune si l'école souhaitée est dans la même commune, sinon accord des deux maires (commune de résidence et commune d'accueil).",
+  "lycees": "Pour une seconde générale et technologique, la demande de lycée hors secteur se fait dans les vœux Affelnet, avec l'établissement d'origine (collège).",
+  "limites": "Ce modèle de lettre ne remplace pas le formulaire officiel de votre DSDEN, quand il en existe un : demandez-le au collège ou à l'école de votre enfant et joignez-y cette lettre si besoin."
+}

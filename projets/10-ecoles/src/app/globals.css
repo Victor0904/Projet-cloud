@@ -1,2 +1,24 @@
 @import "tailwindcss";
 @source "../../../../packages/ui/src";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #fff;
+  color: #161616;
+}
+
+/* La carte n'a pas de sens à l'impression : la liste et les tableaux suffisent. */
+@media print {
+  .leaflet-container {
+    display: none !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  @page {
+    margin: 12mm;
+  }
+}

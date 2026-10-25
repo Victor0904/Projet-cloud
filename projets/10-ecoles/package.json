@@ -6,13 +6,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . && tsc --noEmit",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run",
+    "donnees:telecharger": "NODE_USE_ENV_PROXY=1 node --no-warnings scripts/telecharger.ts",
+    "donnees:construire": "node --no-warnings scripts/construire.ts",
+    "donnees": "npm run donnees:telecharger && npm run donnees:construire"
   },
   "dependencies": {
     "@vie-fr/fr-data": "*",
     "@vie-fr/ui": "*",
+    "leaflet": "^1.9.4",
     "next": "^15.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22"
   }
 }
